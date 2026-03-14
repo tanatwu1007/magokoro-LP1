@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import {
   Heart,
   MapPin,
@@ -167,12 +168,26 @@ export default function LandingPage() {
       <main>
         {/* ========== Hero Section ========== */}
         <section className="relative overflow-hidden bg-gradient-to-b from-primary/10 to-background">
-          <div className="relative mx-auto mb-4 aspect-[16/10] w-full max-w-lg overflow-hidden rounded-b-3xl shadow-xl bg-primary/20">
-            {/* 画像を表示する場合は public/hero-bg.jpg を配置し、以下のコメントを外して Image に差し替えてください */}
-            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground text-sm">
-              ヒーロー画像（public/hero-bg.jpg を配置で表示）
-            </div>
+          <div className="relative mx-auto mb-4 aspect-[16/10] w-full max-w-lg overflow-hidden rounded-b-3xl shadow-xl">
+            <Image
+              src="/hero-bg.png"
+              alt="神奈川まごころ遺品センターのスタッフ"
+              fill
+              className="object-cover"
+              priority
+            />
+            <span className="absolute left-4 top-4 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground shadow-md md:text-base">
+              神奈川県全域対応
+            </span>
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+          </div>
+
+          <div className="container relative mx-auto px-4 text-center">
+            <p className="text-base font-bold text-foreground md:text-lg">
+              最短30分現場へ<br />
+              買取で費用を劇的に安く<br />
+              女性スタッフ同行可能
+            </p>
           </div>
 
           <div className="container relative mx-auto px-4 py-8 md:py-12">
