@@ -7,8 +7,11 @@ import {
   HeartHandshake, 
   CheckCircle2, 
   BadgeJapaneseYen, 
-  Sparkles,
-  ChevronRight
+  ClipboardList,
+  Truck,
+  HelpCircle,
+  Building2,
+  AlertTriangle
 } from 'lucide-react';
 
 export default function Page() {
@@ -28,9 +31,7 @@ export default function Page() {
       </header>
 
       {/* 🟢 1. ファーストビュー（ヒーローセクション） */}
-      {/* ※プロの指摘：ここで「綺麗になるイメージ」と「神奈川・安さ」を3秒で伝える */}
       <section className="relative bg-white">
-        {/* 背景画像（一旦、綺麗な部屋のフリー素材URLを入れています。後で自分の画像に変えられます） */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
@@ -45,14 +46,13 @@ export default function Page() {
             神奈川県エリア限定・地域密着
           </div>
           <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            その遺品・不用品、<br className="md:hidden" />
+            その不用品・粗大ゴミ、<br className="md:hidden" />
             <span className="text-red-600">捨てるのちょっと待って！</span>
           </h2>
           <p className="text-lg md:text-2xl font-bold text-gray-800 mb-8 bg-yellow-200 inline-block px-2 transform -rotate-1">
-            『高価買取』で費用を劇的に安く相殺します。
+            『高価買取』で回収費用を劇的に安くします。
           </p>
 
-          {/* 3つの安心バッジ（プロの指摘：数字と安心感） */}
           <div className="flex flex-col md:flex-row justify-center gap-3 max-w-3xl mx-auto">
             <div className="bg-white border-2 border-green-600 rounded-lg p-3 flex items-center justify-center gap-2 shadow-sm font-bold text-green-800">
               <MapPin className="text-red-500 w-5 h-5" />
@@ -84,7 +84,7 @@ export default function Page() {
               <div className="w-full md:w-2/3">
                 <h3 className="text-xl font-bold text-red-600 mb-3">秘密は「買取・リサイクル」の独自ルート！</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  ただゴミとして処分するだけの回収業者とは違い、私たちは**「リサイクルショップの機能」**を持っています。他社で「処分費用が10万円かかります」と言われた品物も、私たちが買い取って作業費から差し引く（相殺する）ことで、実質負担が0円になるケースも多数あります！
+                  ただゴミとして処分するだけの回収業者とは違い、私たちは**「リサイクルショップの機能」**を持っています。他社で「処分費用が10万円かかります」と言われた不用品も、私たちが買い取って作業費から差し引く（相殺する）ことで、実質負担が0円になるケースも多数あります！
                 </p>
                 <ul className="space-y-2 font-bold text-gray-800">
                   <li className="flex items-center gap-2"><CheckCircle2 className="text-green-500 w-5 h-5" /> 家電・家具・貴金属・骨董品もプロが査定</li>
@@ -96,45 +96,40 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 3. 解決事例（実績セクション） */}
+      {/* 🟢 【NEW】3. ご依頼の流れ */}
       <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
-            驚きの「買取相殺」事例
+            ご依頼のカンタン4ステップ
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* 事例1 */}
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
-              <div className="bg-green-600 text-white text-sm font-bold inline-block px-3 py-1 rounded-full mb-3">
-                大和市 A様邸（2LDK遺品整理）
-              </div>
-              <p className="text-gray-600 text-sm mb-4">他社見積り：250,000円だったのが…</p>
-              <div className="bg-white p-4 rounded-lg text-center mb-2">
-                <div className="text-gray-500 text-sm">作業費：180,000円</div>
-                <div className="text-red-500 font-bold my-1">買取額：- 80,000円（家電等）</div>
-                <div className="border-t border-dashed my-2"></div>
-                <div className="text-xl font-extrabold text-gray-900">
-                  お支払総額：100,000<span className="text-sm font-normal">円</span>
-                </div>
-              </div>
-              <p className="text-xs text-gray-500 text-center">「見積もりを聞いて驚きました。本当に助かりました！」</p>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+            {/* ステップ1 */}
+            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 relative">
+              <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold absolute -top-5 left-1/2 transform -translate-x-1/2 border-4 border-white">1</div>
+              <MessageCircle className="w-12 h-12 text-green-600 mx-auto mt-4 mb-2" />
+              <h3 className="font-bold text-lg mb-2">無料相談・お見積り</h3>
+              <p className="text-sm text-gray-600">LINEや電話で「いくらくらい？」とお気軽にご相談ください。写真査定も可能です。</p>
             </div>
-            
-            {/* 事例2 */}
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm">
-              <div className="bg-green-600 text-white text-sm font-bold inline-block px-3 py-1 rounded-full mb-3">
-                横浜市 B様邸（不用品回収）
-              </div>
-              <p className="text-gray-600 text-sm mb-4">引越しに伴う大型家具・家電の処分</p>
-              <div className="bg-white p-4 rounded-lg text-center mb-2">
-                <div className="text-gray-500 text-sm">作業費：50,000円</div>
-                <div className="text-red-500 font-bold my-1">買取額：- 50,000円（冷蔵庫等）</div>
-                <div className="border-t border-dashed my-2"></div>
-                <div className="text-xl font-extrabold text-red-600">
-                  お支払総額：実質 0<span className="text-sm font-normal">円！</span>
-                </div>
-              </div>
-              <p className="text-xs text-gray-500 text-center">「買取分で費用がチャラになりました。女性スタッフの配慮も嬉しかったです。」</p>
+            {/* ステップ2 */}
+            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 relative">
+              <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold absolute -top-5 left-1/2 transform -translate-x-1/2 border-4 border-white">2</div>
+              <ClipboardList className="w-12 h-12 text-green-600 mx-auto mt-4 mb-2" />
+              <h3 className="font-bold text-lg mb-2">現地調査・確定金額</h3>
+              <p className="text-sm text-gray-600">現地へお伺いし、正確な買取額と回収費を算出。※この後の追加料金は一切ありません！</p>
+            </div>
+            {/* ステップ3 */}
+            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 relative">
+              <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold absolute -top-5 left-1/2 transform -translate-x-1/2 border-4 border-white">3</div>
+              <Truck className="w-12 h-12 text-green-600 mx-auto mt-4 mb-2" />
+              <h3 className="font-bold text-lg mb-2">スピーディな作業</h3>
+              <p className="text-sm text-gray-600">プロのスタッフが迅速かつ丁寧に運び出します。お客様は見ているだけでOKです。</p>
+            </div>
+            {/* ステップ4 */}
+            <div className="bg-slate-50 p-6 rounded-xl text-center border border-slate-200 relative">
+              <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold absolute -top-5 left-1/2 transform -translate-x-1/2 border-4 border-white">4</div>
+              <BadgeJapaneseYen className="w-12 h-12 text-green-600 mx-auto mt-4 mb-2" />
+              <h3 className="font-bold text-lg mb-2">ご精算（買取相殺）</h3>
+              <p className="text-sm text-gray-600">作業完了後にお支払い。買取額が上回った場合は、その場で現金をお渡しします。</p>
             </div>
           </div>
         </div>
@@ -142,9 +137,9 @@ export default function Page() {
 
       {/* 🟢 4. 代表挨拶（安心感セクション） */}
       <section className="py-12 px-4 bg-slate-100">
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center gap-8">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center gap-8 border-t-4 border-gray-800">
           <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 overflow-hidden rounded-full border-4 border-green-100">
-            {/* 代表の顔写真（フリー素材URL。後で自分の顔写真に変えられます） */}
+            {/* 代表の顔写真 */}
             <img 
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop" 
               alt="代表" 
@@ -153,13 +148,97 @@ export default function Page() {
           </div>
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
-              「どんな人が来るか不安…」<br/>その思い、私たちが払拭します。
+              「不当な高額請求」などの<br className="md:hidden"/>悪徳業者にご注意ください。
             </h3>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-              はじめまして。遺品整理や不用品回収は、お客様のプライベートな空間にお邪魔する責任重大な仕事です。だからこそ、私たちは「礼儀正しさ」「清潔感」「明朗会計」を何より大切にしています。<br/><br/>
-              他社で嫌な思いをした方、初めてで不安な方、ぜひ一度ご相談ください。お見積り後の追加料金は一切いただきません。まごころ込めて対応させていただきます。
+              はじめまして。不用品回収業界では、残念ながら「無料と言っていたのに、トラックに積んだ後で数万円を請求された」といったトラブルが後を絶ちません。<br/><br/>
+              だからこそ、私たちは**「お見積り後の追加料金一切なし」「買取による費用削減の徹底」**をお約束します。ご自宅にお伺いする以上、清潔感と礼儀作法を徹底したスタッフのみがお伺いいたします。どんな小さなことでも、まずは安心してご相談ください。
             </p>
             <p className="font-bold text-gray-900">代表</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 🟢 【NEW】5. よくある質問 (FAQ) */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <HelpCircle className="w-8 h-8 text-green-600" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">よくあるご質問</h2>
+          </div>
+          <div className="space-y-4">
+            {/* Q1 */}
+            <div className="border border-gray-200 rounded-lg p-4 bg-slate-50">
+              <h3 className="font-bold text-red-600 flex items-start gap-2 mb-2">
+                <span className="shrink-0 text-lg">Q.</span>
+                <span>見積もりした後に、料金が追加されることはありませんか？</span>
+              </h3>
+              <p className="text-gray-700 flex items-start gap-2 text-sm md:text-base">
+                <span className="shrink-0 font-bold text-green-600 text-lg">A.</span>
+                <span>一切ありません。事前にお出ししたお見積り金額から、作業後に追加で請求することは絶対にありませんのでご安心ください。</span>
+              </p>
+            </div>
+            {/* Q2 */}
+            <div className="border border-gray-200 rounded-lg p-4 bg-slate-50">
+              <h3 className="font-bold text-red-600 flex items-start gap-2 mb-2">
+                <span className="shrink-0 text-lg">Q.</span>
+                <span>ゴミ屋敷のように足の踏み場もない状態ですが、依頼できますか？</span>
+              </h3>
+              <p className="text-gray-700 flex items-start gap-2 text-sm md:text-base">
+                <span className="shrink-0 font-bold text-green-600 text-lg">A.</span>
+                <span>はい、全く問題ありません！仕分けから袋詰め、運び出しまで全てスタッフが行いますので、お客様はそのままの状態でご連絡ください。</span>
+              </p>
+            </div>
+            {/* Q3 */}
+            <div className="border border-gray-200 rounded-lg p-4 bg-slate-50">
+              <h3 className="font-bold text-red-600 flex items-start gap-2 mb-2">
+                <span className="shrink-0 text-lg">Q.</span>
+                <span>壊れている家電や古い家具でも買い取ってもらえますか？</span>
+              </h3>
+              <p className="text-gray-700 flex items-start gap-2 text-sm md:text-base">
+                <span className="shrink-0 font-bold text-green-600 text-lg">A.</span>
+                <span>部品に価値があるものや、海外輸出向けに需要があるものは、壊れていても買取・無料引取ができる場合があります。まずは査定させてください。</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 🟢 【NEW】6. 会社概要・許認可（違法業者との差別化） */}
+      <section className="py-12 px-4 bg-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <Building2 className="w-6 h-6 text-gray-700" />
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900">会社概要・許認可</h2>
+          </div>
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+            <table className="w-full text-sm md:text-base">
+              <tbody>
+                <tr className="border-b">
+                  <th className="bg-gray-50 py-3 px-4 text-left w-1/3 font-medium text-gray-700">屋号</th>
+                  <td className="py-3 px-4 text-gray-900 font-bold">神奈川まごころ遺品センター</td>
+                </tr>
+                <tr className="border-b">
+                  <th className="bg-gray-50 py-3 px-4 text-left font-medium text-gray-700">所在地</th>
+                  <td className="py-3 px-4 text-gray-900">〒242-0000 神奈川県大和市〇〇1-2-3</td>
+                </tr>
+                <tr className="border-b">
+                  <th className="bg-gray-50 py-3 px-4 text-left font-medium text-gray-700">営業時間</th>
+                  <td className="py-3 px-4 text-gray-900">9:00 〜 20:00（年中無休）</td>
+                </tr>
+                <tr>
+                  <th className="bg-gray-50 py-3 px-4 text-left font-medium text-gray-700 align-top">許認可番号<br/><span className="text-[10px] text-red-500">※超重要</span></th>
+                  <td className="py-3 px-4 text-gray-900">
+                    古物商許可番号：神奈川県公安委員会 第450000000000号<br/>
+                    一般廃棄物収集運搬業許可：第〇〇号（※提携業者含む）
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-4 flex items-start gap-2 text-xs text-gray-500 bg-red-50 p-3 rounded border border-red-100">
+            <AlertTriangle className="w-4 h-4 text-red-500 shrink-0" />
+            <p>無許可で不用品回収を行う業者にはご注意ください。当店は法令を遵守し、適正な処分および買取を行っております。</p>
           </div>
         </div>
       </section>
@@ -167,11 +246,10 @@ export default function Page() {
       {/* 🟢 フッター */}
       <footer className="bg-gray-800 text-gray-300 py-8 px-4 text-center text-sm pb-32">
         <p className="font-bold mb-2">神奈川まごころ遺品センター</p>
-        <p className="mb-4">〒242-0000 神奈川県大和市〇〇</p>
         <p>© 2026 神奈川まごころ遺品センター All Rights Reserved.</p>
       </footer>
 
-      {/* 🟢 5. 追従型CTA（アクションボタン） */}
+      {/* 🟢 7. 追従型CTA（アクションボタン） */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-white border-t border-gray-200 shadow-[0_-4px_10px_rgba(0,0,0,0.1)] p-2 md:p-3">
         <div className="max-w-4xl mx-auto flex gap-2">
           {/* LINEボタン */}
