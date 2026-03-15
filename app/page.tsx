@@ -4,12 +4,12 @@ import {
   Phone, MessageCircle, MapPin, Clock, HeartHandshake, 
   CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
   HelpCircle, Building2, AlertTriangle, ThumbsUp, 
-  Gift, CheckSquare, ArrowDown, ShieldCheck, Sparkles
+  Gift, CheckSquare, ArrowDown, ChevronRight, Sparkles, Timer
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '【神奈川の不用品回収・遺品整理】高価買取で費用が安い！まごころ整理センター',
-  description: '神奈川県（横浜・大和など）の不用品回収、粗大ゴミ処分、遺品整理なら「神奈川 まごころ整理センター」へ。リサイクル買取で回収費用を劇的に安く相殺！分別・運び出し不要の丸投げOK。最短30分で無料出張見積もりに伺います。追加料金一切なし！',
+  title: '【神奈川の不用品回収・遺品整理】高価買取で安くなる！まごころ整理センター',
+  description: '神奈川県（大和市・横浜など）の不用品回収、粗大ゴミ処分、遺品整理なら「神奈川 まごころ整理センター」へ。買取相殺で費用を劇的カット！分別・運び出し不要の丸投げOK。見積もり後のキャンセル無料。最短30分で急行します！',
 };
 
 export default function Page() {
@@ -18,21 +18,20 @@ export default function Page() {
       {/* 🟢 ヘッダー */}
       <header className="bg-green-800 text-white py-3 px-3 md:px-6 sticky top-0 z-40 shadow-md">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          {/* ロゴ部分（いただいたロゴのシルエットに近いアイコンと文字） */}
           <h1 className="text-sm md:text-xl font-extrabold flex items-center gap-1.5 tracking-tight">
             <HeartHandshake className="w-5 h-5 md:w-6 md:h-6 text-green-300" />
             神奈川 まごころ整理センター
           </h1>
-          <div className="text-[10px] md:text-sm bg-green-700 px-3 py-1.5 rounded-full font-bold shadow-sm">
-            ご相談・お見積り無料
+          <div className="text-[10px] md:text-sm bg-green-700 px-3 py-1.5 rounded-full font-bold shadow-sm flex items-center gap-1">
+            <Timer className="w-3 h-3 md:w-4 md:h-4 text-yellow-300" />
+            24時間受付中
           </div>
         </div>
       </header>
 
-      {/* 🟢 1. ファーストビュー（スマホでの見やすさを極限まで調整） */}
-      <section className="relative bg-white pb-8 md:pb-12">
+      {/* 🟢 1. ファーストビュー（FV） */}
+      <section className="relative bg-white pb-6 md:pb-12">
         <div className="absolute inset-0 z-0">
-          {/* FV背景：不用品がなくなりスッキリした美しい部屋 */}
           <img 
             src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=2000" 
             alt="整理された綺麗な部屋" 
@@ -41,15 +40,15 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/80 to-white/95"></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 pt-6 md:pt-10 pb-6 text-center">
-          <div className="flex justify-center mb-4">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 pt-6 md:pt-10 pb-2 text-center">
+          <div className="flex justify-center mb-3">
             <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-yellow-900 font-extrabold px-4 py-1.5 md:py-2 rounded-full text-xs md:text-base shadow-md flex items-center gap-1">
               <ThumbsUp className="w-4 h-4 md:w-5 md:h-5" />
-              おかげさまで神奈川県エリア満足度98%！
+              おかげさまで神奈川エリア満足度98%！
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 leading-snug mb-4 tracking-tight text-balance">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 leading-snug mb-3 tracking-tight text-balance">
             その不用品・粗大ゴミ、<br />
             <span className="text-red-600 border-b-4 border-red-600 pb-0.5 inline-block mt-1">捨てるのちょっと待って！</span>
           </h2>
@@ -58,17 +57,23 @@ export default function Page() {
             『高価買取』で回収費用を劇的に安くします。
           </p>
 
-          <div className="max-w-2xl mx-auto bg-red-50 border-2 border-red-500 rounded-xl p-3 md:p-4 mb-6 shadow-sm">
-            <div className="flex items-center justify-center gap-1.5 text-red-600 font-bold mb-1">
-              <Gift className="w-5 h-5 animate-pulse" />
-              <span className="text-base md:text-xl">【WEB限定】特別キャンペーン実施中！</span>
+          {/* 🚨 【改善】緊急性と限定性の付与 */}
+          <div className="max-w-2xl mx-auto bg-white border-4 border-red-500 rounded-xl p-1 mb-6 shadow-lg overflow-hidden relative">
+            <div className="bg-red-600 text-white text-[10px] md:text-xs font-bold py-1 px-3 absolute top-0 left-0 rounded-br-lg animate-pulse">
+              残りわずか！
             </div>
-            <p className="text-gray-800 font-bold text-xs md:text-base text-balance">
-              今お見積りいただくと<span className="text-red-600 text-base md:text-xl mx-1">「買取金額20%UP」</span>または<span className="text-red-600 text-base md:text-xl mx-1">「基本料金割引」</span>適用！
-            </p>
+            <div className="bg-red-50 p-3 md:p-4 pt-5">
+              <div className="flex items-center justify-center gap-1 text-red-600 font-bold mb-1">
+                <Gift className="w-5 h-5" />
+                <span className="text-sm md:text-lg">【毎月先着20名様限定】特別キャンペーン！</span>
+              </div>
+              <p className="text-gray-900 font-bold text-xs md:text-base text-balance mt-1">
+                今すぐのお見積りで<span className="text-red-600 text-lg md:text-2xl mx-1 font-extrabold">「買取金額20%UP」</span>適用！
+              </p>
+            </div>
           </div>
 
-          {/* スマホでは2列、PCでは3列に並ぶ安心バッジ */}
+          {/* 安心バッジ */}
           <div className="grid grid-cols-2 md:flex md:flex-row justify-center gap-2 max-w-3xl mx-auto">
             <div className="bg-white border-2 border-green-600 rounded-lg py-2 px-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-sm font-bold text-green-800 text-xs md:text-sm col-span-2 md:col-span-1">
               <MapPin className="text-red-500 w-5 h-5" />神奈川全域対応
@@ -83,13 +88,36 @@ export default function Page() {
         </div>
       </section>
 
+      {/* 🚨 【改善】FV直後の「お急ぎショートカット」 */}
+      <section className="bg-gradient-to-b from-green-50 to-white py-6 px-4 border-b border-gray-200">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-red-600 font-bold text-xs md:text-sm mb-2">＼ お急ぎの方は今すぐこちら！最短30分でお伺い ／</p>
+          <div className="flex flex-col md:flex-row gap-3">
+            <a href="#" className="flex-1 bg-[#06C755] hover:bg-[#05b34c] text-white rounded-full py-3 px-4 shadow-md flex items-center justify-center gap-2 transition-transform active:scale-95">
+              <MessageCircle className="w-6 h-6" />
+              <div className="text-left leading-tight">
+                <div className="text-[10px] font-bold">写真で簡単・匿名OK</div>
+                <div className="text-base font-extrabold">LINEで無料査定</div>
+              </div>
+            </a>
+            <a href="tel:000-000-0000" className="flex-1 bg-[#FF6A00] hover:bg-[#e65f00] text-white rounded-full py-3 px-4 shadow-md flex items-center justify-center gap-2 transition-transform active:scale-95">
+              <Phone className="w-6 h-6" />
+              <div className="text-left leading-tight">
+                <div className="text-[10px] font-bold">相談だけでも大歓迎</div>
+                <div className="text-base font-extrabold">0120-000-000</div>
+              </div>
+            </a>
+          </div>
+          {/* リスクリバーサル */}
+          <p className="text-[10px] md:text-xs text-gray-500 mt-3 font-medium">
+            ※とりあえず見積もりだけ…でも大歓迎！<span className="text-red-500 font-bold">見積もり後のキャンセルは完全無料</span>です。
+          </p>
+        </div>
+      </section>
+
       {/* 🟢 2. 悩み共感セクション */}
       <section className="py-10 md:py-16 px-4 bg-slate-800 text-white relative">
-        <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-1.5 shadow-md">
-          <ArrowDown className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
-        </div>
-
-        <div className="max-w-5xl mx-auto pt-4 flex flex-col md:flex-row items-center gap-6 md:gap-10">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-10">
           <div className="w-full md:w-1/2 order-2 md:order-1">
             <h2 className="text-xl md:text-3xl font-bold mb-5 text-yellow-400 text-center md:text-left">
               こんなお悩み、抱えていませんか？
@@ -113,8 +141,7 @@ export default function Page() {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2">
-             {/* 悩みイメージ：段ボールや片付けの悩み */}
+          <div className="w-full md:w-1/2 order-1 md:order-2 relative">
             <img 
               src="https://images.unsplash.com/photo-1584820927498-cafe2c11866e?auto=format&fit=crop&q=80&w=800" 
               alt="片付けの悩み" 
@@ -131,19 +158,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 3. 中間CTA（スマホで押しやすい大きさに） */}
-      <section className="py-8 px-4 bg-yellow-50 border-b border-yellow-200">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="font-bold text-red-600 mb-2 text-sm md:text-base">＼ スマホで写真を撮って送るだけ！最短3分でわかる ／</p>
-          <a href="#" className="flex md:inline-flex items-center justify-center w-full md:w-auto bg-[#06C755] hover:bg-[#05b34c] transition-colors text-white text-lg md:text-2xl font-extrabold rounded-full py-4 px-6 shadow-lg shadow-green-200">
-            <MessageCircle className="w-7 h-7 md:w-8 md:h-8 mr-2" />
-            【無料】LINEでカンタン写真査定
-          </a>
-          <p className="text-[10px] md:text-xs text-gray-500 mt-2">※無理な営業は一切いたしません。匿名でのご相談も大歓迎です。</p>
-        </div>
-      </section>
-
-      {/* 🟢 4. 選ばれる3つの理由（写真入り・スマホ対応） */}
+      {/* 🟢 3. 選ばれる3つの理由 */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">
@@ -153,7 +168,6 @@ export default function Page() {
             {/* 理由1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
               <div className="relative h-40 md:h-48">
-                {/* 画像：支払い・お金のイメージ */}
                 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="高価買取で安く" className="w-full h-full object-cover"/>
                 <div className="absolute top-2 left-2 bg-green-600 text-white font-bold px-3 py-1 rounded-full text-xs md:text-sm shadow-md">理由 1</div>
               </div>
@@ -165,7 +179,6 @@ export default function Page() {
             {/* 理由2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
               <div className="relative h-40 md:h-48">
-                {/* 画像：くつろぐ人（丸投げでOKのイメージ） */}
                 <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="丸投げ片付け" className="w-full h-full object-cover"/>
                 <div className="absolute top-2 left-2 bg-green-600 text-white font-bold px-3 py-1 rounded-full text-xs md:text-sm shadow-md">理由 2</div>
               </div>
@@ -177,7 +190,6 @@ export default function Page() {
             {/* 理由3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
               <div className="relative h-40 md:h-48">
-                {/* 画像：安心感のある女性スタッフ */}
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="安心のスタッフ" className="w-full h-full object-cover"/>
                 <div className="absolute top-2 left-2 bg-green-600 text-white font-bold px-3 py-1 rounded-full text-xs md:text-sm shadow-md">理由 3</div>
               </div>
@@ -190,7 +202,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 5. 料金プラン */}
+      {/* 🟢 4. 料金プラン */}
       <section className="py-12 md:py-16 px-4 bg-slate-100">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-3">
@@ -201,7 +213,6 @@ export default function Page() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* プラン1 */}
             <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col">
               <div className="bg-gray-700 text-white text-center py-2 font-bold text-xs md:text-sm">ちょっとしたお片付け</div>
               <div className="p-5 md:p-6 text-center flex-grow">
@@ -215,7 +226,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* プラン2 */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-500 relative flex flex-col z-10 md:-translate-y-2">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-b-md shadow-sm z-20">1番人気！</div>
               <div className="bg-green-600 text-white text-center py-3 md:py-4 font-bold text-sm md:text-base mt-4 md:mt-0">ごっそりお片付け</div>
@@ -230,7 +240,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* プラン3 */}
             <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col">
               <div className="bg-gray-700 text-white text-center py-2 font-bold text-xs md:text-sm">家まるごと・ゴミ屋敷</div>
               <div className="p-5 md:p-6 text-center flex-grow">
@@ -250,18 +259,16 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 6. 解決事例 */}
+      {/* 🟢 5. 解決事例 */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-10">
             驚きの「買取相殺」実績
           </h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* 事例1 */}
             <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row">
               <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-bl-lg z-10">15万円お得！</div>
               <div className="h-40 md:w-2/5 md:h-auto relative">
-                 {/* 画像：遺品整理後の綺麗な和室 */}
                  <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="遺品整理実績" className="w-full h-full object-cover"/>
                  <div className="absolute bottom-0 left-0 bg-black/60 text-white text-[10px] px-2 py-1">整理後の部屋</div>
               </div>
@@ -279,11 +286,9 @@ export default function Page() {
               </div>
             </div>
             
-            {/* 事例2 */}
             <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row">
               <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-bl-lg z-10">費用相殺！</div>
               <div className="h-40 md:w-2/5 md:h-auto relative">
-                 {/* 画像：不用品回収後のアパート */}
                  <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800" alt="不用品回収実績" className="w-full h-full object-cover"/>
                  <div className="absolute bottom-0 left-0 bg-black/60 text-white text-[10px] px-2 py-1">回収後のリビング</div>
               </div>
@@ -304,7 +309,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 7. ご依頼の流れ */}
+      {/* 🟢 6. ご依頼の流れ */}
       <section className="py-12 md:py-16 px-4 bg-green-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">
@@ -313,7 +318,6 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 relative">
             <div className="hidden md:block absolute top-16 left-10 right-10 h-1 bg-green-200 z-0"></div>
             
-            {/* ステップ1 */}
             <div className="text-center relative z-10 bg-white md:bg-transparent p-3 md:p-0 rounded-xl shadow-sm md:shadow-none border border-green-100 md:border-none">
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-white shadow-md overflow-hidden mb-2 md:mb-4 relative">
                 <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&q=80&w=500" alt="相談" className="w-full h-full object-cover"/>
@@ -323,7 +327,6 @@ export default function Page() {
               <p className="text-[10px] md:text-sm text-gray-600">LINEや電話でお気軽にご相談ください。</p>
             </div>
             
-            {/* ステップ2 */}
             <div className="text-center relative z-10 bg-white md:bg-transparent p-3 md:p-0 rounded-xl shadow-sm md:shadow-none border border-green-100 md:border-none">
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-white shadow-md overflow-hidden mb-2 md:mb-4 relative">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=500" alt="見積もり" className="w-full h-full object-cover"/>
@@ -333,7 +336,6 @@ export default function Page() {
               <p className="text-[10px] md:text-sm text-gray-600">正確な金額を算出。<span className="text-red-500 font-bold">追加料金なし！</span></p>
             </div>
             
-            {/* ステップ3 */}
             <div className="text-center relative z-10 bg-white md:bg-transparent p-3 md:p-0 rounded-xl shadow-sm md:shadow-none border border-green-100 md:border-none">
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-white shadow-md overflow-hidden mb-2 md:mb-4 relative">
                 <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=500" alt="作業" className="w-full h-full object-cover"/>
@@ -343,7 +345,6 @@ export default function Page() {
               <p className="text-[10px] md:text-sm text-gray-600">プロが迅速に運び出します。丸投げでOK！</p>
             </div>
             
-            {/* ステップ4 */}
             <div className="text-center relative z-10 bg-white md:bg-transparent p-3 md:p-0 rounded-xl shadow-sm md:shadow-none border border-green-100 md:border-none">
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-white shadow-md overflow-hidden mb-2 md:mb-4 relative">
                 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=500" alt="精算" className="w-full h-full object-cover"/>
@@ -356,12 +357,11 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 8. 代表挨拶 */}
+      {/* 🟢 7. 代表挨拶（安心感の念押し） */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto bg-slate-50 rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-sm flex flex-col md:flex-row items-center gap-6 md:gap-10 border border-slate-200 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-green-600"></div>
           <div className="w-28 h-28 md:w-56 md:h-56 shrink-0 overflow-hidden rounded-full border-4 border-white shadow-lg">
-            {/* 代表の顔写真 */}
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" alt="代表" className="w-full h-full object-cover"/>
           </div>
           <div className="text-center md:text-left">
@@ -369,7 +369,7 @@ export default function Page() {
               「不当な高額請求」などの<br className="hidden md:block"/>悪徳業者にどうかご注意ください。
             </h3>
             <p className="text-gray-700 text-xs md:text-base leading-relaxed mb-4 md:mb-6 text-left">
-              はじめまして。不用品回収業界では「無料と言っていたのに、トラックに積んだ後で数万円を請求された」といったトラブルが後を絶ちません。<br/><br/>
+              はじめまして。不用品回収業界では「無料と言っていたのに、後から数万円を請求された」といったトラブルが後を絶ちません。<br/><br/>
               だからこそ、私たちは<strong className="text-red-600 border-b-2 border-red-200">「お見積り後の追加料金一切なし」「買取による費用削減の徹底」</strong>をお約束します。ご自宅にお伺いする以上、清潔感と礼儀作法を徹底したスタッフのみがお伺いいたします。どんな小さなことでも、まずは安心してご相談ください。
             </p>
             <p className="font-bold text-gray-900 text-right text-sm md:text-lg">神奈川 まごころ整理センター 代表</p>
@@ -377,7 +377,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 9. よくある質問 (FAQ) */}
+      {/* 🟢 8. よくある質問 (FAQ) */}
       <section className="py-12 md:py-16 px-4 bg-slate-100">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 md:gap-3 mb-8 md:mb-10">
@@ -395,17 +395,17 @@ export default function Page() {
             </div>
             <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-gray-200">
               <h3 className="font-bold text-gray-900 flex items-start gap-2 md:gap-3 mb-2">
-                <span className="shrink-0 text-lg md:text-2xl text-red-600 font-extrabold leading-none mt-0.5">Q.</span><span className="text-sm md:text-lg">ゴミ屋敷のように足の踏み場もない状態ですが、依頼できますか？</span>
+                <span className="shrink-0 text-lg md:text-2xl text-red-600 font-extrabold leading-none mt-0.5">Q.</span><span className="text-sm md:text-lg">見積もり後にキャンセルしても本当にお金はかかりませんか？</span>
               </h3>
               <p className="text-gray-700 flex items-start gap-2 md:gap-3 mt-2 md:mt-3">
-                <span className="shrink-0 font-extrabold text-green-600 text-lg md:text-2xl leading-none mt-0.5">A.</span><span className="text-xs md:text-base">はい、全く問題ありません！仕分けから袋詰め、運び出しまで全てプロのスタッフが行いますので、そのままの状態でご連絡ください。</span>
+                <span className="shrink-0 font-extrabold text-green-600 text-lg md:text-2xl leading-none mt-0.5">A.</span><span className="text-xs md:text-base"><strong className="text-red-600">はい、完全無料です。</strong>金額にご納得いただけない場合はお気兼ねなくお断りください。強引な営業も一切いたしません。</span>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 🟢 10. 会社概要・許認可（住所更新済み） */}
+      {/* 🟢 9. 会社概要・許認可 */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 md:mb-8">
@@ -441,43 +441,49 @@ export default function Page() {
       </section>
 
       {/* 🟢 フッター */}
-      <footer className="bg-gray-800 text-gray-300 py-10 md:py-12 px-4 text-center text-xs md:text-sm pb-32 md:pb-36">
+      <footer className="bg-gray-800 text-gray-300 py-10 md:py-12 px-4 text-center text-xs md:text-sm pb-36 md:pb-40">
         <p className="font-bold mb-2 md:mb-3 text-base md:text-lg">神奈川 まごころ整理センター</p>
         <p className="mb-4 text-gray-400">〒242-0024 神奈川県大和市福田５丁目4-11</p>
         <p>© 2026 神奈川 まごころ整理センター All Rights Reserved.</p>
       </footer>
 
-      {/* 🟢 追従型CTA（スマホで押しやすいサイズ・配置） */}
-      <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-[0_-8px_20px_rgba(0,0,0,0.08)] p-2 md:p-3 pb-safe">
-        <div className="max-w-4xl mx-auto flex gap-2">
-          {/* LINEボタン */}
-          <a 
-            href="#" 
-            className="flex-1 bg-[#06C755] hover:bg-[#05b34c] transition-colors text-white rounded-xl flex items-center justify-center py-2.5 md:py-3 px-1 md:px-2 shadow-md relative overflow-hidden group"
-          >
-            <div className="absolute top-0 right-0 bg-red-600 text-[8px] md:text-xs font-bold px-1.5 md:px-2 py-0.5 rounded-bl-lg">20%UP!</div>
-            <div className="flex items-center gap-1.5 md:gap-2 relative z-10">
-              <MessageCircle className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform" />
-              <div className="text-left">
-                <div className="text-[9px] md:text-xs font-bold leading-tight opacity-90">写真で簡単・匿名OK</div>
-                <div className="text-[13px] md:text-lg font-extrabold leading-tight tracking-tight">LINE無料査定</div>
+      {/* 🟢 追従型CTA（最強のクロージングエリア） */}
+      <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-t-2 border-green-500 shadow-[0_-8px_20px_rgba(0,0,0,0.1)] p-2 md:p-3 pb-safe">
+        <div className="max-w-4xl mx-auto flex flex-col gap-1.5 md:gap-2">
+          {/* キャンセル無料の安心テキスト */}
+          <p className="text-center text-[10px] md:text-xs font-bold text-gray-700">
+            ＼ まずは相談だけ・他社との相見積もりも大歓迎！ <span className="text-red-600">見積り後のキャンセル無料</span> ／
+          </p>
+          <div className="flex gap-2">
+            {/* LINEボタン */}
+            <a 
+              href="#" 
+              className="flex-1 bg-[#06C755] hover:bg-[#05b34c] transition-colors text-white rounded-xl flex items-center justify-center py-2.5 md:py-3 px-1 md:px-2 shadow-md relative overflow-hidden group"
+            >
+              <div className="absolute top-0 right-0 bg-red-600 text-[8px] md:text-xs font-bold px-1.5 md:px-2 py-0.5 rounded-bl-lg animate-pulse">20%UP!</div>
+              <div className="flex items-center gap-1.5 md:gap-2 relative z-10">
+                <MessageCircle className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform" />
+                <div className="text-left">
+                  <div className="text-[9px] md:text-xs font-bold leading-tight opacity-90">写真で簡単・匿名OK</div>
+                  <div className="text-[13px] md:text-lg font-extrabold leading-tight tracking-tight">LINE無料査定</div>
+                </div>
               </div>
-            </div>
-          </a>
-          
-          {/* 電話ボタン */}
-          <a 
-            href="tel:000-000-0000" 
-            className="flex-1 bg-[#FF6A00] hover:bg-[#e65f00] transition-colors text-white rounded-xl flex items-center justify-center py-2.5 md:py-3 px-1 md:px-2 shadow-md group"
-          >
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <Phone className="w-6 h-6 md:w-8 md:h-8 group-hover:rotate-12 transition-transform" />
-              <div className="text-left">
-                <div className="text-[9px] md:text-xs font-bold leading-tight opacity-90">最短30分で急行！</div>
-                <div className="text-[13px] md:text-lg font-extrabold leading-tight tracking-tight">電話で相談する</div>
+            </a>
+            
+            {/* 電話ボタン */}
+            <a 
+              href="tel:000-000-0000" 
+              className="flex-1 bg-[#FF6A00] hover:bg-[#e65f00] transition-colors text-white rounded-xl flex items-center justify-center py-2.5 md:py-3 px-1 md:px-2 shadow-md group"
+            >
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Phone className="w-6 h-6 md:w-8 md:h-8 group-hover:rotate-12 transition-transform" />
+                <div className="text-left">
+                  <div className="text-[9px] md:text-xs font-bold leading-tight opacity-90">最短30分で急行！</div>
+                  <div className="text-[13px] md:text-lg font-extrabold leading-tight tracking-tight">0120-000-000</div>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
