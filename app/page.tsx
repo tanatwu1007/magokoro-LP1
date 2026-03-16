@@ -4,7 +4,7 @@ import {
   Phone, MessageCircle, MapPin, Clock, HeartHandshake, 
   CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
   HelpCircle, Building2, AlertTriangle, ThumbsUp, 
-  Gift, CheckSquare, ArrowDown, Sparkles, Timer
+  Gift, CheckSquare, ArrowDown, Sparkles, Timer, Star
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans pb-28 md:pb-24">
-      {/* 🟢 ヘッダー（白背景に変更し、指定のロゴ画像を配置） */}
-      <header className="bg-white py-3 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200">
+      {/* 🟢 ヘッダー */}
+      <header className="bg-white py-2.5 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          {/* publicフォルダに入れた logo.png を読み込みます */}
           <div className="flex items-center">
+            {/* publicフォルダの logo.png を読み込み */}
             <img 
               src="/logo.png" 
               alt="神奈川 まごころ整理センター" 
-              className="h-9 md:h-12 object-contain" 
+              className="h-8 md:h-11 object-contain" 
             />
           </div>
           <div className="text-[10px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-3 py-1.5 rounded-full font-bold shadow-sm flex items-center gap-1">
@@ -33,66 +33,67 @@ export default function Page() {
         </div>
       </header>
 
-      {/* 🟢 1. ファーストビュー（目を引く背景画像 ＋ 読みやすい白パネル） */}
-      <section className="relative pb-10 md:pb-16 pt-8 md:pt-12 min-h-[85vh] flex items-center">
-        {/* 背景のフリー画像：清潔感があり、光が差し込む美しい部屋（片付け後の理想像） */}
+      {/* 🟢 1. ファーストビュー（背景画像をハッキリ見せるダークオーバーレイ仕様） */}
+      <section className="relative pb-12 md:pb-20 pt-10 md:pt-16 min-h-[85vh] flex items-center">
+        {/* 背景画像：清潔感のある美しい部屋 */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000" 
             alt="整理された綺麗な部屋" 
             className="w-full h-full object-cover"
           />
-          {/* 画像を暗くしすぎず、少しだけ白っぽくして爽やかさを演出 */}
-          <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
+          {/* 黒の半透明フィルムを重ねて、文字を読みやすくしつつ画像を見せる */}
+          <div className="absolute inset-0 bg-slate-900/65"></div>
         </div>
 
-        {/* テキスト部分を白い半透明のパネルで囲い、文字をくっきり読ませる */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 w-full">
-          <div className="bg-white/90 backdrop-blur-md p-6 md:p-10 rounded-3xl shadow-2xl border border-white text-center relative overflow-hidden">
-            {/* 装飾 */}
-            <Sparkles className="absolute -top-4 -right-4 w-24 h-24 text-yellow-300 opacity-30" />
-
-            <div className="flex justify-center mb-4 relative z-10">
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-yellow-900 font-extrabold px-5 py-2 rounded-full text-xs md:text-base shadow-md flex items-center gap-1.5">
-                <ThumbsUp className="w-4 h-4 md:w-5 md:h-5" />
-                おかげさまで神奈川エリア満足度98%！
+        <div className="relative z-10 max-w-4xl mx-auto px-4 w-full text-center">
+          
+          {/* 権威性バッジ（星マーク追加で信用度UP） */}
+          <div className="flex justify-center mb-5">
+            <div className="bg-yellow-400 text-yellow-900 font-extrabold px-5 py-2 rounded-full text-xs md:text-base shadow-lg flex items-center gap-1.5 border-2 border-yellow-300">
+              <div className="flex gap-0.5 mr-1">
+                <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-900" />
+                <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-900" />
+                <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-900" />
               </div>
+              おかげさまで神奈川エリア満足度98%！
             </div>
+          </div>
 
-            <h2 className="text-2xl md:text-5xl font-extrabold text-gray-950 leading-tight mb-5 tracking-tight text-balance relative z-10">
-              その不用品・粗大ゴミ、<br />
-              <span className="text-red-600 border-b-4 border-red-600 pb-1 inline-block mt-2">捨てるのちょっと待って！</span>
-            </h2>
-            
-            <p className="text-base md:text-3xl font-bold text-gray-900 mb-8 bg-yellow-200 inline-block px-4 py-2 transform -rotate-1 shadow-sm rounded-sm text-balance relative z-10">
-              『高価買取』で回収費用を大幅に安くします。
+          {/* メインコピー（白と黄色で圧倒的なインパクト） */}
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5 tracking-tight text-balance drop-shadow-md">
+            その不用品・粗大ゴミ、<br />
+            <span className="text-yellow-400 border-b-4 border-yellow-400 pb-1 inline-block mt-2">捨てるのちょっと待って！</span>
+          </h2>
+          
+          <p className="text-lg md:text-3xl font-bold text-gray-900 mb-8 bg-white inline-block px-5 py-2 md:py-3 transform -rotate-1 shadow-xl rounded-sm text-balance">
+            『高価買取』で回収費用を<span className="text-red-600">大幅に安く</span>します。
+          </p>
+
+          {/* 限定キャンペーンバナー（白背景で目立たせる） */}
+          <div className="max-w-2xl mx-auto bg-white border-4 border-red-500 rounded-2xl p-4 md:p-6 mb-8 shadow-2xl relative">
+            <div className="bg-red-600 text-white text-[10px] md:text-sm font-bold py-1 px-4 absolute -top-3 left-1/2 transform -translate-x-1/2 rounded-full animate-pulse shadow-md whitespace-nowrap">
+              ＼ 残り枠わずか！お急ぎください ／
+            </div>
+            <div className="flex items-center justify-center gap-1.5 text-red-600 font-bold mb-2 mt-2">
+              <Gift className="w-5 h-5 md:w-6 md:h-6" />
+              <span className="text-base md:text-xl">【毎月先着20名様限定】特別キャンペーン</span>
+            </div>
+            <p className="text-gray-900 font-bold text-sm md:text-xl text-balance mt-2">
+              今すぐのお見積りで<span className="text-red-600 text-xl md:text-3xl mx-1.5 font-extrabold">「買取金額20%UP」</span>適用！
             </p>
+          </div>
 
-            {/* 緊急キャンペーンバナー */}
-            <div className="max-w-2xl mx-auto bg-white border-2 border-red-500 rounded-xl p-4 md:p-5 mb-8 shadow-md relative z-10">
-              <div className="bg-red-600 text-white text-[10px] md:text-xs font-bold py-1 px-3 absolute top-0 left-0 rounded-br-lg animate-pulse">
-                残りわずか！
-              </div>
-              <div className="flex items-center justify-center gap-1.5 text-red-600 font-bold mb-1.5 mt-2 md:mt-0">
-                <Gift className="w-5 h-5 md:w-6 md:h-6" />
-                <span className="text-sm md:text-xl">【毎月先着20名様限定】特別キャンペーン！</span>
-              </div>
-              <p className="text-gray-900 font-bold text-xs md:text-lg text-balance mt-2">
-                今すぐのお見積りで<span className="text-red-600 text-lg md:text-2xl mx-1.5 font-extrabold">「買取金額20%UP」</span>適用！
-              </p>
+          {/* 安心バッジ */}
+          <div className="grid grid-cols-2 md:flex md:flex-row justify-center gap-2 max-w-3xl mx-auto">
+            <div className="bg-white/95 border-2 border-green-500 rounded-lg py-2.5 px-2 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-lg font-bold text-green-800 text-xs md:text-sm col-span-2 md:col-span-1">
+              <MapPin className="text-red-500 w-5 h-5" />神奈川全域対応
             </div>
-
-            {/* 安心バッジ */}
-            <div className="grid grid-cols-2 md:flex md:flex-row justify-center gap-2 max-w-3xl mx-auto relative z-10">
-              <div className="bg-white border-2 border-green-600 rounded-lg py-2 px-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-sm font-bold text-green-800 text-xs md:text-sm col-span-2 md:col-span-1">
-                <MapPin className="text-red-500 w-5 h-5" />神奈川全域対応
-              </div>
-              <div className="bg-white border-2 border-green-600 rounded-lg py-2 px-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-sm font-bold text-green-800 text-xs md:text-sm">
-                <Clock className="text-orange-500 w-5 h-5" />最短30分で急行
-              </div>
-              <div className="bg-white border-2 border-green-600 rounded-lg py-2 px-1 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-sm font-bold text-green-800 text-xs md:text-sm">
-                <HeartHandshake className="text-pink-500 w-5 h-5" />女性スタッフ同行
-              </div>
+            <div className="bg-white/95 border-2 border-green-500 rounded-lg py-2.5 px-2 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-lg font-bold text-green-800 text-xs md:text-sm">
+              <Clock className="text-orange-500 w-5 h-5" />最短30分で急行
+            </div>
+            <div className="bg-white/95 border-2 border-green-500 rounded-lg py-2.5 px-2 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 shadow-lg font-bold text-green-800 text-xs md:text-sm">
+              <HeartHandshake className="text-pink-500 w-5 h-5" />女性スタッフ同行
             </div>
           </div>
         </div>
