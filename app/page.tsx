@@ -1,9 +1,16 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { 
   Phone, MessageCircle, MapPin, Clock, HeartHandshake, 
-  CheckCircle2, HelpCircle, Building2, AlertTriangle, 
-  ThumbsUp, Gift, CheckSquare, Sparkles, Timer, Star, ShieldCheck
+  CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
+  HelpCircle, Building2, AlertTriangle, ThumbsUp, 
+  Gift, CheckSquare, ArrowRight, Sparkles, Timer, Star, ShieldCheck
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '【神奈川の不用品回収・遺品整理】高価買取で費用が安い！まごころ整理センター',
+  description: '神奈川県（大和市・横浜など）の不用品回収、粗大ゴミ処分、遺品整理なら「神奈川 まごころ整理センター」へ。リサイクル買取で回収費用を劇的に安く相殺！搬出・出張費コミコミ。見積もり後のキャンセル無料。最短30分で急行します！',
+};
 
 export default function Page() {
   return (
@@ -37,7 +44,6 @@ export default function Page() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 w-full text-center">
-          
           <div className="flex justify-center mb-5">
             <div className="bg-yellow-400 text-yellow-900 font-extrabold px-5 py-2 rounded-full text-xs md:text-base shadow-lg flex items-center gap-1.5 border-2 border-yellow-300">
               <div className="flex gap-0.5 mr-1">
@@ -159,7 +165,7 @@ export default function Page() {
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">
-            私たちが<span className="text-red-600">圧倒的に選ばれる</span>3つの理由
+            私たちが<span className="text-red-600">圧倒的に選ばれる</span><br className="md:hidden" />3つの理由
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
@@ -196,7 +202,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 4. 料金プラン（コミコミ明記） */}
+      {/* 🟢 4. 料金プラン */}
       <section className="py-12 md:py-16 px-4 bg-slate-100">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-3">
@@ -262,60 +268,108 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 5. 解決事例 */}
+      {/* 🟢 5. 解決事例（💥ビフォーアフター写真の完全実装） */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-10">
-            驚きの「買取相殺」実績
+          <h2 className="text-xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">
+            驚きの「買取相殺」ビフォーアフター
           </h2>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row">
-              <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-bl-lg z-10">15万円お得！</div>
-              <div className="h-40 md:w-2/5 md:h-auto relative">
-                 <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="遺品整理実績" className="w-full h-full object-cover"/>
-                 <div className="absolute bottom-0 left-0 bg-black/60 text-white text-[10px] px-2 py-1">整理後の部屋</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            
+            {/* 事例1：ビフォーアフター */}
+            <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-lg relative overflow-hidden flex flex-col">
+              <div className="absolute top-0 left-0 bg-red-600 text-white text-xs md:text-sm font-extrabold px-4 py-1.5 rounded-br-xl z-20 shadow-md">
+                15万円お得！
               </div>
-              <div className="p-4 md:p-5 md:w-3/5">
-                <div className="bg-green-600 text-white text-[10px] font-bold inline-block px-2 py-1 rounded mb-2">大和市 A様邸（2LDK 実家の遺品整理）</div>
-                <div className="flex gap-2 text-[10px] text-gray-500 mb-2">
-                  <span className="bg-gray-200 px-1.5 py-0.5 rounded">スタッフ3名</span>
-                  <span className="bg-gray-200 px-1.5 py-0.5 rounded">作業時間：約4時間</span>
+              
+              {/* ビフォーアフター画像エリア */}
+              <div className="flex w-full h-48 md:h-56 relative bg-gray-100">
+                {/* BEFORE */}
+                <div className="w-1/2 h-full relative border-r-2 border-white">
+                  <img src="https://images.unsplash.com/photo-1558522195-e1201b090344?auto=format&fit=crop&q=80&w=600" alt="散らかった部屋 Before" className="w-full h-full object-cover filter brightness-90"/>
+                  <div className="absolute top-2 left-2 bg-gray-800 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-sm">Before</div>
                 </div>
-                <div className="bg-white p-3 rounded-lg text-center border border-gray-100 shadow-sm">
-                  <div className="text-gray-500 text-[10px] md:text-xs">作業費・処分費：180,000円</div>
+                {/* AFTER */}
+                <div className="w-1/2 h-full relative">
+                  <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="綺麗な部屋 After" className="w-full h-full object-cover"/>
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-sm">After</div>
+                </div>
+                {/* 中央の矢印アイコン */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-lg border border-gray-100 z-10">
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-green-600" />
+                </div>
+              </div>
+
+              {/* テキストエリア */}
+              <div className="p-5 md:p-6 flex-grow flex flex-col justify-between">
+                <div>
+                  <div className="bg-green-600 text-white text-xs font-bold inline-block px-2.5 py-1 rounded-full mb-3">大和市 A様邸（2LDK 実家の遺品整理）</div>
+                  <div className="flex gap-2 text-[10px] md:text-xs text-gray-500 mb-3">
+                    <span className="bg-gray-200 px-2 py-1 rounded">スタッフ3名</span>
+                    <span className="bg-gray-200 px-2 py-1 rounded">作業時間：約4時間</span>
+                  </div>
+                </div>
+                <div className="bg-white p-4 rounded-xl text-center border border-gray-100 shadow-sm">
+                  <p className="text-gray-800 text-xs md:text-sm mb-2 font-bold border-b border-dashed border-gray-200 pb-2">他社見積り：250,000円だったのが…</p>
+                  <div className="text-gray-500 text-xs mt-2">作業費・処分費：180,000円</div>
                   <div className="text-red-500 font-bold my-1 text-sm md:text-base">買取額：- 80,000円</div>
-                  <div className="text-[9px] text-gray-500 mb-1">（内訳：高年式冷蔵庫、骨董品、ブランドバッグ等）</div>
-                  <div className="border-t border-dashed my-1 border-gray-300"></div>
-                  <div className="text-base md:text-lg font-extrabold text-gray-900">
-                    お支払総額：100,000<span className="text-[10px] md:text-xs font-normal">円</span>
+                  <div className="text-[10px] text-gray-500 mb-2">（内訳：高年式冷蔵庫、骨董品、ブランド家具等）</div>
+                  <div className="border-t border-gray-200 my-2 pt-2">
+                    <div className="text-lg md:text-xl font-extrabold text-gray-900">
+                      お支払総額：100,000<span className="text-xs font-normal">円</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row">
-              <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-bl-lg z-10">費用相殺！</div>
-              <div className="h-40 md:w-2/5 md:h-auto relative">
-                 <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800" alt="不用品回収実績" className="w-full h-full object-cover"/>
-                 <div className="absolute bottom-0 left-0 bg-black/60 text-white text-[10px] px-2 py-1">回収後のリビング</div>
+            {/* 事例2：ビフォーアフター */}
+            <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-lg relative overflow-hidden flex flex-col">
+              <div className="absolute top-0 left-0 bg-red-600 text-white text-xs md:text-sm font-extrabold px-4 py-1.5 rounded-br-xl z-20 shadow-md">
+                費用相殺で実質0円！
               </div>
-              <div className="p-4 md:p-5 md:w-3/5">
-                <div className="bg-green-600 text-white text-[10px] font-bold inline-block px-2 py-1 rounded mb-2">横浜市 B様（1K 引越し不用品回収）</div>
-                <div className="flex gap-2 text-[10px] text-gray-500 mb-2">
-                  <span className="bg-gray-200 px-1.5 py-0.5 rounded">スタッフ2名</span>
-                  <span className="bg-gray-200 px-1.5 py-0.5 rounded">作業時間：約1時間</span>
+              
+              {/* ビフォーアフター画像エリア */}
+              <div className="flex w-full h-48 md:h-56 relative bg-gray-100">
+                {/* BEFORE */}
+                <div className="w-1/2 h-full relative border-r-2 border-white">
+                  <img src="https://images.unsplash.com/photo-1584820927498-cafe2c11866e?auto=format&fit=crop&q=80&w=600" alt="不用品 Before" className="w-full h-full object-cover filter brightness-90"/>
+                  <div className="absolute top-2 left-2 bg-gray-800 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-sm">Before</div>
                 </div>
-                <div className="bg-white p-3 rounded-lg text-center border border-gray-100 shadow-sm">
-                  <div className="text-gray-500 text-[10px] md:text-xs">作業費・処分費：39,800円</div>
+                {/* AFTER */}
+                <div className="w-1/2 h-full relative">
+                  <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=600" alt="スッキリ After" className="w-full h-full object-cover"/>
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-sm">After</div>
+                </div>
+                {/* 中央の矢印アイコン */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-lg border border-gray-100 z-10">
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-green-600" />
+                </div>
+              </div>
+
+              {/* テキストエリア */}
+              <div className="p-5 md:p-6 flex-grow flex flex-col justify-between">
+                <div>
+                  <div className="bg-green-600 text-white text-xs font-bold inline-block px-2.5 py-1 rounded-full mb-3">横浜市 B様（1K 引越し不用品回収）</div>
+                  <div className="flex gap-2 text-[10px] md:text-xs text-gray-500 mb-3">
+                    <span className="bg-gray-200 px-2 py-1 rounded">スタッフ2名</span>
+                    <span className="bg-gray-200 px-2 py-1 rounded">作業時間：約1.5時間</span>
+                  </div>
+                </div>
+                <div className="bg-white p-4 rounded-xl text-center border border-gray-100 shadow-sm">
+                  <p className="text-gray-800 text-xs md:text-sm mb-2 font-bold border-b border-dashed border-gray-200 pb-2">引越しに伴う家具・家電の処分</p>
+                  <div className="text-gray-500 text-xs mt-2">作業費・処分費：39,800円</div>
                   <div className="text-red-500 font-bold my-1 text-sm md:text-base">買取額：- 39,800円</div>
-                  <div className="text-[9px] text-gray-500 mb-1">（内訳：ドラム式洗濯機、液晶テレビ等）</div>
-                  <div className="border-t border-dashed my-1 border-gray-300"></div>
-                  <div className="text-lg md:text-xl font-extrabold text-red-600">
-                    お支払総額：実質 0<span className="text-[10px] md:text-xs font-normal text-gray-900">円！</span>
+                  <div className="text-[10px] text-gray-500 mb-2">（内訳：ドラム式洗濯機、液晶テレビ等）</div>
+                  <div className="border-t border-gray-200 my-2 pt-2">
+                    <div className="text-xl md:text-2xl font-extrabold text-red-600">
+                      お支払総額：実質 0<span className="text-sm font-normal text-gray-900">円！</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
