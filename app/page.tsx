@@ -110,14 +110,14 @@ export default function Page() {
             ＼ お急ぎの方は今すぐこちら！最短30分でお伺い ／
           </p>
           <div className="flex flex-col md:flex-row gap-3 md:gap-4 mt-2">
-            <a href="#" className="flex-1 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-4 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
+            <a href="https://line.me/R/ti/p/votgs?ts=03170305&oat_content=url" className="flex-1 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-4 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
               <Camera className="w-8 h-8 md:w-9 md:h-9" />
               <div className="text-left leading-tight">
                 <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">部屋全体・大型家具・家電の3枚でOK!</div>
                 <div className="text-lg md:text-xl font-extrabold tracking-tight drop-shadow-sm">LINEで無料スピード査定</div>
               </div>
             </a>
-            <a href="tel:0120000000" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-2xl py-4 md:py-4 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00]">
+            <a href="tel:09013835108" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-2xl py-4 md:py-4 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-8 h-8 md:w-9 md:h-9" />
               <div className="text-left leading-tight">
                 <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</div>
@@ -280,7 +280,7 @@ export default function Page() {
           <p className="text-red-600 font-bold text-sm md:text-lg mb-4 bg-red-50 inline-block px-4 py-1.5 rounded-full">
             ＼ 相見積もり大歓迎！まずは当店の安さをご確認ください ／
           </p>
-          <a href="#" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-5 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
+          <a href="https://line.me/R/ti/p/votgs?ts=03170305&oat_content=url" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-5 px-4 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
             <Camera className="w-8 h-8 md:w-10 md:h-10" />
             <div className="text-left leading-tight">
               <div className="text-[11px] md:text-sm font-bold opacity-90 mb-1">部屋全体・大型家具・家電の3枚でOK!</div>
@@ -613,14 +613,14 @@ export default function Page() {
             ＼ 相見積もり大歓迎！まずは当店の安さと対応の良さをご実感ください ／
           </p>
           <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-center">
-            <a href="#" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-5 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
+            <a href="https://line.me/R/ti/p/votgs?ts=03170305&oat_content=url" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-2xl py-4 md:py-5 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#05b34c]">
               <Camera className="w-8 h-8 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
                 <div className="text-[11px] md:text-sm font-bold opacity-90 mb-1">匿名OK・24時間受付中</div>
                 <div className="text-xl md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINE無料査定</div>
               </div>
             </a>
-            <a href="tel:0120000000" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-2xl py-4 md:py-5 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00]">
+            <a href="tel:09013835108" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-2xl py-4 md:py-5 shadow-xl flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-8 h-8 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
                 <div className="text-[11px] md:text-sm font-bold opacity-90 mb-1">最短30分で急行！相談だけでもOK</div>
@@ -646,7 +646,7 @@ export default function Page() {
           </p>
           <div className="flex gap-2 mt-0.5">
             <a 
-              href="#" 
+              href="https://line.me/R/ti/p/votgs?ts=03170305&oat_content=url" 
               className="flex-1 bg-gradient-to-b from-[#06C755] to-[#04a044] transition-colors text-white rounded-xl flex items-center justify-center py-3 md:py-4 px-1 md:px-3 shadow-lg relative overflow-hidden group border border-[#05b34c]"
             >
               <div className="absolute top-0 right-0 bg-red-600 text-[9px] md:text-xs font-black px-2 md:px-3 py-0.5 rounded-bl-lg animate-pulse shadow-sm">20%UP!</div>
@@ -660,7 +660,7 @@ export default function Page() {
             </a>
             
             <a 
-              href="tel:0120000000" 
+              href="tel:09013835108" 
               className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-xl flex items-center justify-center py-3 md:py-4 px-1 md:px-3 shadow-lg group border border-[#e65f00]"
             >
               <div className="flex items-center gap-1.5 md:gap-3">
