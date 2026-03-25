@@ -138,7 +138,7 @@ export default function Page() {
             <a href="tel:09013835108" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 md:py-4 px-3 shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
-                <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">大和市の代表・粟野が直通で出ます！</div>
+                <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</div>
                 <div className="text-[16px] md:text-2xl font-extrabold tracking-tight drop-shadow-sm">090-1383-5108</div>
               </div>
             </a>
@@ -402,11 +402,11 @@ export default function Page() {
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
-                  <img src="https://images.unsplash.com/photo-1558522195-e1201b090344?auto=format&fit=crop&q=80&w=600" alt="散らかった部屋 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
+                  <img src="/yamato-chuo-before.png" alt="散らかった部屋 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
                   <div className="absolute top-1.5 left-1.5 bg-gray-900/80 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">Before</div>
                 </div>
                 <div className="w-1/2 h-full relative">
-                  <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="綺麗な部屋 After" loading="lazy" className="w-full h-full object-cover"/>
+                  <img src="/yamato-chuo-after.png" alt="綺麗な部屋 After" loading="lazy" className="w-full h-full object-cover"/>
                   <div className="absolute top-1.5 left-1.5 bg-blue-600/90 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">After</div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md border border-gray-100 z-10">
@@ -597,7 +597,7 @@ export default function Page() {
                 4
               </div>
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=500" alt="精算" loading="lazy" className="w-full h-full object-cover"/>
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=500" alt="精算・お支払い" loading="lazy" className="w-full h-full object-cover"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">ご精算（買取相殺）</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">作業後にお支払い。買取でお得に。</p>
