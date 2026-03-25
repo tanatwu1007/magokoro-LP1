@@ -5,7 +5,7 @@ import {
   CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
   HelpCircle, Building2, AlertTriangle, ThumbsUp, 
   Gift, CheckSquare, ArrowRight, ArrowDown, Timer, Star, ShieldCheck, Camera,
-  XCircle, CheckCircle, MessageSquareQuote, Flame
+  XCircle, CheckCircle, MessageSquareQuote, Flame, Info
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -39,6 +39,13 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* 🟢 NEW! 上部帯（3つの無料宣言・不安潰し） */}
+      <div className="bg-green-600 text-white text-[10px] md:text-sm font-bold py-1.5 px-2 text-center flex justify-center items-center gap-2 md:gap-4 shadow-sm z-50 relative">
+        <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 md:w-4 md:h-4" />大和市内の出張費0円</span>
+        <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 md:w-4 md:h-4" />お見積り無料</span>
+        <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 md:w-4 md:h-4" />キャンセル料0円</span>
+      </div>
+
       {/* 🟢 ヘッダー */}
       <header className="bg-white py-2 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center gap-2">
@@ -52,7 +59,7 @@ export default function Page() {
         </div>
       </header>
 
-      {/* 🟢 1. ファーストビュー（大和市民特化） */}
+      {/* 🟢 1. ファーストビュー（大和市民特化 ＆ 即理解） */}
       <section className="relative pb-8 md:pb-16 pt-6 md:pt-12 min-h-[85vh] flex items-center flex-col justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
@@ -72,17 +79,18 @@ export default function Page() {
 
           <div className="flex flex-wrap justify-center gap-1.5 mb-5 bg-white/10 p-2.5 rounded-b-xl rounded-t-sm backdrop-blur-sm border border-white/20 w-[95%] md:w-auto">
             <div className="bg-white text-red-700 font-extrabold px-3 py-1.5 md:py-2 rounded-full text-[11px] md:text-base shadow-lg border-2 border-red-500">
-              福田5丁目から最短15分で急行！
+              福田5丁目から最短15分急行
             </div>
+            {/* 🎯 数字の証拠を強化 */}
             <div className="bg-gradient-to-r from-green-500 to-green-600 text-white font-extrabold px-3 py-1.5 md:py-2 rounded-full text-[11px] md:text-base shadow-lg border border-green-400">
-              大和市民のお客様満足度98.3%
+              大和市での年間対応実績300件突破
             </div>
           </div>
 
-          <h2 className="text-[26px] sm:text-[28px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-1">
+          <h1 className="text-[26px] sm:text-[28px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-1">
             大和市の不用品・遺品整理<br />
             <span className="text-yellow-400 text-[32px] sm:text-[36px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-1">地元企業にお任せ！</span>
-          </h2>
+          </h1>
           
           <div className="bg-white inline-block px-5 py-3 md:py-4 transform -rotate-1 shadow-2xl rounded-xl mb-6 w-[95%] md:w-auto border-2 border-gray-100">
             <p className="text-[17px] md:text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">
@@ -121,7 +129,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🚨 お急ぎショートカット */}
+      {/* 🚨 FV直下 CTA（具体的な行動を促す文言へ改善） */}
       <section className="bg-gradient-to-b from-green-50 to-white py-5 md:py-8 px-3 md:px-4 border-b border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-red-600 font-bold text-[11px] md:text-base mb-2.5 bg-red-50 inline-block px-3 py-1 rounded-full border border-red-100">
@@ -132,14 +140,15 @@ export default function Page() {
               <Camera className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
                 <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">他社見積書・部屋の写真を送るだけ!</div>
-                <div className="text-[15px] md:text-xl font-extrabold tracking-tight drop-shadow-sm">LINEで最短5分スピード査定</div>
+                {/* 🎯 CTA文言強化 */}
+                <div className="text-[14px] md:text-xl font-extrabold tracking-tight drop-shadow-sm">写真を送って概算費用を知る</div>
               </div>
             </a>
             <a href="tel:09013835108" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 md:py-4 px-3 shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
-                <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</div>
-                <div className="text-[16px] md:text-2xl font-extrabold tracking-tight drop-shadow-sm">090-1383-5108</div>
+                <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">大和市の代表・粟野が直通で出ます！</div>
+                <div className="text-[15px] md:text-2xl font-extrabold tracking-tight drop-shadow-sm">今すぐ無料で電話相談する</div>
               </div>
             </a>
           </div>
@@ -201,7 +210,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 3. 他社との比較表 */}
+      {/* 🟢 3. 他社との比較表（不安潰し） */}
       <section className="py-10 md:py-20 px-2 md:px-4 bg-green-50 relative">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6 md:mb-12">
@@ -294,23 +303,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🚨 中間CTA */}
-      <section className="bg-white py-6 md:py-10 px-3 md:px-4 border-b border-gray-200">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-red-600 font-bold text-[11px] md:text-lg mb-3 bg-red-50 inline-block px-3 py-1.5 rounded-full border border-red-100 w-full sm:w-auto truncate">
-            ＼ 他社の見積書を送るだけ！大和市エリア最低価格保証 ／
-          </p>
-          <a href="#" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3 md:py-5 px-3 shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c]">
-            <Camera className="w-7 h-7 md:w-10 md:h-10" />
-            <div className="text-left leading-tight">
-              <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">見積書・部屋の写真をパシャッと送るだけ!</div>
-              <div className="text-[16px] md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINEで最短5分スピード査定</div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      {/* 🟢 4. 料金プラン */}
+      {/* 🟢 4. 料金プラン（明確化） */}
       <section className="py-12 md:py-20 px-4 bg-slate-100">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-14">
@@ -379,15 +372,11 @@ export default function Page() {
               <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100">エアコン取り外し</span>
               <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100">簡易清掃</span>
             </div>
-            <p className="text-[9px] md:text-xs text-gray-500 mt-4 leading-relaxed text-left font-medium bg-gray-50 p-2.5 rounded text-balance">
-              ※階段が3階以上の場合や特殊な解体が必要な場合は事前にお見積りにて明確にお伝えします。<br/>
-              ※リサイクル家電には別途法定リサイクル料金がかかる場合がございますが、買取可能な場合は相殺いたします。
-            </p>
           </div>
         </div>
       </section>
 
-      {/* 🟢 5. 解決事例（大和市特化） */}
+      {/* 🟢 5. 解決事例（証拠と数字の強化） */}
       <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-[22px] md:text-4xl font-extrabold text-center text-gray-900 mb-8 md:mb-14 leading-tight">
@@ -395,18 +384,18 @@ export default function Page() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             
-            {/* 🎯 事例1：大和市中央 */}
+            {/* 事例1 */}
             <div className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 shadow-lg relative overflow-hidden flex flex-col">
               <div className="absolute top-0 left-0 bg-red-600 text-white text-[10px] md:text-sm font-extrabold px-3 py-1 md:py-2 rounded-br-xl z-20 shadow-sm">
                 大和市で15万円お得に！
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
-                  <img src="/yamato-chuo-before.png" alt="散らかった部屋 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
+                  <img src="https://images.unsplash.com/photo-1558522195-e1201b090344?auto=format&fit=crop&q=80&w=600" alt="散らかった部屋 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
                   <div className="absolute top-1.5 left-1.5 bg-gray-900/80 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">Before</div>
                 </div>
                 <div className="w-1/2 h-full relative">
-                  <img src="/yamato-chuo-after.png" alt="綺麗な部屋 After" loading="lazy" className="w-full h-full object-cover"/>
+                  <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="綺麗な部屋 After" loading="lazy" className="w-full h-full object-cover"/>
                   <div className="absolute top-1.5 left-1.5 bg-blue-600/90 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">After</div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md border border-gray-100 z-10">
@@ -438,7 +427,7 @@ export default function Page() {
               </div>
             </div>
             
-            {/* 🎯 事例2：大和市南林間 */}
+            {/* 事例2 */}
             <div className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 shadow-lg relative overflow-hidden flex flex-col">
               <div className="absolute top-0 left-0 bg-red-600 text-white text-xs md:text-sm font-extrabold px-5 py-2 rounded-br-2xl z-20 shadow-sm">
                 遺品整理もお任せ！
@@ -485,69 +474,8 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 NEW! お客様の声（大和市特化） */}
-      <section className="py-12 md:py-20 px-4 bg-green-50 border-t border-green-100">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-[22px] md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-              大和市のお客様から喜びの声が<br className="md:hidden" />多数届いております！
-            </h2>
-            <div className="inline-flex items-center justify-center gap-2 md:gap-3 bg-white py-1.5 md:py-2 px-5 md:px-6 rounded-full shadow-sm border border-gray-200">
-               <span className="font-bold text-gray-700 text-xs md:text-base">大和市エリア 総合評価</span>
-               <span className="text-lg md:text-xl font-black text-gray-900">4.8</span>
-               <div className="flex gap-0.5">
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-               </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-            {/* 🎯 大和市の声を優先して見せる */}
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
-              <div className="flex gap-1 mb-2 md:mb-3 mt-2">
-                <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">地元の業者さんで安かった！</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                他市の業者より圧倒的に安かったです。同じ大和市内ということで、電話してすぐに福田から飛んで来てくれたのには驚きました。
-              </p>
-              <p className="text-[10px] md:text-xs text-gray-400 text-right font-bold">大和市福田 / 40代 男性</p>
-            </div>
-            
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
-              <div className="flex gap-1 mb-2 md:mb-3 mt-2">
-                <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">女性スタッフさんがいて安心</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                一人暮らしなので不安でしたが、女性スタッフ同行をお願いできたので安心して任せられました。地元ですぐに来てくれて助かりました。
-              </p>
-              <p className="text-[10px] md:text-xs text-gray-400 text-right font-bold">大和市中央林間 / 20代 女性</p>
-            </div>
-
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
-              <div className="flex gap-1 mb-2 md:mb-3 mt-2">
-                <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">市の粗大ごみで間に合わず…</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                大和市の粗大ごみ収集に間に合わず困っていましたが、こちらにお願いしたら即日で全部持って行ってくれました。神対応です！
-              </p>
-              <p className="text-[10px] md:text-xs text-gray-400 text-right font-bold">大和市鶴間 / 50代 男性</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* 🟢 6. ご依頼の流れ */}
-      <section className="py-12 md:py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-slate-50 border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-[22px] md:text-4xl font-extrabold text-center text-gray-900 mb-8 md:mb-16">
             ご依頼のカンタン4ステップ
@@ -555,8 +483,7 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 relative">
             <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-1.5 bg-green-200 z-0"></div>
             
-            {/* ステップ1 */}
-            <div className="bg-slate-50 md:bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
+            <div className="bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 1
               </div>
@@ -567,8 +494,7 @@ export default function Page() {
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">LINEで部屋の写真をお送りいただくとスムーズです。</p>
             </div>
             
-            {/* ステップ2 */}
-            <div className="bg-slate-50 md:bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
+            <div className="bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 2
               </div>
@@ -579,8 +505,7 @@ export default function Page() {
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">正確な金額を算出。<span className="text-red-500 font-bold block mt-0.5">キャンセル無料！</span></p>
             </div>
             
-            {/* ステップ3 */}
-            <div className="bg-slate-50 md:bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
+            <div className="bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 3
               </div>
@@ -591,13 +516,12 @@ export default function Page() {
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">大和市内ならすぐ急行！全て丸投げでOKです。</p>
             </div>
             
-            {/* ステップ4 */}
-            <div className="bg-slate-50 md:bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
+            <div className="bg-white rounded-2xl shadow-sm md:shadow-md border border-slate-200 md:border-green-100 p-3 md:p-6 text-center relative mt-5 md:mt-0 flex flex-col items-center z-10 h-full">
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 4
               </div>
               <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=500" alt="精算・お支払い" loading="lazy" className="w-full h-full object-cover"/>
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=500" alt="ご精算" loading="lazy" className="w-full h-full object-cover"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">ご精算（買取相殺）</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">作業後にお支払い。買取でお得に。</p>
@@ -606,34 +530,32 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 7. 代表挨拶 */}
-      <section className="py-10 md:py-20 px-3 md:px-4 bg-slate-100">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl md:rounded-[32px] p-6 md:p-14 shadow-lg flex flex-col md:flex-row items-center gap-6 md:gap-12 border border-slate-200 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1.5 md:h-3 bg-green-600"></div>
-          <div className="w-28 h-28 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-100 shadow-inner">
+      {/* 🟢 7. 代表挨拶（実在感の究極系） */}
+      <section className="py-10 md:py-20 px-3 md:px-4 bg-slate-800 text-white">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
+          <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-600 shadow-2xl">
             <img src="/IMG_1828.jpg" alt="代表 粟野 匠音" loading="lazy" className="w-full h-full object-cover rounded-full"/>
           </div>
           <div className="text-center md:text-left flex-grow">
-            <h2 className="text-2xl md:text-4xl font-extrabold text-[#104285] mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
+            <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-400 mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
             <div className="mb-4 md:mb-6">
-              <span className="text-sm md:text-lg font-bold text-[#104285] block mb-0.5">代表</span>
-              <h3 className="text-3xl md:text-5xl font-extrabold text-[#104285] tracking-widest">粟野 匠音</h3>
+              <span className="text-sm md:text-lg font-bold text-gray-300 block mb-0.5">代表</span>
+              <h3 className="text-3xl md:text-5xl font-extrabold text-white tracking-widest">粟野 匠音</h3>
             </div>
-            <p className="text-gray-800 text-[13px] md:text-[16px] leading-relaxed md:leading-loose text-left font-medium">
-              『神奈川 まごころ整理センター』代表の粟野 匠音（あわの たくと）です。当サイトをご覧いただき、誠にありがとうございます。<br/>
+            <p className="text-gray-200 text-[13px] md:text-[16px] leading-relaxed md:leading-loose text-left font-medium">
+              『神奈川 まごころ整理センター』代表の粟野です。<br/>
               私たちは、大和市福田に拠点を置く「生粋の地元企業」です。遠方から来て高額な出張費を請求するような業者とは違い、地元のお客様に愛される誠実なサービスを第一としております。<br/>
               不要になったお品物を、単に処分するのではなく、新しい価値を見出し、高価買取を行うことで、お客様のご負担を大幅に軽減いたします。<br/>
               大和市民の皆様、どのような些細なご相談でもお気軽にお申し付けください。私が直接お電話に出ます！
             </p>
             
-            {/* 🎯 代表直通ボタン追加 */}
             <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
-              <p className="text-red-600 font-bold text-xs md:text-sm mb-2">＼ 代表の粟野が直接お電話に出ます！ ／</p>
+              <p className="text-yellow-400 font-bold text-xs md:text-sm mb-2">＼ 担当者たらい回しなし！代表直通です ／</p>
               <a href="tel:09013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00] hover:shadow-xl w-full sm:w-auto">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 animate-pulse" />
                 <div className="text-left leading-tight">
-                  <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">どんな小さな事でもご相談ください</div>
-                  <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">代表直通: 090-1383-5108</div>
+                  <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">今すぐ代表の粟野に電話で相談する</div>
+                  <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</div>
                 </div>
               </a>
             </div>
@@ -678,24 +600,6 @@ export default function Page() {
               </h3>
               <p className="text-gray-700 flex items-start gap-2.5 md:gap-4 border-t border-dashed border-gray-100 pt-2 md:pt-3">
                 <span className="shrink-0 font-black text-green-600 text-lg md:text-3xl leading-none mt-0.5">A.</span><span className="text-[12px] md:text-lg font-medium leading-relaxed">はい、可能です！当店は大和市福田にございますので、ご予約状況により<strong className="text-red-600">最短15〜30分</strong>でお伺いいたします。お急ぎの場合はお電話にてご相談ください。</span>
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-8 shadow-sm border border-gray-200">
-              <h3 className="font-bold text-gray-900 flex items-start gap-2.5 md:gap-4 mb-2 md:mb-3">
-                <span className="shrink-0 text-lg md:text-3xl text-red-600 font-black leading-none mt-0.5">Q.</span><span className="text-[13px] md:text-xl leading-snug">ゴミ屋敷で足の踏み場もありませんが、お願いできますか？</span>
-              </h3>
-              <p className="text-gray-700 flex items-start gap-2.5 md:gap-4 border-t border-dashed border-gray-100 pt-2 md:pt-3">
-                <span className="shrink-0 font-black text-green-600 text-lg md:text-3xl leading-none mt-0.5">A.</span><span className="text-[12px] md:text-lg font-medium leading-relaxed">そのままの状態で全く問題ありません！他社で断られるような困難な現場や、孤独死・特殊清掃の現場も秘密厳守でプロが対応いたします。</span>
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-8 shadow-sm border border-gray-200">
-              <h3 className="font-bold text-gray-900 flex items-start gap-2.5 md:gap-4 mb-2 md:mb-3">
-                <span className="shrink-0 text-lg md:text-3xl text-red-600 font-black leading-none mt-0.5">Q.</span><span className="text-[13px] md:text-xl leading-snug">エアコンの取り外しなどはしてもらえますか？</span>
-              </h3>
-              <p className="text-gray-700 flex items-start gap-2.5 md:gap-4 border-t border-dashed border-gray-100 pt-2 md:pt-3">
-                <span className="shrink-0 font-black text-green-600 text-lg md:text-3xl leading-none mt-0.5">A.</span><span className="text-[12px] md:text-lg font-medium leading-relaxed">はい、お任せください。標準的なエアコンの取り外し作業も対応可能です。買取可能な高年式エアコンであれば、取り外し費用を含めてもプラスになるケースがございます。</span>
               </p>
             </div>
 
@@ -759,14 +663,14 @@ export default function Page() {
             <a href="#" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#05b34c]">
               <Camera className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
-                <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">匿名OK・24時間受付中</div>
-                <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINE無料査定</div>
+                <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">まずは無料で概算費用を知る</div>
+                <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">写真を送ってLINE査定</div>
               </div>
             </a>
             <a href="tel:09013835108" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
-                <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">代表直通！相談だけでもOK</div>
+                <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">代表直通！すぐに対応可否を確認する</div>
                 <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">090-1383-5108</div>
               </div>
             </a>
@@ -781,11 +685,11 @@ export default function Page() {
         <p className="opacity-70">© 2026 神奈川 まごころ整理センター All Rights Reserved.</p>
       </footer>
 
-      {/* 🟢 追従型CTA */}
+      {/* 🟢 追従型CTA（文言強化） */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_15px_rgba(0,0,0,0.08)] p-2 md:p-3" style={{ paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom))' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-1 md:gap-2">
           <p className="text-center text-[9px] md:text-xs font-extrabold text-gray-700 truncate px-1">
-            ＼ <span className="text-red-600">しつこい営業なし！</span>写真送るだけ・相見積もり歓迎 ／
+            ＼ <span className="text-red-600">しつこい営業なし！</span>出張費・お見積り・キャンセル0円 ／
           </p>
           <div className="flex gap-1.5 md:gap-2 mt-0.5">
             <a 
@@ -796,8 +700,8 @@ export default function Page() {
               <div className="flex items-center gap-1 md:gap-3 relative z-10">
                 <Camera className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
                 <div className="text-left">
-                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">最短5分返信</div>
-                  <div className="text-[13px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">LINE査定</div>
+                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">無料で概算費用を知る</div>
+                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">写真を送ってLINE査定</div>
                 </div>
               </div>
             </a>
@@ -809,8 +713,8 @@ export default function Page() {
               <div className="flex items-center gap-1 md:gap-3">
                 <Phone className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
                 <div className="text-left">
-                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">大和市専用ダイヤル</div>
-                  <div className="text-[13px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">電話相談</div>
+                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">すぐに対応可否を確認する</div>
+                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">代表直通ダイヤル</div>
                 </div>
               </div>
             </a>
