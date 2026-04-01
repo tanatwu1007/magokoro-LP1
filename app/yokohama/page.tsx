@@ -42,7 +42,7 @@ export default function Page() {
       {/* 🟢 ヘッダー */}
       <header className="bg-white py-2 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo.png" alt="神奈川 まごころ整理センター" className="h-6 md:h-11 object-contain" />
+          <img src="/logo.png" alt="神奈川 まごころ整理センター" className="h-8 md:h-14 object-contain" />
         </div>
         <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-1 md:py-1.5 rounded-full font-bold shadow-sm flex items-center gap-1">
           <Timer className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
@@ -709,8 +709,7 @@ export default function Page() {
                 <tr>
                   <th className="bg-gray-50 py-3 md:py-5 px-3 md:px-6 text-left text-gray-700 align-top border-r border-gray-200">許認可番号</th>
                   <td className="py-3 md:py-5 px-3 md:px-6 text-gray-900 leading-relaxed">
-                    <span className="text-red-600 font-bold text-[9px] md:text-xs">※公開前に古物商番号を記載※</span><br/>
-                    古物商許可：第XXXX号<br/>
+                    古物商許可：東京都公安委員第301052616733号<br/>
                     <div className="mt-2 text-[9px] md:text-xs text-gray-500 leading-relaxed bg-gray-50 p-2 md:p-3 rounded border border-gray-200 font-normal">
                       ※家庭から出る一般廃棄物の回収につきましては、各市町村の許可を受けた業者に委託し、各種法令を厳守して処理を行っております。
                     </div>

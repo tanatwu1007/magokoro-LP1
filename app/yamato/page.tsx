@@ -48,12 +48,12 @@ export default function Page() {
       </div>
 
       {/* 🟢 ヘッダー */}
-      <header className="bg-white py-2 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
+      <header className="bg-white py-1 md:py-1.5 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="text-[9px] md:text-xs font-black text-red-600 border-2 border-red-500 bg-red-50 px-1.5 py-0.5 rounded shadow-sm">大和市福田の地元企業</div>
-          <img src="/logo.png" alt="大和市 まごころ整理センター" className="h-5 md:h-10 object-contain" />
+          <img src="/logo.png" alt="大和市 まごころ整理センター" className="h-6 md:h-10 object-contain mt-1 origin-left scale-140" />
         </div>
-        <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-1 md:py-1.5 rounded-full font-bold shadow-sm flex items-center gap-1">
+        <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-0.5 md:py-1 rounded-full font-bold shadow-sm flex items-center gap-1">
           <Timer className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
           24時間受付
         </div>
@@ -92,7 +92,7 @@ export default function Page() {
 
           <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
             <div className="w-full flex flex-col items-center">
-              <a href="#" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c]">
+              <a href="https://lin.ee/Gf8Or5r" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c]">
                 <Camera className="w-6 h-6 md:w-8 md:h-8" />
                 <div className="text-left leading-tight">
                   <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">LINEで写真を送って即見積り</div>
@@ -185,7 +185,7 @@ export default function Page() {
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2 relative">
             <img 
-              src="https://images.unsplash.com/photo-1584820927498-cafe2c11866e?auto=format&fit=crop&q=80&w=800" 
+              src="/IMG_2153.png" 
               alt="片付けの悩み" 
               loading="lazy"
               className="w-full h-44 md:h-72 object-cover rounded-xl md:rounded-2xl shadow-xl border-2 md:border-4 border-slate-600"
@@ -328,7 +328,7 @@ export default function Page() {
             
             <div className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 shadow-lg relative overflow-hidden flex flex-col">
               <div className="absolute top-0 left-0 bg-red-600 text-white text-[10px] md:text-sm font-extrabold px-3 py-1 md:py-2 rounded-br-xl z-20 shadow-sm">
-                大和市で15万円お得に！
+                大和市で1.5万円お得に！
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
@@ -631,8 +631,7 @@ export default function Page() {
                 <tr>
                   <th className="bg-gray-50 py-3 md:py-5 px-3 md:px-6 text-left text-gray-700 align-top border-r border-gray-200">許認可番号</th>
                   <td className="py-3 md:py-5 px-3 md:px-6 text-gray-900 leading-relaxed">
-                    <span className="text-red-600 font-bold text-[9px] md:text-xs">※公開前に古物商番号を記載※</span><br/>
-                    古物商許可：第XXXX号<br/>
+                    古物商許可：東京都公安委員第301052616733号<br/>
                     <div className="mt-2 text-[9px] md:text-xs text-gray-500 leading-relaxed bg-gray-50 p-2 md:p-3 rounded border border-gray-200 font-normal">
                       ※家庭から出る一般廃棄物の回収につきましては、各市町村の許可を受けた業者に委託し、各種法令を厳守して処理を行っております。
                     </div>
@@ -656,7 +655,7 @@ export default function Page() {
           </p>
           <div className="flex flex-col md:flex-row gap-2.5 md:gap-5 justify-center">
             <div className="w-full md:w-auto">
-               <a href="#" className="w-full md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#05b34c]">
+               <a href="https://lin.ee/Gf8Or5r" className="w-full md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#05b34c]">
                  <Camera className="w-6 h-6 md:w-10 md:h-10" />
                  <div className="text-left leading-tight">
                    <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">無料で見積りを取る</div>
@@ -692,7 +691,7 @@ export default function Page() {
           </p>
           <div className="flex gap-1.5 md:gap-2 mt-0.5">
             <a 
-              href="#" 
+              href="https://lin.ee/Gf8Or5r" 
               className="flex-1 bg-gradient-to-b from-[#06C755] to-[#04a044] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md relative overflow-hidden active:scale-95 border border-[#05b34c]"
             >
               <div className="absolute top-0 right-0 bg-red-600 text-[8px] md:text-xs font-black px-1.5 md:px-3 py-0.5 rounded-bl-md animate-pulse shadow-sm">無料</div>
