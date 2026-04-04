@@ -10,7 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: '【大和市民限定】不用品回収・遺品整理なら地元福田のまごころ整理センター',
-  description: '大和市の不用品回収、粗大ゴミ処分、遺品整理なら地元・福田の「まごころ整理センター」へ！最短30分で急行、見積無料・追加料金なし。今なら軽トラ14,900円〜。',
+  description: '大和市の不用品回収、粗大ゴミ処分、遺品整理なら地元・福田の「まごころ整理センター」へ！最短30分で急行、見積無料・追加料金なし。今なら軽トラ14,800円〜。',
 };
 
 export default function Page() {
@@ -28,7 +28,7 @@ export default function Page() {
       "streetAddress": "福田５丁目4-11"
     },
     "telephone": "0120-437-599",
-    "priceRange": "¥14,900~",
+    "priceRange": "¥14,800~",
     "areaServed": ["大和市"]
   };
 
@@ -105,7 +105,7 @@ export default function Page() {
                 </span>
                 <ArrowRight className="w-6 h-6 md:w-10 md:h-10 text-red-600 shrink-0" />
                 <span className="text-red-600 text-[32px] sm:text-4xl md:text-6xl font-black tracking-tight drop-shadow-sm">
-                  14,900<span className="text-[16px] sm:text-xl md:text-3xl font-bold">円</span><span className="text-[18px] sm:text-2xl md:text-4xl">〜</span>
+                  14,800<span className="text-[16px] sm:text-xl md:text-3xl font-bold">円</span><span className="text-[18px] sm:text-2xl md:text-4xl">〜</span>
                 </span>
               </div>
               <span className="inline-block bg-yellow-300 text-red-800 font-black text-base sm:text-lg md:text-2xl px-3 py-1.5 md:px-4 md:py-2 rounded-lg border-2 border-yellow-500 shadow-sm">
@@ -273,7 +273,7 @@ export default function Page() {
                   <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-3 text-center">
                     <span className="text-gray-400 line-through text-2xl md:text-4xl font-black">19,800<span className="text-sm md:text-xl font-bold">円</span></span>
                     <ArrowRight className="w-5 h-5 md:w-8 md:h-8 text-red-600 shrink-0" />
-                    <span className="text-red-600 text-3xl md:text-5xl font-black">14,900<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
+                    <span className="text-red-600 text-3xl md:text-5xl font-black">14,800<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
                   </div>
                   <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">5,000円OFF</span>
                 </div>
@@ -347,7 +347,7 @@ export default function Page() {
                        <td className="border border-gray-200 p-1.5 md:p-2 font-medium bg-gray-50">軽トラ積み放題</td>
                        <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50 leading-tight">
                          <div className="text-gray-400 line-through text-[10px] md:text-xs font-bold">19,800円</div>
-                         <div>14,900円〜</div>
+                         <div>14,800円〜</div>
                          <div className="text-[9px] md:text-[11px] text-red-700 font-black mt-0.5">5,000円OFF</div>
                        </td>
                        <td className="border border-gray-200 p-1.5 md:p-2 text-gray-500">25,000円〜</td>
