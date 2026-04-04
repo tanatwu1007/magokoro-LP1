@@ -27,7 +27,7 @@ export default function Page() {
       "postalCode": "242-0024",
       "streetAddress": "福田５丁目4-11"
     },
-    "telephone": "090-1383-5108",
+    "telephone": "0120-437-599",
     "priceRange": "¥14,900~",
     "areaServed": ["大和市"]
   };
@@ -103,7 +103,7 @@ export default function Page() {
             </div>
             
             <div className="w-full flex flex-col items-center mt-2 sm:mt-0">
-              <a href="tel:09013835108" className="w-full bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
+              <a href="tel:0120437599" className="w-full bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
                 <Phone className="w-6 h-6 md:w-8 md:h-8" />
                 <div className="text-left leading-tight">
                   <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</div>
@@ -374,11 +374,11 @@ export default function Page() {
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
-                  <img src="https://images.unsplash.com/photo-1584820927498-cafe2c11866e?auto=format&fit=crop&q=80&w=600" alt="不用品 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
+                  <img src="/yamato-minamirinkan-before.png" alt="不用品 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
                   <div className="absolute top-1.5 left-1.5 bg-gray-900/80 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">Before</div>
                 </div>
                 <div className="w-1/2 h-full relative">
-                  <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=600" alt="スッキリ After" loading="lazy" className="w-full h-full object-cover"/>
+                  <img src="/yamato-minamirinkan-after.png" alt="スッキリ After" loading="lazy" className="w-full h-full object-cover"/>
                   <div className="absolute top-1.5 left-1.5 bg-blue-600/90 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">After</div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md border border-gray-100 z-10">
@@ -664,11 +664,11 @@ export default function Page() {
                </a>
             </div>
             <div className="w-full md:w-auto mt-2 md:mt-0">
-               <a href="tel:09013835108" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
+               <a href="tel:0120437599" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
                  <Phone className="w-6 h-6 md:w-10 md:h-10" />
                  <div className="text-left leading-tight">
                    <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">電話で今すぐ相談</div>
-                   <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">090-1383-5108</div>
+                   <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</div>
                  </div>
                </a>
             </div>
@@ -705,14 +705,14 @@ export default function Page() {
             </a>
             
             <a 
-              href="tel:09013835108" 
+              href="tel:0120437599" 
               className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md active:scale-95 border border-[#e65f00]"
             >
               <div className="flex items-center gap-1 md:gap-3">
                 <Phone className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
                 <div className="text-left">
-                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">電話で今すぐ相談</div>
-                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">代表直通ダイヤル</div>
+                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</div>
+                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">今すぐ無料で電話相談</div>
                 </div>
               </div>
             </a>

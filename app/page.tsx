@@ -27,7 +27,7 @@ export default function Page() {
       "postalCode": "242-0024",
       "streetAddress": "福田５丁目4-11"
     },
-    "telephone": "090-1383-5108",
+    "telephone": "0120-437-599",
     "priceRange": "¥19,800~",
     "areaServed": ["神奈川県", "大和市", "横浜市", "相模原市", "川崎市", "海老名市", "座間市", "綾瀬市", "藤沢市"]
   };
@@ -139,11 +139,11 @@ export default function Page() {
                 <div className="text-[15px] md:text-xl font-extrabold tracking-tight drop-shadow-sm">LINEで最短5分スピード査定</div>
               </div>
             </a>
-            <a href="tel:09013835108" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 md:py-4 px-3 shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
+            <a href="tel:0120437599" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 md:py-4 px-3 shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
                 <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</div>
-                <div className="text-[16px] md:text-2xl font-extrabold tracking-tight drop-shadow-sm">090-1383-5108</div>
+                <div className="text-[16px] md:text-2xl font-extrabold tracking-tight drop-shadow-sm">0120-437-599</div>
               </div>
             </a>
           </div>
@@ -622,11 +622,11 @@ export default function Page() {
             {/* 🎯 代表直通ボタン追加 */}
             <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
               <p className="text-red-600 font-bold text-xs md:text-sm mb-2">＼ 代表の粟野が直接お電話に出ます！ ／</p>
-              <a href="tel:09013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00] hover:shadow-xl w-full sm:w-auto">
+              <a href="tel:0120437599" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00] hover:shadow-xl w-full sm:w-auto">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 animate-pulse" />
                 <div className="text-left leading-tight">
                   <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">どんな小さな事でもご相談ください</div>
-                  <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">代表直通: 090-1383-5108</div>
+                  <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">代表直通: 0120-437-599</div>
                 </div>
               </a>
             </div>
@@ -762,11 +762,11 @@ export default function Page() {
                 <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINE無料査定</div>
               </div>
             </a>
-            <a href="tel:09013835108" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
+            <a href="tel:0120437599" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
               <Phone className="w-6 h-6 md:w-10 md:h-10" />
               <div className="text-left leading-tight">
                 <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で急行！相談だけでもOK</div>
-                <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">090-1383-5108</div>
+                <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</div>
               </div>
             </a>
           </div>
@@ -802,7 +802,7 @@ export default function Page() {
             </a>
             
             <a 
-              href="tel:09013835108" 
+              href="tel:0120437599" 
               className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md active:scale-95 border border-[#e65f00]"
             >
               <div className="flex items-center gap-1 md:gap-3">
