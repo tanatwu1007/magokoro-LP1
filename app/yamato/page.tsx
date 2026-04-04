@@ -72,26 +72,59 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
           
-          <h1 className="text-[24px] sm:text-[28px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-3 mt-4 text-balance break-keep">
-            大和市の不用品回収<br />
-            <span className="text-yellow-400 text-[26px] sm:text-[30px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-2 max-w-full leading-tight">
-              <span className="md:hidden">最短30分で<br />お伺いします</span>
-              <span className="hidden md:inline">最短30分でお伺いします</span>
+          <div className="w-[95%] md:w-auto max-w-lg mx-auto mb-3 mt-2 rounded-xl md:rounded-2xl overflow-hidden shadow-xl border-2 border-red-500">
+            <div className="bg-red-600 text-white font-black px-4 py-3 md:py-4 text-[14px] sm:text-base md:text-xl flex items-center justify-center gap-2 animate-pulse text-center leading-tight">
+              <Flame className="w-5 h-5 md:w-7 md:h-7 fill-yellow-300 text-yellow-300 shrink-0" />
+              本日あと3名限定
+            </div>
+            <div className="bg-red-700 text-white font-black px-4 py-2.5 md:py-3.5 text-[12px] sm:text-[15px] md:text-lg flex items-center justify-center text-center leading-snug border-t border-red-500/80">
+              今月限定価格・先着10名様
+            </div>
+          </div>
+
+          <h1 className="w-full px-1 mb-4 text-center">
+            <span className="block text-red-500 text-[clamp(1.65rem,7.5vw,3.25rem)] md:text-6xl lg:text-7xl font-black drop-shadow-2xl leading-[1.1] tracking-tight">
+              最短30分で即対応
+            </span>
+            <span className="block text-yellow-400 text-[clamp(1.2rem,5vw,2.25rem)] md:text-5xl font-extrabold drop-shadow-xl mt-1 md:mt-2 pb-0.5 md:pb-1 border-b-4 border-yellow-400 inline-block max-w-[95vw]">
+              今すぐ駆けつけます
+            </span>
+            <span className="block text-white text-[20px] sm:text-2xl md:text-4xl font-extrabold leading-snug mt-4 md:mt-5 drop-shadow-lg px-1">
+              大和市の不用品回収
             </span>
           </h1>
+
+          <div className="w-[95%] max-w-xl mx-auto mb-5 bg-white/95 rounded-xl border-2 border-yellow-400 p-3 md:p-5 shadow-2xl">
+            <p className="text-center text-[11px] md:text-sm font-extrabold text-gray-800 mb-2 md:mb-3">
+              軽トラパック <span className="text-red-600">今月限定・大和市民対象</span>
+            </p>
+            <div className="flex flex-col items-center gap-2 md:gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4">
+                <span className="text-gray-400 line-through text-[26px] sm:text-3xl md:text-5xl font-black tracking-tight">
+                  19,800<span className="text-[14px] sm:text-lg md:text-2xl font-bold">円</span>
+                </span>
+                <ArrowRight className="w-6 h-6 md:w-10 md:h-10 text-red-600 shrink-0" />
+                <span className="text-red-600 text-[32px] sm:text-4xl md:text-6xl font-black tracking-tight drop-shadow-sm">
+                  14,900<span className="text-[16px] sm:text-xl md:text-3xl font-bold">円</span><span className="text-[18px] sm:text-2xl md:text-4xl">〜</span>
+                </span>
+              </div>
+              <span className="inline-block bg-yellow-300 text-red-800 font-black text-base sm:text-lg md:text-2xl px-3 py-1.5 md:px-4 md:py-2 rounded-lg border-2 border-yellow-500 shadow-sm">
+                4,900円OFF
+              </span>
+            </div>
+          </div>
           
           {/* 🎯 限定価格 ＆ 信頼保証のサブコピー */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 md:p-6 mb-8 w-[95%] md:w-auto shadow-2xl text-left inline-block">
              <ul className="space-y-2 md:space-y-3 text-white font-bold text-[14px] md:text-xl">
                <li className="flex items-start gap-2">
                  <CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0 mt-0.5" />
-                 <span className="min-w-0 flex-1 flex flex-wrap items-center gap-x-1.5 gap-y-1">
-                   <span className="inline-flex flex-wrap items-center gap-x-0.5">
-                     軽トラパック <span className="text-[12px] md:text-sm line-through text-gray-300">19,800円</span>
-                     <ArrowRight className="inline w-3 h-3 text-yellow-300 shrink-0" />
-                     <span className="text-yellow-300 text-[18px] sm:text-[20px] md:text-3xl font-black">14,900</span><span className="text-yellow-300 font-bold">円〜</span>
+                 <span className="min-w-0 flex-1 flex flex-col gap-2">
+                   <span className="leading-snug">軽トラパックは上記の<span className="text-yellow-300">特別価格</span>でご案内中です。</span>
+                   <span className="flex flex-wrap gap-2">
+                     <span className="shrink-0 whitespace-nowrap bg-red-600 text-white font-black px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-[11px] sm:text-sm md:text-base border-2 border-red-400 shadow-md">本日あと3名限定</span>
+                     <span className="shrink-0 whitespace-nowrap bg-red-700 text-white font-black px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-[11px] sm:text-sm md:text-base border-2 border-red-500 shadow-md">今月限定・先着10名</span>
                    </span>
-                   <span className="shrink-0 whitespace-nowrap text-[9px] sm:text-[10px] md:text-sm bg-red-600 text-white px-1.5 py-0.5 rounded font-black leading-none">今だけ限定</span>
                  </span>
                </li>
                <li className="flex items-center gap-2"><CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" /><span className="text-yellow-300">見積り後の追加請求ゼロ保証</span></li>
@@ -229,14 +262,20 @@ export default function Page() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 mb-10">
             {/* 🎯 軽トラパック（価格変更・限定ラベル） */}
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col relative">
-              <div className="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg shadow-sm">今だけの大和市民限定価格</div>
-              <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest mt-4">ちょっとしたお片付け</div>
+            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-red-400 flex flex-col relative">
+              <div className="bg-red-600 text-white text-center py-2 md:py-2.5 font-black text-[11px] md:text-sm tracking-wide">
+                本日あと3名・先着10名限定
+              </div>
+              <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest">ちょっとしたお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">軽トラ積み放題</h3>
-                <div className="mt-2">
-                   <span className="text-gray-400 line-through text-sm md:text-base font-bold">通常 19,800円</span>
-                   <div className="text-4xl md:text-5xl font-extrabold text-red-600 drop-shadow-sm mt-0.5 mb-1">14,900<span className="text-base font-bold text-gray-900 ml-0.5">円〜</span></div>
+                <div className="mt-3 mb-1 flex flex-col items-center gap-2">
+                  <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-3 text-center">
+                    <span className="text-gray-400 line-through text-2xl md:text-4xl font-black">19,800<span className="text-sm md:text-xl font-bold">円</span></span>
+                    <ArrowRight className="w-5 h-5 md:w-8 md:h-8 text-red-600 shrink-0" />
+                    <span className="text-red-600 text-3xl md:text-5xl font-black">14,900<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
+                  </div>
+                  <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">4,900円OFF</span>
                 </div>
                 <p className="text-[11px] md:text-sm text-gray-700 font-bold mb-4 mt-3 bg-green-50 py-1.5 rounded-md border border-green-100">間取り目安：1R 〜 1K</p>
                 <ul className="text-xs md:text-base text-gray-600 text-left space-y-2 font-medium">
@@ -306,8 +345,11 @@ export default function Page() {
                    <tbody>
                      <tr>
                        <td className="border border-gray-200 p-1.5 md:p-2 font-medium bg-gray-50">軽トラ積み放題</td>
-                       {/* 🎯 表内も価格変更 */}
-                       <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50">14,900円〜</td>
+                       <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50 leading-tight">
+                         <div className="text-gray-400 line-through text-[10px] md:text-xs font-bold">19,800円</div>
+                         <div>14,900円〜</div>
+                         <div className="text-[9px] md:text-[11px] text-red-700 font-black mt-0.5">4,900円OFF</div>
+                       </td>
                        <td className="border border-gray-200 p-1.5 md:p-2 text-gray-500">25,000円〜</td>
                      </tr>
                      <tr>
