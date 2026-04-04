@@ -72,19 +72,27 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
           
-          <h1 className="text-[26px] sm:text-[30px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-2 sm:px-3 mt-4 text-balance break-keep">
+          <h1 className="text-[24px] sm:text-[28px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-3 mt-4 text-balance break-keep">
             大和市の不用品回収<br />
-            <span className="text-yellow-400 text-[28px] sm:text-[34px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-2 max-w-full text-pretty break-keep">
-              最短30分でお伺い<span className="whitespace-nowrap">します</span>
+            <span className="text-yellow-400 text-[26px] sm:text-[30px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-2 max-w-full leading-tight">
+              <span className="md:hidden">最短30分で<br />お伺いします</span>
+              <span className="hidden md:inline">最短30分でお伺いします</span>
             </span>
           </h1>
           
           {/* 🎯 限定価格 ＆ 信頼保証のサブコピー */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 md:p-6 mb-8 w-[95%] md:w-auto shadow-2xl text-left inline-block">
              <ul className="space-y-2 md:space-y-3 text-white font-bold text-[14px] md:text-xl">
-               <li className="flex items-center gap-2">
-                 <CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" />
-                 <span>軽トラパック <span className="text-[12px] md:text-sm line-through text-gray-300 ml-1">19,800円</span><ArrowRight className="inline w-3 h-3 text-yellow-300 mx-0.5 md:mx-1"/><span className="text-yellow-300 text-[20px] md:text-3xl font-black">14,900</span>円〜<span className="text-[10px] md:text-sm bg-red-600 text-white px-1.5 py-0.5 rounded ml-2 align-middle">今だけ限定</span></span>
+               <li className="flex items-start gap-2">
+                 <CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0 mt-0.5" />
+                 <span className="min-w-0 flex-1 flex flex-wrap items-center gap-x-1.5 gap-y-1">
+                   <span className="inline-flex flex-wrap items-center gap-x-0.5">
+                     軽トラパック <span className="text-[12px] md:text-sm line-through text-gray-300">19,800円</span>
+                     <ArrowRight className="inline w-3 h-3 text-yellow-300 shrink-0" />
+                     <span className="text-yellow-300 text-[18px] sm:text-[20px] md:text-3xl font-black">14,900</span><span className="text-yellow-300 font-bold">円〜</span>
+                   </span>
+                   <span className="shrink-0 whitespace-nowrap text-[9px] sm:text-[10px] md:text-sm bg-red-600 text-white px-1.5 py-0.5 rounded font-black leading-none">今だけ限定</span>
+                 </span>
                </li>
                <li className="flex items-center gap-2"><CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" /><span className="text-yellow-300">見積り後の追加請求ゼロ保証</span></li>
                <li className="flex items-center gap-2"><CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" />下請けなし！<span className="text-yellow-300">代表の粟野が必ず直接対応</span></li>
@@ -94,7 +102,7 @@ export default function Page() {
 
           <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
             <div className="w-full flex flex-col items-center">
-              <a href="https://lin.ee/Gf8Or5r" className="w-full bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c]">
+              <a href="https://lin.ee/Gf8Or5r" className="w-full min-h-[48px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c] touch-manipulation">
                 <Camera className="w-6 h-6 md:w-8 md:h-8" />
                 <div className="text-left leading-tight">
                   <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">LINEで写真を送って即見積り</div>
@@ -105,7 +113,7 @@ export default function Page() {
             </div>
             
             <div className="w-full flex flex-col items-center mt-2 sm:mt-0">
-              <a href="tel:0120437599" className="w-full bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00]">
+              <a href="tel:0120437599" className="w-full min-h-[48px] bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00] touch-manipulation">
                 <Phone className="w-6 h-6 md:w-8 md:h-8" />
                 <div className="text-left leading-tight">
                   <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</div>
@@ -691,10 +699,10 @@ export default function Page() {
           <p className="text-center text-[9px] md:text-xs font-extrabold text-gray-700 px-2 text-balance leading-tight">
             ＼ <span className="text-red-600">しつこい営業なし！</span>出張費・お見積り・キャンセル0円 ／
           </p>
-          <div className="flex gap-1.5 md:gap-2 mt-0.5">
+          <div className="flex gap-2 md:gap-2 mt-0.5">
             <a 
               href="https://lin.ee/Gf8Or5r" 
-              className="flex-1 bg-gradient-to-b from-[#06C755] to-[#04a044] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md relative overflow-hidden active:scale-95 border border-[#05b34c]"
+              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#06C755] to-[#04a044] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-3 md:py-4 px-1.5 md:px-3 shadow-md relative overflow-hidden active:scale-95 border border-[#05b34c] touch-manipulation"
             >
               <div className="absolute top-0 right-0 bg-red-600 text-[8px] md:text-xs font-black px-1.5 md:px-3 py-0.5 rounded-bl-md animate-pulse shadow-sm">無料</div>
               <div className="flex items-center gap-1 md:gap-3 relative z-10">
@@ -708,7 +716,7 @@ export default function Page() {
             
             <a 
               href="tel:0120437599" 
-              className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md active:scale-95 border border-[#e65f00]"
+              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-3 md:py-4 px-1.5 md:px-3 shadow-md active:scale-95 border border-[#e65f00] touch-manipulation"
             >
               <div className="flex items-center gap-1 md:gap-3">
                 <Phone className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
