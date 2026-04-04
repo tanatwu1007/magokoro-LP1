@@ -40,11 +40,11 @@ export default function Page() {
       />
 
       {/* 🟢 上部帯 */}
-      <div className="bg-green-600 text-white text-[10px] md:text-sm font-bold py-1.5 px-2 text-center flex justify-center items-center gap-2 md:gap-4 shadow-sm z-50 relative">
-        <span className="flex items-center gap-1">大和市対応</span><span className="opacity-50">|</span>
-        <span className="flex items-center gap-1">見積無料</span><span className="opacity-50">|</span>
-        <span className="flex items-center gap-1">最短30分到着</span><span className="opacity-50">|</span>
-        <span className="flex items-center gap-1">年中無休</span>
+      <div className="bg-green-600 text-white text-[9px] sm:text-[10px] md:text-sm font-bold py-1.5 px-2 text-center flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5 md:gap-x-4 md:gap-y-0 shadow-sm z-50 relative leading-snug">
+        <span className="shrink-0">大和市対応</span><span className="opacity-50 shrink-0">|</span>
+        <span className="shrink-0">見積無料</span><span className="opacity-50 shrink-0">|</span>
+        <span className="shrink-0">最短30分到着</span><span className="opacity-50 shrink-0">|</span>
+        <span className="shrink-0">年中無休</span>
       </div>
 
       {/* 🟢 ヘッダー */}
@@ -72,9 +72,11 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
           
-          <h1 className="text-[28px] sm:text-[32px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-1 mt-4">
+          <h1 className="text-[26px] sm:text-[30px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-2xl w-full px-2 sm:px-3 mt-4 text-balance break-keep">
             大和市の不用品回収<br />
-            <span className="text-yellow-400 text-[36px] sm:text-[40px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-2">最短30分でお伺いします</span>
+            <span className="text-yellow-400 text-[28px] sm:text-[34px] md:text-6xl border-b-4 border-yellow-400 pb-1 md:pb-2 inline-block mb-2 md:mb-4 mt-2 max-w-full text-pretty break-keep">
+              最短30分でお伺い<span className="whitespace-nowrap">します</span>
+            </span>
           </h1>
           
           {/* 🎯 限定価格 ＆ 信頼保証のサブコピー */}
@@ -650,7 +652,7 @@ export default function Page() {
             大和市の不用品回収・遺品整理なら<br/>
             地元・福田の<span className="text-green-700">まごころ整理センター</span>にお任せ！
           </h2>
-          <p className="text-[11px] md:text-lg text-red-600 mb-6 md:mb-10 font-bold bg-white inline-block px-4 py-2 md:py-2.5 rounded-full shadow-sm border border-red-100 w-full sm:w-auto truncate">
+          <p className="text-[11px] md:text-lg text-red-600 mb-6 md:mb-10 font-bold bg-white inline-block px-3 sm:px-4 py-2 md:py-2.5 rounded-full shadow-sm border border-red-100 w-full sm:max-w-2xl sm:mx-auto text-balance leading-snug">
             ＼ 大和市民限定！他社のお見積書提示で最低価格保証 ／
           </p>
           <div className="flex flex-col md:flex-row gap-2.5 md:gap-5 justify-center">
@@ -686,7 +688,7 @@ export default function Page() {
       {/* 🟢 追従型CTA */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_15px_rgba(0,0,0,0.08)] p-2 md:p-3" style={{ paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom))' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-1 md:gap-2">
-          <p className="text-center text-[9px] md:text-xs font-extrabold text-gray-700 truncate px-1">
+          <p className="text-center text-[9px] md:text-xs font-extrabold text-gray-700 px-2 text-balance leading-tight">
             ＼ <span className="text-red-600">しつこい営業なし！</span>出張費・お見積り・キャンセル0円 ／
           </p>
           <div className="flex gap-1.5 md:gap-2 mt-0.5">
