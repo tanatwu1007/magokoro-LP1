@@ -109,7 +109,7 @@ export default function Page() {
                 </span>
               </div>
               <span className="inline-block bg-yellow-300 text-red-800 font-black text-base sm:text-lg md:text-2xl px-3 py-1.5 md:px-4 md:py-2 rounded-lg border-2 border-yellow-500 shadow-sm">
-                4,900円OFF
+                5,000円OFF
               </span>
             </div>
           </div>
@@ -275,7 +275,7 @@ export default function Page() {
                     <ArrowRight className="w-5 h-5 md:w-8 md:h-8 text-red-600 shrink-0" />
                     <span className="text-red-600 text-3xl md:text-5xl font-black">14,900<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
                   </div>
-                  <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">4,900円OFF</span>
+                  <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">5,000円OFF</span>
                 </div>
                 <p className="text-[11px] md:text-sm text-gray-700 font-bold mb-4 mt-3 bg-green-50 py-1.5 rounded-md border border-green-100">間取り目安：1R 〜 1K</p>
                 <ul className="text-xs md:text-base text-gray-600 text-left space-y-2 font-medium">
@@ -348,7 +348,7 @@ export default function Page() {
                        <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50 leading-tight">
                          <div className="text-gray-400 line-through text-[10px] md:text-xs font-bold">19,800円</div>
                          <div>14,900円〜</div>
-                         <div className="text-[9px] md:text-[11px] text-red-700 font-black mt-0.5">4,900円OFF</div>
+                         <div className="text-[9px] md:text-[11px] text-red-700 font-black mt-0.5">5,000円OFF</div>
                        </td>
                        <td className="border border-gray-200 p-1.5 md:p-2 text-gray-500">25,000円〜</td>
                      </tr>
