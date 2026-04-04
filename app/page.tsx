@@ -63,9 +63,14 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
           
-          <div className="bg-red-600 text-white font-black px-3 py-1.5 md:py-2 rounded-t-lg text-[10px] md:text-base shadow-lg flex items-center justify-center gap-1 mb-0 border-x border-t border-red-500 animate-pulse w-[95%] md:w-auto">
-            <Flame className="w-3.5 h-3.5 md:w-5 md:h-5 fill-yellow-300 text-yellow-300" />
-            <span className="truncate">【3・4月 引越しシーズン】ご予約殺到中！</span>
+          <div className="w-[95%] md:w-auto max-w-lg mx-auto mb-2 rounded-xl md:rounded-2xl overflow-hidden shadow-xl border-2 border-red-500">
+            <div className="bg-red-600 text-white font-black px-4 py-3 md:py-4 text-[14px] sm:text-base md:text-xl flex items-center justify-center gap-2 animate-pulse text-center leading-tight">
+              <Flame className="w-5 h-5 md:w-7 md:h-7 fill-yellow-300 text-yellow-300 shrink-0" />
+              本日あと3名限定
+            </div>
+            <div className="bg-red-700 text-white font-black px-4 py-2.5 md:py-3.5 text-[12px] sm:text-[15px] md:text-lg flex items-center justify-center text-center leading-snug border-t border-red-500/80">
+              今月限定価格・先着10名様
+            </div>
           </div>
 
           <div className="flex flex-wrap justify-center gap-1.5 mb-4 md:mb-6 bg-white/10 p-2 rounded-b-lg rounded-t-sm backdrop-blur-sm border border-white/20 w-[95%] md:w-auto">
@@ -82,20 +87,48 @@ export default function Page() {
             </div>
           </div>
 
-          <h2 className="text-[24px] sm:text-[26px] md:text-5xl font-extrabold text-white leading-snug mb-4 tracking-tight drop-shadow-xl w-full px-1">
-            他社で25万円の不用品回収が、<br />
-            <span className="text-yellow-400 border-b-2 md:border-b-4 border-yellow-400 pb-0.5 md:pb-1 inline-block mt-1">買取相殺で実質0円に！？</span>
+          <h2 className="w-full px-1 mb-4 text-center">
+            <span className="block text-red-500 text-[clamp(1.65rem,7.5vw,3.25rem)] md:text-6xl lg:text-7xl font-black drop-shadow-2xl leading-[1.1] tracking-tight">
+              最短30分で即対応
+            </span>
+            <span className="block text-yellow-400 text-[clamp(1.2rem,5vw,2.25rem)] md:text-5xl font-extrabold drop-shadow-xl mt-1 md:mt-2 pb-0.5 md:pb-1 border-b-4 border-yellow-400 inline-block max-w-[95vw]">
+              今すぐ駆けつけます
+            </span>
+            <span className="block text-white text-[17px] sm:text-xl md:text-3xl font-extrabold leading-snug mt-4 md:mt-5 drop-shadow-lg px-1">
+              他社で25万円の不用品回収が、<br className="sm:hidden" />
+              <span className="text-yellow-400 border-b-2 md:border-b-4 border-yellow-400 pb-0.5 md:pb-1 inline-block mt-1">買取相殺で実質0円に！？</span>
+            </span>
           </h2>
           
-          <div className="bg-white inline-block px-4 py-2 md:py-3 transform -rotate-1 shadow-2xl rounded-lg mb-5 w-[95%] md:w-auto">
+          <div className="bg-white inline-block px-4 py-2 md:py-3 transform -rotate-1 shadow-2xl rounded-lg mb-4 w-[95%] md:w-auto">
             <p className="text-[16px] md:text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">
               捨てるのちょっと待って！<br className="md:hidden" />回収費用を<span className="text-red-600 text-xl md:text-4xl ml-1">大幅に安く</span>します
             </p>
           </div>
 
-          <div className="w-[98%] max-w-2xl bg-white border-2 md:border-4 border-red-500 rounded-xl p-3 md:p-6 mb-5 shadow-2xl relative mt-2 mx-auto">
-            <div className="bg-red-600 text-white text-[10px] md:text-base font-black py-1 px-4 md:px-6 absolute -top-3 left-1/2 transform -translate-x-1/2 rounded-full shadow-md whitespace-nowrap">
-              ＼ 今月の特別割引、残り3枠！ ／
+          <div className="w-[95%] max-w-xl mx-auto mb-5 bg-white/95 rounded-xl border-2 border-yellow-400 p-3 md:p-5 shadow-2xl">
+            <p className="text-center text-[11px] md:text-sm font-extrabold text-gray-800 mb-2 md:mb-3">
+              軽トラ積み放題 <span className="text-red-600">今月限定</span>
+            </p>
+            <div className="flex flex-col items-center gap-2 md:gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4">
+                <span className="text-gray-400 line-through text-[26px] sm:text-3xl md:text-5xl font-black tracking-tight">
+                  19,800<span className="text-[14px] sm:text-lg md:text-2xl font-bold">円</span>
+                </span>
+                <ArrowRight className="w-6 h-6 md:w-10 md:h-10 text-red-600 shrink-0" />
+                <span className="text-red-600 text-[32px] sm:text-4xl md:text-6xl font-black tracking-tight drop-shadow-sm">
+                  14,900<span className="text-[16px] sm:text-xl md:text-3xl font-bold">円</span><span className="text-[18px] sm:text-2xl md:text-4xl">〜</span>
+                </span>
+              </div>
+              <span className="inline-block bg-yellow-300 text-red-800 font-black text-base sm:text-lg md:text-2xl px-3 py-1.5 md:px-4 md:py-2 rounded-lg border-2 border-yellow-500 shadow-sm">
+                4,900円OFF
+              </span>
+            </div>
+          </div>
+
+          <div className="w-[98%] max-w-2xl bg-gradient-to-b from-white to-red-50/40 border-2 md:border-4 border-red-500 rounded-xl p-3 md:p-6 mb-5 shadow-2xl relative mt-1 mx-auto">
+            <div className="bg-red-600 text-white text-[11px] sm:text-sm md:text-lg font-black py-2 px-5 md:px-8 absolute -top-4 md:-top-5 left-1/2 transform -translate-x-1/2 rounded-full shadow-xl border-2 border-red-400 text-center leading-tight max-w-[92%] md:max-w-none md:whitespace-nowrap">
+              ＼ 本日限定・先着10名 ／今月限定価格
             </div>
             <div className="flex items-center justify-center gap-1 text-red-600 font-bold mb-1.5 mt-2">
               <Gift className="w-4 h-4 md:w-6 md:h-6" />
@@ -323,12 +356,22 @@ export default function Page() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6">
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6">
+            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-red-400 flex flex-col relative">
+              <div className="bg-red-600 text-white text-center py-2 md:py-2.5 font-black text-[11px] md:text-sm tracking-wide">
+                本日あと3名・先着10名限定
+              </div>
               <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest">ちょっとしたお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">軽トラ積み放題</h3>
-                <div className="text-3xl md:text-5xl font-extrabold text-red-600 mb-1 mt-3 drop-shadow-sm">19,800<span className="text-base font-bold text-gray-900 ml-0.5">円〜</span></div>
+                <div className="mt-3 mb-1 flex flex-col items-center gap-2">
+                  <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-3 text-center">
+                    <span className="text-gray-400 line-through text-2xl md:text-4xl font-black">19,800<span className="text-sm md:text-xl font-bold">円</span></span>
+                    <ArrowRight className="w-5 h-5 md:w-8 md:h-8 text-red-600 shrink-0" />
+                    <span className="text-red-600 text-3xl md:text-5xl font-black">14,900<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
+                  </div>
+                  <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">4,900円OFF</span>
+                </div>
                 <p className="text-[11px] md:text-sm text-gray-700 font-bold mb-4 mt-3 bg-green-50 py-1.5 rounded-md border border-green-100">間取り目安：1R 〜 1K</p>
                 <ul className="text-xs md:text-base text-gray-600 text-left space-y-2 font-medium">
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-green-500 shrink-0 mt-0.5" /> 押し入れ〜1部屋程度の不用品に</li>
