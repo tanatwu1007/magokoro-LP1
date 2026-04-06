@@ -612,7 +612,7 @@ export default function Page() {
             
             <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
               <p className="text-yellow-400 font-bold text-xs md:text-sm mb-2">＼ 担当者たらい回しなし！代表直通です ／</p>
-              <a href="tel:09013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
+              <a href="tel:+819013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
                 <div className="pointer-events-none flex items-center justify-center gap-3">
                   <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
                   <div className="text-left leading-tight">
