@@ -11,6 +11,7 @@ import {
 export const metadata: Metadata = {
   title: '【神奈川の不用品回収・遺品整理】高価買取で費用が安い！まごころ整理センター',
   description: '神奈川県（大和市・横浜など）の不用品回収、粗大ゴミ処分、遺品整理なら「神奈川 まごころ整理センター」へ。リサイクル買取で回収費用を劇的に安く相殺！搬出・出張費コミコミ。見積もり後のキャンセル無料。最短30分で急行します！',
+  formatDetection: { telephone: false },
 };
 
 export default function Page() {
@@ -140,13 +141,11 @@ export default function Page() {
               </div>
             </a>
             <a href="tel:0120437599" className="flex-1 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 md:py-4 px-3 shadow-lg flex items-center justify-center gap-2 border border-[#e65f00] touch-manipulation">
-              <div className="pointer-events-none flex w-full items-center justify-center gap-2">
-                <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
-                <div className="text-left leading-tight">
-                  <div className="text-[9px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</div>
-                  <div className="text-[15px] md:text-xl font-extrabold tracking-tight drop-shadow-sm">0120-437-599</div>
-                </div>
-              </div>
+              <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
+              <span className="text-left leading-tight">
+                <span className="block text-[9px] md:text-xs font-bold opacity-90 mb-0.5">相見積もり・ご相談だけでも大歓迎</span>
+                <span className="block text-[15px] md:text-xl font-extrabold tracking-tight drop-shadow-sm">0120-437-599</span>
+              </span>
             </a>
           </div>
           <p className="text-[10px] md:text-xs text-gray-700 mt-3 font-bold text-balance bg-gray-50 p-1.5 rounded-md inline-block border border-gray-200 w-full sm:w-auto">
@@ -742,13 +741,11 @@ export default function Page() {
               </div>
             </a>
             <a href="tel:0120437599" className="w-full md:w-auto md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 border border-[#e65f00] touch-manipulation">
-              <div className="pointer-events-none flex w-full items-center justify-center gap-2 md:gap-3">
-                <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
-                <div className="text-left leading-tight">
-                  <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で急行！相談だけでもOK</div>
-                  <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</div>
-                </div>
-              </div>
+              <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
+              <span className="text-left leading-tight">
+                <span className="block text-[9px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で急行！相談だけでもOK</span>
+                <span className="block text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</span>
+              </span>
             </a>
           </div>
         </div>
@@ -784,15 +781,13 @@ export default function Page() {
             
             <a 
               href="tel:0120437599" 
-              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-lg md:rounded-xl flex items-center justify-center py-2.5 md:py-4 px-1 md:px-3 shadow-md border border-[#e65f00] touch-manipulation"
+              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-lg md:rounded-xl flex items-center justify-center gap-1 md:gap-3 py-2.5 md:py-4 px-1 md:px-3 shadow-md border border-[#e65f00] touch-manipulation"
             >
-              <div className="pointer-events-none flex w-full items-center justify-center gap-1 md:gap-3">
-                <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
-                <div className="text-left">
-                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">最短30分急行</div>
-                  <div className="text-[13px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">電話相談</div>
-                </div>
-              </div>
+              <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
+              <span className="text-left">
+                <span className="block text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">最短30分急行</span>
+                <span className="block text-[13px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">電話相談</span>
+              </span>
             </a>
           </div>
         </div>
