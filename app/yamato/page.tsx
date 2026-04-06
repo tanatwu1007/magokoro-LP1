@@ -146,12 +146,14 @@ export default function Page() {
             </div>
             
             <div className="w-full flex flex-col items-center mt-2 sm:mt-0">
-              <a href="tel:0120437599" className="w-full min-h-[48px] bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#e65f00] touch-manipulation">
-                <Phone className="w-6 h-6 md:w-8 md:h-8" />
-                <div className="text-left leading-tight">
-                  <div className="text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</div>
-                  <div className="text-[16px] md:text-2xl font-black tracking-tight drop-shadow-md">電話で今すぐ相談</div>
-                </div>
+              <a href="tel:0120437599" className="w-full min-h-[48px] bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 border border-[#e65f00] touch-manipulation">
+                <span className="pointer-events-none flex w-full items-center justify-center gap-2">
+                  <Phone className="w-6 h-6 md:w-8 md:h-8 shrink-0" aria-hidden />
+                  <span className="text-left leading-tight">
+                    <span className="block text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</span>
+                    <span className="block text-[16px] md:text-2xl font-black tracking-tight drop-shadow-md">電話で今すぐ相談</span>
+                  </span>
+                </span>
               </a>
               <p className="text-gray-300 text-[10px] md:text-xs mt-2 font-bold flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-400"/>※ご相談だけでも大歓迎です</p>
             </div>
@@ -610,11 +612,13 @@ export default function Page() {
             
             <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
               <p className="text-yellow-400 font-bold text-xs md:text-sm mb-2">＼ 担当者たらい回しなし！代表直通です ／</p>
-              <a href="tel:09013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 transition-transform active:scale-95 border border-[#e65f00] hover:shadow-xl w-full sm:w-auto">
-                <Phone className="w-5 h-5 md:w-6 md:h-6 animate-pulse" />
-                <div className="text-left leading-tight">
-                  <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">今すぐ代表の粟野に電話で相談する</div>
-                  <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</div>
+              <a href="tel:09013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
+                <div className="pointer-events-none flex items-center justify-center gap-3">
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
+                  <div className="text-left leading-tight">
+                    <div className="text-[10px] md:text-xs font-bold opacity-90 mb-0.5">今すぐ代表の粟野に電話で相談する</div>
+                    <div className="text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</div>
+                  </div>
                 </div>
               </a>
             </div>
@@ -716,11 +720,13 @@ export default function Page() {
                </a>
             </div>
             <div className="w-full md:w-auto mt-2 md:mt-0">
-               <a href="tel:0120437599" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#e65f00]">
-                 <Phone className="w-6 h-6 md:w-10 md:h-10" />
-                 <div className="text-left leading-tight">
-                   <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">電話で今すぐ相談</div>
-                   <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</div>
+               <a href="tel:0120437599" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 border border-[#e65f00] touch-manipulation">
+                 <div className="pointer-events-none flex w-full items-center justify-center gap-2 md:gap-3">
+                   <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
+                   <div className="text-left leading-tight">
+                     <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">電話で今すぐ相談</div>
+                     <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</div>
+                   </div>
                  </div>
                </a>
             </div>
@@ -758,10 +764,10 @@ export default function Page() {
             
             <a 
               href="tel:0120437599" 
-              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-3 md:py-4 px-1.5 md:px-3 shadow-md active:scale-95 border border-[#e65f00] touch-manipulation"
+              className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-lg md:rounded-xl flex items-center justify-center py-3 md:py-4 px-1.5 md:px-3 shadow-md border border-[#e65f00] touch-manipulation"
             >
-              <div className="flex items-center gap-1 md:gap-3">
-                <Phone className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
+              <div className="pointer-events-none flex w-full items-center justify-center gap-1 md:gap-3">
+                <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
                 <div className="text-left">
                   <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</div>
                   <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">今すぐ無料で電話相談</div>
