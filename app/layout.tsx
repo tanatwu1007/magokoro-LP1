@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-/** Google Ads コンバージョン ID（例: AW-123456789）。Vercel では NEXT_PUBLIC_GOOGLE_ADS_ID を設定 */
+/** Google Ads コンバージョン ID。必要なら NEXT_PUBLIC_GOOGLE_ADS_ID で上書き */
 const GOOGLE_ADS_ID =
-  process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "AW-XXXXXXXXX";
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "AW-8141898422";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
