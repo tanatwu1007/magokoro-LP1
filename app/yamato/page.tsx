@@ -73,16 +73,6 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
           
-          <div className="w-[95%] md:w-auto max-w-lg mx-auto mb-3 mt-2 rounded-xl md:rounded-2xl overflow-hidden shadow-xl border-2 border-red-500">
-            <div className="bg-red-600 text-white font-black px-4 py-3 md:py-4 text-[14px] sm:text-base md:text-xl flex items-center justify-center gap-2 animate-pulse text-center leading-tight">
-              <Flame className="w-5 h-5 md:w-7 md:h-7 fill-yellow-300 text-yellow-300 shrink-0" />
-              本日あと3名限定
-            </div>
-            <div className="bg-red-700 text-white font-black px-4 py-2.5 md:py-3.5 text-[12px] sm:text-[15px] md:text-lg flex items-center justify-center text-center leading-snug border-t border-red-500/80">
-              今月限定価格・先着10名様
-            </div>
-          </div>
-
           <h1 className="w-full px-1 mb-4 text-center">
             <span className="block text-red-500 text-[clamp(1.65rem,7.5vw,3.25rem)] md:text-6xl lg:text-7xl font-black drop-shadow-2xl leading-[1.1] tracking-tight">
               最短30分で即対応
@@ -120,13 +110,7 @@ export default function Page() {
              <ul className="space-y-2 md:space-y-3 text-white font-bold text-[14px] md:text-xl">
                <li className="flex items-start gap-2">
                  <CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0 mt-0.5" />
-                 <span className="min-w-0 flex-1 flex flex-col gap-2">
-                   <span className="leading-snug">軽トラパックは上記の<span className="text-yellow-300">特別価格</span>でご案内中です。</span>
-                   <span className="flex flex-wrap gap-2">
-                     <span className="shrink-0 whitespace-nowrap bg-red-600 text-white font-black px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-[11px] sm:text-sm md:text-base border-2 border-red-400 shadow-md">本日あと3名限定</span>
-                     <span className="shrink-0 whitespace-nowrap bg-red-700 text-white font-black px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-[11px] sm:text-sm md:text-base border-2 border-red-500 shadow-md">今月限定・先着10名</span>
-                   </span>
-                 </span>
+                 <span className="leading-snug">軽トラパックは上記の<span className="text-yellow-300">特別価格</span>でご案内中です。</span>
                </li>
                <li className="flex items-center gap-2"><CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" /><span className="text-yellow-300">見積り後の追加請求ゼロ保証</span></li>
                <li className="flex items-center gap-2"><CheckCircle2 className="text-green-400 w-5 h-5 md:w-7 md:h-7 shrink-0" />下請けなし！<span className="text-yellow-300">代表の粟野が必ず直接対応</span></li>
