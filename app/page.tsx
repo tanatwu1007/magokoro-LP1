@@ -9,8 +9,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '【大和市民限定】不用品回収・遺品整理なら地元福田のまごころ整理センター',
-  description: '大和市の不用品回収、粗大ゴミ処分、遺品整理なら地元・福田の「まごころ整理センター」へ！最短30分で急行、見積無料・追加料金なし。今なら軽トラ14,800円〜。',
+  title: '大和市の不用品回収・遺品整理｜即日対応・最短30分｜まごころ整理センター',
+  description: '大和市で不用品回収・遺品整理なら地元・福田のまごころ整理センター。即日対応・最短30分で到着。見積無料・追加料金なし・年中無休。軽トラパック14,800円〜。大和市全域対応。',
   formatDetection: { telephone: false },
 };
 
@@ -75,13 +75,13 @@ export default function Page() {
           
           <h1 className="w-full px-1 mb-4 text-center">
             <span className="block text-red-500 text-[clamp(1.65rem,7.5vw,3.25rem)] md:text-6xl lg:text-7xl font-black drop-shadow-2xl leading-[1.1] tracking-tight">
-              最短30分で即対応
+              即日対応・最短30分で
             </span>
             <span className="block text-yellow-400 text-[clamp(1.2rem,5vw,2.25rem)] md:text-5xl font-extrabold drop-shadow-xl mt-1 md:mt-2 pb-0.5 md:pb-1 border-b-4 border-yellow-400 inline-block max-w-[95vw]">
-              今すぐ駆けつけます
+              駆けつけます
             </span>
             <span className="block text-white text-[20px] sm:text-2xl md:text-4xl font-extrabold leading-snug mt-4 md:mt-5 drop-shadow-lg px-1">
-              大和市の不用品回収
+              大和市の不用品回収・遺品整理
             </span>
           </h1>
 
@@ -118,6 +118,7 @@ export default function Page() {
              </ul>
           </div>
 
+          <p className="text-white/80 text-[12px] md:text-sm text-center mb-3 font-medium leading-relaxed">大和市での不用品回収・粗大ゴミ処分・遺品整理に即日対応。大和市福田を拠点に最短30分で到着します。</p>
           <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
             <div className="w-full flex flex-col items-center">
               <a href="https://lin.ee/Gf8Or5r" className="w-full min-h-[48px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c] touch-manipulation">
@@ -189,6 +190,7 @@ export default function Page() {
 
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-10 pt-4">
           <div className="w-full md:w-1/2 order-2 md:order-1">
+            <p className="text-yellow-300 font-bold text-[12px] md:text-base mb-2 text-center md:text-left">大和市で不用品回収・粗大ゴミ処分をお考えの方へ</p>
             <h2 className="text-[20px] md:text-3xl font-extrabold mb-5 text-yellow-400 text-center md:text-left leading-tight">
               大和市での不用品処分で<br className="md:hidden"/>こんなお悩みありませんか？
             </h2>
@@ -241,7 +243,7 @@ export default function Page() {
               ★大和市での相見積もり大歓迎！買取相殺でさらに激安に★
             </p>
             <h2 className="text-[22px] md:text-4xl font-extrabold text-gray-900 mb-3 md:mb-4 leading-tight">
-              料金は見積り時に確定。<br className="md:hidden"/><span className="text-red-600 border-b-2 border-red-300">追加料金は一切いただきません。</span>
+              大和市の不用品回収・遺品整理 料金プラン<br className="md:hidden"/><span className="text-red-600 border-b-2 border-red-300">追加料金は一切いただきません。</span>
             </h2>
           </div>
           
@@ -578,7 +580,7 @@ export default function Page() {
       <section className="py-10 md:py-20 px-3 md:px-4 bg-slate-800 text-white">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
           <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-600 shadow-2xl">
-            <img src="/IMG_1828.jpg" alt="代表 粟野 匠音" loading="lazy" className="w-full h-full object-cover rounded-full"/>
+            <img src="/IMG_1828.jpg" alt="大和市 不用品回収 まごころ整理センター 代表 粟野匠音" loading="lazy" className="w-full h-full object-cover rounded-full"/>
           </div>
           <div className="text-center md:text-left flex-grow">
             <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-400 mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
