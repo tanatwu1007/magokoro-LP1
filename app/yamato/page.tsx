@@ -243,7 +243,7 @@ export default function Page() {
               ★大和市での相見積もり大歓迎！買取相殺でさらに激安に★
             </p>
             <h2 className="text-[22px] md:text-4xl font-extrabold text-gray-900 mb-3 md:mb-4 leading-tight">
-              大和市の不用品回収・遺品整理 料金プラン<br className="md:hidden"/><span className="text-red-600 border-b-2 border-red-300">追加料金は一切いただきません。</span>
+              大和市の不用品回収・遺品整理<br/><span className="whitespace-nowrap">料金プラン</span><br className="md:hidden"/><span className="text-red-600 border-b-2 border-red-300">追加料金は一切いただきません。</span>
             </h2>
           </div>
           
