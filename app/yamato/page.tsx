@@ -118,7 +118,11 @@ export default function Page() {
              </ul>
           </div>
 
-          <p className="text-white/80 text-[12px] md:text-sm text-center mb-3 font-medium leading-relaxed">大和市での不用品回収・粗大ゴミ処分・遺品整理に即日対応。大和市福田を拠点に最短30分で到着します。</p>
+          <p className="text-white/80 text-[12px] md:text-sm text-center mb-4 font-medium leading-relaxed">大和市での不用品回収・粗大ゴミ回収・遺品整理に即日対応。大和市福田を拠点に最短30分で到着します。</p>
+          <a href="tel:0120437599" className="flex flex-col items-center mb-4 group">
+            <span className="text-white/70 text-[11px] font-bold mb-0.5 tracking-wide">今すぐお電話ください（年中無休）</span>
+            <span className="text-white text-[36px] sm:text-5xl md:text-6xl font-black tracking-widest drop-shadow-lg group-active:opacity-80 leading-none">0120-437-599</span>
+          </a>
           <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
             <div className="w-full flex flex-col items-center">
               <a href="https://lin.ee/Gf8Or5r" className="w-full min-h-[48px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c] touch-manipulation">
