@@ -125,6 +125,17 @@ export default function Page() {
           </a>
           <div className="w-full max-w-2xl flex flex-col sm:flex-row gap-3 md:gap-5 justify-center">
             <div className="w-full flex flex-col items-center">
+              <a href="tel:0120437599" className="w-full min-h-[56px] bg-[#9B1C1C] text-white rounded-xl py-4 md:py-5 shadow-[0_8px_24px_rgba(155,28,28,0.5)] flex items-center justify-center gap-2 border border-[#7a1515] touch-manipulation active:scale-95">
+                <Phone className="w-7 h-7 md:w-9 md:h-9 shrink-0" aria-hidden />
+                <span className="text-left leading-tight">
+                  <span className="block text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</span>
+                  <span className="block text-[15px] md:text-2xl font-black tracking-tight drop-shadow-md">今すぐ電話で無料相談　0120-437-599</span>
+                </span>
+              </a>
+              <p className="text-gray-300 text-[10px] md:text-xs mt-2 font-bold flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-400"/>※ご相談だけでも大歓迎です</p>
+            </div>
+
+            <div className="w-full flex flex-col items-center mt-2 sm:mt-0">
               <a href="https://lin.ee/Gf8Or5r" className="w-full min-h-[48px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(6,199,85,0.4)] flex items-center justify-center gap-2 transition-transform active:scale-95 border border-[#05b34c] touch-manipulation">
                 <Camera className="w-6 h-6 md:w-8 md:h-8" />
                 <div className="text-left leading-tight">
@@ -133,17 +144,6 @@ export default function Page() {
                 </div>
               </a>
               <p className="text-gray-300 text-[10px] md:text-xs mt-2 font-bold flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-400"/>※しつこい営業は一切しません</p>
-            </div>
-            
-            <div className="w-full flex flex-col items-center mt-2 sm:mt-0">
-              <a href="tel:0120437599" className="w-full min-h-[48px] bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3.5 md:py-5 shadow-[0_8px_20px_rgba(255,106,0,0.4)] flex items-center justify-center gap-2 border border-[#e65f00] touch-manipulation">
-                <Phone className="w-6 h-6 md:w-8 md:h-8 shrink-0" aria-hidden />
-                <span className="text-left leading-tight">
-                  <span className="block text-[10px] md:text-sm font-bold opacity-90 mb-0.5">最短30分で折り返し可能</span>
-                  <span className="block text-[16px] md:text-2xl font-black tracking-tight drop-shadow-md">電話で今すぐ相談</span>
-                </span>
-              </a>
-              <p className="text-gray-300 text-[10px] md:text-xs mt-2 font-bold flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-400"/>※ご相談だけでも大歓迎です</p>
             </div>
           </div>
         </div>
@@ -364,9 +364,10 @@ export default function Page() {
       {/* 🟢 4. 解決事例 */}
       <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[22px] md:text-4xl font-extrabold text-center text-gray-900 mb-8 md:mb-14 leading-tight">
+          <h2 className="text-[22px] md:text-4xl font-extrabold text-center text-gray-900 mb-3 md:mb-5 leading-tight">
             大和市での驚きの「買取相殺」<br className="md:hidden"/>ビフォーアフター
           </h2>
+          <p className="text-center text-red-600 font-extrabold text-[13px] md:text-lg mb-8 md:mb-12">💡 買取相殺で最大4万円引きになったお客様も！</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             
             <div className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 shadow-lg relative overflow-hidden flex flex-col">
@@ -754,7 +755,7 @@ export default function Page() {
               <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
               <span className="text-left">
                 <span className="block text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</span>
-                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">今すぐ無料で電話相談</span>
+                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">📞 今すぐ無料電話相談</span>
               </span>
             </a>
           </div>
