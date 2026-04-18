@@ -700,7 +700,7 @@ export default function Page() {
                 「捨てるしかないと思っていた冷蔵庫やテレビに値段をつけてもらい、回収費用から相殺してくれました。結果的に他社の半額くらいで済み、大満足です。」
               </p>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 K様 / 20代女性</p>
+                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 K様 / 50代女性</p>
               </div>
             </div>
           </div>
