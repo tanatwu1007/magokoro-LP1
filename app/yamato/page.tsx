@@ -64,7 +64,7 @@ export default function Page() {
       <section className="relative pb-8 md:pb-14 pt-6 md:pt-10 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=2000"
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=2000"
             alt="明るく整理された部屋"
             className="w-full h-full object-cover"
           />
