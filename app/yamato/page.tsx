@@ -241,19 +241,11 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 mb-10">
             {/* 🎯 軽トラパック（価格変更・限定ラベル） */}
             <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-red-400 flex flex-col relative">
-              <div className="bg-red-600 text-white text-center py-2 md:py-2.5 font-black text-[11px] md:text-sm tracking-wide">
-                本日あと3名・先着10名限定
-              </div>
               <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest">ちょっとしたお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">軽トラ積み放題</h3>
                 <div className="mt-3 mb-1 flex flex-col items-center gap-2">
-                  <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-3 text-center">
-                    <span className="text-gray-400 line-through text-2xl md:text-4xl font-black">19,800<span className="text-sm md:text-xl font-bold">円</span></span>
-                    <ArrowRight className="w-5 h-5 md:w-8 md:h-8 text-red-600 shrink-0" />
-                    <span className="text-red-600 text-3xl md:text-5xl font-black">14,800<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
-                  </div>
-                  <span className="bg-yellow-300 text-red-800 font-black text-sm md:text-lg px-2.5 py-1 rounded-md border border-yellow-500">5,000円OFF</span>
+                  <span className="text-red-600 text-3xl md:text-5xl font-black">14,800<span className="text-base md:text-2xl font-bold">円</span><span className="text-lg md:text-3xl">〜</span></span>
                 </div>
                 <p className="text-[11px] md:text-sm text-gray-700 font-bold mb-4 mt-3 bg-green-50 py-1.5 rounded-md border border-green-100">間取り目安：1R 〜 1K</p>
                 <ul className="text-xs md:text-base text-gray-600 text-left space-y-2 font-medium">
@@ -264,7 +256,7 @@ export default function Page() {
             </div>
 
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-[3px] border-green-500 relative flex flex-col z-10 transform md:scale-105">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[10px] md:text-sm font-extrabold px-4 py-1 rounded-b-md shadow-sm z-20 whitespace-nowrap">大和市で1番人気！</div>
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[10px] md:text-sm font-extrabold px-4 py-1 rounded-b-md shadow-sm z-20 whitespace-nowrap">スタッフおすすめプラン</div>
               <div className="bg-gradient-to-b from-green-500 to-green-600 text-white text-center py-3 md:py-4 font-bold text-sm md:text-lg tracking-widest mt-5 md:mt-0">ごっそりお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">1.5t平積みパック</h3>
@@ -323,11 +315,7 @@ export default function Page() {
                    <tbody>
                      <tr>
                        <td className="border border-gray-200 p-1.5 md:p-2 font-medium bg-gray-50">軽トラ積み放題</td>
-                       <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50 leading-tight">
-                         <div className="text-gray-400 line-through text-[10px] md:text-xs font-bold">19,800円</div>
-                         <div>14,800円〜</div>
-                         <div className="text-[9px] md:text-[11px] text-red-700 font-black mt-0.5">5,000円OFF</div>
-                       </td>
+                       <td className="border border-green-200 p-1.5 md:p-2 font-bold text-red-600 bg-green-50">14,800円〜</td>
                        <td className="border border-gray-200 p-1.5 md:p-2 text-gray-500">25,000円〜</td>
                      </tr>
                      <tr>
