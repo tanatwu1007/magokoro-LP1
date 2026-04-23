@@ -58,6 +58,7 @@ export default function Page() {
           <img
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000"
             alt="整理された綺麗な部屋"
+            fetchPriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/75"></div>
