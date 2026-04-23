@@ -7,6 +7,7 @@ import {
   Gift, CheckSquare, ArrowRight, ArrowDown, Timer, Star, ShieldCheck, Camera,
   XCircle, CheckCircle, MessageSquareQuote, Flame, Info, ChevronRight
 } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: '大和市の不用品回収・遺品整理｜即日対応・最短30分｜まごころ整理センター',
@@ -52,7 +53,7 @@ export default function Page() {
       <header className="bg-white py-1 md:py-1.5 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="text-[9px] md:text-xs font-black text-red-600 border-2 border-red-500 bg-red-50 px-1.5 py-0.5 rounded shadow-sm">大和市福田の地元企業</div>
-          <img src="/logo.png" alt="大和市 まごころ整理センター" className="h-6 md:h-10 object-contain mt-1 origin-left scale-140" />
+          <Image src="/logo.png" alt="大和市 まごころ整理センター" width={952} height={242} className="h-6 md:h-10 w-auto object-contain mt-1 origin-left scale-140" />
         </div>
         <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-0.5 md:py-1 rounded-full font-bold shadow-sm flex items-center gap-1">
           <Timer className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
@@ -63,10 +64,13 @@ export default function Page() {
       {/* 🟢 1. ファーストビュー（信頼→CTA→価格の順） */}
       <section className="relative pb-8 md:pb-14 pt-6 md:pt-10 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=2000"
             alt="明るく整理された部屋"
-            className="w-full h-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/75"></div>
         </div>
@@ -202,10 +206,11 @@ export default function Page() {
             </ul>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2 relative">
-            <img 
-              src="/IMG_2153.png" 
-              alt="片付けの悩み" 
-              loading="lazy"
+            <Image
+              src="/IMG_2153.png"
+              alt="片付けの悩み"
+              width={1477}
+              height={1108}
               className="w-full h-44 md:h-72 object-cover rounded-xl md:rounded-2xl shadow-xl border-2 md:border-4 border-slate-600"
             />
           </div>
@@ -488,11 +493,11 @@ export default function Page() {
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
-                  <img src="/IMG_1948.png" alt="散らかった部屋 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
+                  <Image src="/IMG_1948.png" alt="散らかった部屋 Before" fill sizes="50vw" className="object-cover filter brightness-90"/>
                   <div className="absolute top-1.5 left-1.5 bg-gray-900/80 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">Before</div>
                 </div>
                 <div className="w-1/2 h-full relative">
-                  <img src="/IMG_1949.png" alt="綺麗な部屋 After" loading="lazy" className="w-full h-full object-cover"/>
+                  <Image src="/IMG_1949.png" alt="綺麗な部屋 After" fill sizes="50vw" className="object-cover"/>
                   <div className="absolute top-1.5 left-1.5 bg-blue-600/90 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">After</div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md border border-gray-100 z-10">
@@ -530,11 +535,11 @@ export default function Page() {
               </div>
               <div className="flex w-full h-40 md:h-64 relative bg-gray-100">
                 <div className="w-1/2 h-full relative border-r-2 border-white">
-                  <img src="/yamato-minamirinkan-before.png" alt="不用品 Before" loading="lazy" className="w-full h-full object-cover filter brightness-90"/>
+                  <Image src="/yamato-minamirinkan-before.png" alt="不用品 Before" fill sizes="50vw" className="object-cover filter brightness-90"/>
                   <div className="absolute top-1.5 left-1.5 bg-gray-900/80 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">Before</div>
                 </div>
                 <div className="w-1/2 h-full relative">
-                  <img src="/yamato-minamirinkan-after.png" alt="スッキリ After" loading="lazy" className="w-full h-full object-cover"/>
+                  <Image src="/yamato-minamirinkan-after.png" alt="スッキリ After" fill sizes="50vw" className="object-cover"/>
                   <div className="absolute top-1.5 left-1.5 bg-blue-600/90 text-white text-[9px] md:text-sm font-bold px-2 py-0.5 rounded shadow-sm">After</div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md border border-gray-100 z-10">
@@ -704,8 +709,8 @@ export default function Page() {
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 1
               </div>
-              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="無料相談・見積り" loading="lazy" className="w-full h-full object-cover object-[80%_62%]"/>
+              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0 relative">
+                <Image src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="無料相談・見積り" fill sizes="(max-width: 768px) 64px, 128px" className="object-cover object-[80%_62%]"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">無料相談・見積り</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">LINEで部屋の写真をお送りいただくとスムーズです。</p>
@@ -715,8 +720,8 @@ export default function Page() {
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 2
               </div>
-              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500" alt="現地調査・確定" loading="lazy" className="w-full h-full object-cover"/>
+              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0 relative">
+                <Image src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500" alt="現地調査・確定" fill sizes="(max-width: 768px) 64px, 128px" className="object-cover"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">現地調査・確定</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">正確な金額を算出。<span className="text-red-500 font-bold block mt-0.5">キャンセル無料！</span></p>
@@ -726,8 +731,8 @@ export default function Page() {
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 3
               </div>
-              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500" alt="スピーディな作業" loading="lazy" className="w-full h-full object-cover"/>
+              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0 relative">
+                <Image src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500" alt="スピーディな作業" fill sizes="(max-width: 768px) 64px, 128px" className="object-cover"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">スピーディな作業</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">大和市内ならすぐ急行！全て丸投げでOKです。</p>
@@ -737,8 +742,8 @@ export default function Page() {
               <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 w-8 h-8 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-green-600 text-white font-black flex items-center justify-center rounded-full text-base md:text-2xl shadow-lg border-2 md:border-4 border-white">
                 4
               </div>
-              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0">
-                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500" alt="ご精算（買取相殺）" loading="lazy" className="w-full h-full object-cover"/>
+              <div className="w-16 h-16 md:w-32 md:h-32 mx-auto rounded-full border-2 md:border-4 border-green-50 shadow-inner overflow-hidden mb-2.5 md:mb-4 mt-3 md:mt-5 bg-gray-100 shrink-0 relative">
+                <Image src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500" alt="ご精算（買取相殺）" fill sizes="(max-width: 768px) 64px, 128px" className="object-cover"/>
               </div>
               <h3 className="font-extrabold text-[12px] md:text-lg mb-1.5 md:mb-2 text-green-800">ご精算（買取相殺）</h3>
               <p className="text-[9px] md:text-sm text-gray-600 font-medium leading-relaxed">作業後にお支払い。買取でお得に。</p>
@@ -750,8 +755,8 @@ export default function Page() {
       {/* 🟢 7. 代表挨拶（実在感の究極系） */}
       <section className="py-10 md:py-20 px-3 md:px-4 bg-slate-800 text-white">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
-          <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-600 shadow-2xl">
-            <img src="/IMG_1828.jpg" alt="大和市 不用品回収 まごころ整理センター 代表 粟野匠音" loading="lazy" className="w-full h-full object-cover rounded-full"/>
+          <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-600 shadow-2xl relative">
+            <Image src="/IMG_1828.jpg" alt="大和市 不用品回収 まごころ整理センター 代表 粟野匠音" fill sizes="(max-width: 768px) 128px, 256px" className="object-cover rounded-full"/>
           </div>
           <div className="text-center md:text-left flex-grow">
             <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-400 mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
