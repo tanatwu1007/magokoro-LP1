@@ -44,8 +44,8 @@ export default function Page() {
       {/* 🟢 上部帯 */}
       <div className="bg-green-600 text-white text-[9px] sm:text-[10px] md:text-sm font-bold py-1.5 px-2 text-center flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5 md:gap-x-4 md:gap-y-0 shadow-sm z-50 relative leading-snug">
         <span className="shrink-0">大和市対応</span><span className="opacity-50 shrink-0">|</span>
-        <span className="shrink-0">見積無料</span><span className="opacity-50 shrink-0">|</span>
-        <span className="shrink-0">最短30分到着</span><span className="opacity-50 shrink-0">|</span>
+        <span className="shrink-0">見積もり無料</span><span className="opacity-50 shrink-0">|</span>
+        <span className="shrink-0">女性スタッフ同行可</span><span className="opacity-50 shrink-0">|</span>
         <span className="shrink-0">年中無休</span>
       </div>
 
