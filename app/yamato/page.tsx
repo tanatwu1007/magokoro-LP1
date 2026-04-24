@@ -100,17 +100,17 @@ export default function Page() {
 
           {/* Step 13: 信頼バッジ */}
           <div className="w-[95%] max-w-xl mx-auto mb-5 flex flex-wrap justify-center gap-2">
-            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
               <ShieldCheck className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-gray-800">古物商許可証あり</span>
+              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">古物商許可証あり</span>
             </div>
-            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
               <CheckCircle2 className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-gray-800">女性スタッフ在籍</span>
+              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">女性スタッフ在籍</span>
             </div>
-            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
               <HeartHandshake className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-gray-800">供養・お焚き上げ対応</span>
+              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">供養・お焚き上げ対応</span>
             </div>
           </div>
 
