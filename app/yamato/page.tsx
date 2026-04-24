@@ -71,7 +71,7 @@ export default function Page() {
             className="w-full h-full object-cover object-center md:object-center"
             style={{ objectPosition: '40% center' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,248,240,0.55)] to-[rgba(245,235,220,0.55)]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,248,240,0.78)] to-[rgba(245,235,220,0.72)]"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
