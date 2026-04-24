@@ -115,9 +115,12 @@ export default function Page() {
           </div>
 
           {/* Step 8: 電話CTA */}
-          <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[76px] bg-[#A83232] hover:bg-[#963030] text-white rounded-xl py-4 md:py-5 shadow-[0_6px_20px_rgba(168,50,50,0.4)] flex items-center justify-center gap-3 border-2 border-[#8a2a2a] touch-manipulation active:scale-[0.97] transition-transform mb-2">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0">
-              <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
+          <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[84px] bg-[#A83232] hover:bg-[#963030] text-white rounded-xl py-4 md:py-5 shadow-[0_6px_20px_rgba(168,50,50,0.4)] flex items-center justify-center gap-3 border-2 border-[#8a2a2a] touch-manipulation active:scale-[0.97] transition-transform mb-2">
+            <div className="flex flex-col items-center shrink-0">
+              <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden shrink-0" style={{ border: '3px solid #FFFFFF', boxShadow: '0 0 0 2px #D4A04A, 0 4px 12px rgba(0,0,0,0.25)' }}>
+                <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
+              </div>
+              <span className="text-[10px] md:text-[11px] font-medium mt-1 opacity-90">代表　粟野</span>
             </div>
             <Phone className="w-7 h-7 md:w-9 md:h-9 shrink-0" aria-hidden />
             <span className="text-left leading-tight">
