@@ -68,9 +68,10 @@ export default function Page() {
             src="/images/hero-engawa.jpg"
             alt="落ち着いた日本家屋の縁側"
             fetchPriority="high"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center md:object-center"
+            style={{ objectPosition: '40% center' }}
           />
-          <div className="absolute inset-0 bg-slate-900/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,248,240,0.55)] to-[rgba(245,235,220,0.55)]"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
