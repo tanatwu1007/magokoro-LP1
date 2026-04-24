@@ -75,97 +75,77 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
-          {/* メインコピー */}
-          <h1 className="w-full px-1 mb-2 text-center">
-            <span className="block text-white text-[24px] sm:text-3xl md:text-5xl lg:text-6xl font-black drop-shadow-2xl leading-[1.15] tracking-tight">
-              大和市の不用品回収・遺品整理
-            </span>
-            <span className="block text-yellow-400 text-[18px] sm:text-xl md:text-3xl font-extrabold drop-shadow-xl mt-2 md:mt-3 leading-snug">
-              即日対応・最短30分で駆けつけます
+          {/* Step 4: H1 */}
+          <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]">
+            <span className="block text-white text-[22px] sm:text-3xl md:text-5xl lg:text-6xl font-bold drop-shadow-2xl leading-[1.2]">
+              大和市で、ご実家の片付け・<br/>遺品整理をお手伝いします
             </span>
           </h1>
 
-          {/* 修正1: 1点から訴求サブコピー */}
-          <p className="text-yellow-300 text-[13px] sm:text-base md:text-lg font-bold drop-shadow-md leading-relaxed mb-4">
-            ベッド1点・テレビ1台からOK ／ 引越し後の最後のゴミも丸投げ
+          {/* Step 5: サブコピー */}
+          <p className="text-white text-[15px] sm:text-lg md:text-xl font-bold drop-shadow-lg leading-relaxed mb-3 tracking-[0.03em]">
+            ご遺族・ご家族のお気持ちに寄り添い、<br/>一つひとつ丁寧にお引き受けします
           </p>
 
-          {/* 修正3: 電話ボタン直上マイクロコピー */}
-          <p className="text-yellow-300 text-[12px] md:text-sm font-extrabold mb-2 drop-shadow-md">代表の粟野が直接対応します</p>
+          {/* Step 6: 第三コピー（信頼情報） */}
+          <div className="w-[95%] max-w-xl mx-auto mb-3 text-center">
+            <p className="text-white/90 text-[13px] sm:text-base md:text-lg font-bold drop-shadow-md leading-relaxed">
+              大和市・福田の地元業者　│　代表・粟野が直接ご相談をお受けします
+            </p>
+            <p className="text-white/80 text-[12px] sm:text-sm md:text-base font-medium drop-shadow-md mt-1">
+              お家具1点のお片付けから、お家丸ごとまで
+            </p>
+          </div>
 
-          {/* 修正2: 電話CTA＋代表顔写真 */}
-          <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[76px] bg-[#B91C1C] hover:bg-[#991B1B] text-white rounded-xl py-4 md:py-5 shadow-[0_8px_24px_rgba(185,28,28,0.5)] flex items-center justify-center gap-3 border-2 border-[#991B1B] touch-manipulation active:scale-[0.97] transition-transform mb-2">
+          {/* Step 13: 信頼バッジ */}
+          <div className="w-[95%] max-w-xl mx-auto mb-5 flex flex-wrap justify-center gap-2">
+            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+              <ShieldCheck className="w-3.5 h-3.5 text-green-700 shrink-0" />
+              <span className="text-[10px] md:text-xs font-bold text-gray-800">古物商許可証あり</span>
+            </div>
+            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+              <CheckCircle2 className="w-3.5 h-3.5 text-green-700 shrink-0" />
+              <span className="text-[10px] md:text-xs font-bold text-gray-800">女性スタッフ在籍</span>
+            </div>
+            <div className="bg-white/95 rounded-full px-3 py-1 flex items-center gap-1.5 border border-white/60 shadow-sm">
+              <HeartHandshake className="w-3.5 h-3.5 text-green-700 shrink-0" />
+              <span className="text-[10px] md:text-xs font-bold text-gray-800">供養・お焚き上げ対応</span>
+            </div>
+          </div>
+
+          {/* Step 8: 電話CTA */}
+          <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[76px] bg-[#A83232] hover:bg-[#963030] text-white rounded-xl py-4 md:py-5 shadow-[0_6px_20px_rgba(168,50,50,0.4)] flex items-center justify-center gap-3 border-2 border-[#8a2a2a] touch-manipulation active:scale-[0.97] transition-transform mb-2">
             <div className="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0">
               <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
             </div>
             <Phone className="w-7 h-7 md:w-9 md:h-9 shrink-0" aria-hidden />
             <span className="text-left leading-tight">
-              <span className="block text-[11px] md:text-sm font-bold opacity-90 mb-0.5">今すぐお電話（年中無休・通話無料）</span>
+              <span className="block text-[11px] md:text-sm font-bold opacity-90 mb-0.5">お電話でのご相談（通話無料）</span>
               <span className="block text-[22px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
+              <span className="block text-[9px] md:text-xs font-medium opacity-80 mt-0.5">年中無休・受付中</span>
             </span>
           </a>
 
-          {/* 修正3: 電話ボタン直下マイクロコピー */}
-          <div className="flex flex-wrap gap-x-4 gap-y-0.5 justify-center mb-4">
-            <p className="text-white/90 text-[11px] md:text-xs font-bold flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>見積り後のキャンセル無料
+          {/* Step 9: 安心要素 */}
+          <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1 sm:gap-4 mb-4">
+            <p className="text-white/90 text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+              <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>見積もり後のキャンセル無料
             </p>
-            <p className="text-white/90 text-[11px] md:text-xs font-bold flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>しつこい営業一切なし
+            <p className="text-white/90 text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+              <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>しつこい営業は一切いたしません
+            </p>
+            <p className="text-white/90 text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+              <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>ご家族でご相談の上でお決めください
             </p>
           </div>
 
-          {/* LINEサブCTA（小さめ・緑） */}
-          <a href="https://lin.ee/Gf8Or5r" className="w-[95%] max-w-xl min-h-[44px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-2.5 md:py-3 shadow-[0_6px_16px_rgba(6,199,85,0.35)] flex items-center justify-center gap-2 transition-transform active:scale-[0.97] border border-[#05b34c] touch-manipulation mb-4">
+          {/* Step 10: LINE CTA */}
+          <a href="https://lin.ee/Gf8Or5r" className="w-[95%] max-w-xl min-h-[44px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-2.5 md:py-3 shadow-[0_6px_16px_rgba(6,199,85,0.35)] flex items-center justify-center gap-2 transition-transform active:scale-[0.97] border border-[#05b34c] touch-manipulation">
             <MessageCircle className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
-            <span className="text-[13px] md:text-base font-black tracking-tight drop-shadow-md">LINEで写真送って即見積り（無料）</span>
+            <span className="text-[13px] md:text-base font-black tracking-tight drop-shadow-md">LINEで写真を送ってお見積もり（無料）</span>
           </a>
 
-          {/* 修正4: 料金バッジ */}
-          <a href="#pricing" className="w-[95%] max-w-xl bg-gradient-to-r from-orange-400 to-yellow-400 text-gray-900 rounded-lg py-2.5 px-4 shadow-lg border border-orange-500 flex items-center justify-center gap-2 hover:brightness-105 transition-all">
-            <BadgeJapaneseYen className="w-5 h-5 md:w-6 md:h-6 text-orange-800 shrink-0" />
-            <span className="text-[14px] md:text-lg font-black tracking-tight">軽トラ積み放題 <span className="text-red-800 text-[18px] md:text-xl">14,800円〜</span></span>
-            <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-orange-800 shrink-0" />
-          </a>
-        </div>
-      </section>
-
-      {/* 修正5: こんな時にご相談ください */}
-      <section className="py-8 md:py-12 px-4 bg-green-50 border-b border-green-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-[18px] md:text-2xl font-extrabold text-gray-900 text-center mb-5 md:mb-8">こんな時にご相談ください</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-            <div className="bg-white rounded-xl p-4 border border-green-200 shadow-sm flex items-center gap-3">
-              <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-                <CheckSquare className="w-5 h-5 text-green-700" />
-              </div>
-              <p className="text-[13px] md:text-sm font-bold text-gray-800 leading-snug">ベッド・マットレスの<br className="sm:hidden"/>1点処分</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 border border-green-200 shadow-sm flex items-center gap-3">
-              <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center shrink-0">
-                <CheckSquare className="w-5 h-5 text-green-700" />
-              </div>
-              <p className="text-[13px] md:text-sm font-bold text-gray-800 leading-snug">テレビ・冷蔵庫・洗濯機の<br className="sm:hidden"/>単品回収</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 border border-green-200 shadow-sm flex items-center gap-3">
-              <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
-                <Truck className="w-5 h-5 text-orange-700" />
-              </div>
-              <p className="text-[13px] md:text-sm font-bold text-gray-800 leading-snug">引越しの退去日が迫った<br className="sm:hidden"/>最後の片付け</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 border border-green-200 shadow-sm flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
-                <Building2 className="w-5 h-5 text-blue-700" />
-              </div>
-              <p className="text-[13px] md:text-sm font-bold text-gray-800 leading-snug">実家の不用品<br className="sm:hidden"/>まとめて処分</p>
-            </div>
-            <div className="bg-white rounded-xl p-4 border border-green-200 shadow-sm flex items-center gap-3 sm:col-span-2 md:col-span-1">
-              <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center shrink-0">
-                <HeartHandshake className="w-5 h-5 text-red-700" />
-              </div>
-              <p className="text-[13px] md:text-sm font-bold text-gray-800 leading-snug">ゴミ屋敷・遺品整理</p>
-            </div>
-          </div>
+          {/* Step 11: 料金バッジはFVから削除。料金セクション(#pricing)に既存のため移動不要 */}
         </div>
       </section>
 
@@ -796,7 +776,7 @@ export default function Page() {
               <a href="tel:+819013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
                 <span className="text-left leading-tight">
-                  <span className="block text-[10px] md:text-xs font-bold opacity-90 mb-0.5">今すぐ代表の粟野に電話で相談する</span>
+                  <span className="block text-[10px] md:text-xs font-bold opacity-90 mb-0.5">代表の粟野に電話で相談する</span>
                   <span className="block text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</span>
                 </span>
               </a>
@@ -894,7 +874,7 @@ export default function Page() {
                  <Camera className="w-6 h-6 md:w-10 md:h-10" />
                  <div className="text-left leading-tight">
                    <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">無料で見積りを取る</div>
-                   <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">写真を送ってLINE査定</div>
+                   <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINEで写真を送って相談</div>
                  </div>
                </a>
             </div>
@@ -902,7 +882,7 @@ export default function Page() {
                <a href="tel:0120437599" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 border border-[#e65f00] touch-manipulation">
                  <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
                  <span className="text-left leading-tight">
-                   <span className="block text-[9px] md:text-sm font-bold opacity-90 mb-0.5">電話で今すぐ相談</span>
+                   <span className="block text-[9px] md:text-sm font-bold opacity-90 mb-0.5">お電話で相談する</span>
                    <span className="block text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</span>
                  </span>
                </a>
@@ -934,7 +914,7 @@ export default function Page() {
                 <Camera className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
                 <div className="text-left">
                   <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">無料で見積りを取る</div>
-                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">写真を送ってLINE査定</div>
+                  <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">LINEで写真を送って相談</div>
                 </div>
               </div>
             </a>
@@ -946,7 +926,7 @@ export default function Page() {
               <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
               <span className="text-left">
                 <span className="block text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</span>
-                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">📞 今すぐ無料電話相談</span>
+                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">📞 お電話で相談する</span>
               </span>
             </a>
           </div>
