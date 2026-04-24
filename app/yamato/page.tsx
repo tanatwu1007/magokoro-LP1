@@ -580,6 +580,39 @@ export default function Page() {
         </div>
       </section>
 
+      {/* 🟢 代表挨拶 */}
+      <section className="pt-[60px] pb-12 md:pt-[100px] md:pb-20 px-3 md:px-4" style={{ backgroundColor: '#F5EFE6' }}>
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
+          <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full shadow-xl relative" style={{ backgroundColor: '#E8D9C0', border: '3px solid #FFFFFF', boxShadow: '0 0 0 3px #D4A04A, 0 4px 16px rgba(0,0,0,0.15)' }}>
+            <Image src="/images/representative-awano.png" alt="大和市 不用品回収 まごころ整理センター 代表 粟野匠音" fill sizes="(max-width: 768px) 128px, 256px" className="object-cover object-top rounded-full"/>
+          </div>
+          <div className="text-center md:text-left flex-grow">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-[#3B2E1F] mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
+            <div className="mb-4 md:mb-6">
+              <span className="text-sm md:text-lg font-bold text-[#6B5B47] block mb-0.5">代表</span>
+              <h3 className="text-3xl md:text-5xl font-extrabold text-[#2B2B2B] tracking-widest">粟野 匠音</h3>
+            </div>
+            <p className="text-[#3B2E1F] text-[13px] md:text-[16px] leading-[1.8] text-left font-medium">
+              『神奈川 まごころ整理センター』代表の粟野です。<br/>
+              私たちは、大和市福田に拠点を置く「生粋の地元企業」です。遠方から来て高額な出張費を請求するような業者とは違い、地元のお客様に愛される誠実なサービスを第一としております。<br/>
+              不要になったお品物を、単に処分するのではなく、新しい価値を見出し、高価買取を行うことで、お客様のご負担を大幅に軽減いたします。<br/>
+              大和市民の皆様、どのような些細なご相談でもお気軽にお申し付けください。私が直接お電話に出ます。
+            </p>
+
+            <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
+              <p className="text-[#6B5B47] font-bold text-xs md:text-sm mb-2">＼ 担当者たらい回しなし！代表直通です ／</p>
+              <a href="tel:+819013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
+                <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
+                <span className="text-left leading-tight">
+                  <span className="block text-[10px] md:text-xs font-bold opacity-90 mb-0.5">代表の粟野に電話で相談する</span>
+                  <span className="block text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 🟢 5. これまでのご依頼例 */}
       <section className="py-12 md:py-20 px-4 bg-green-50 border-t border-green-100">
         <div className="max-w-5xl mx-auto">
@@ -700,39 +733,6 @@ export default function Page() {
           <p className="text-[12px] md:text-[13px] text-[#888888] text-center leading-[1.7] max-w-[600px] mx-auto mt-6 md:mt-8 px-5">
             ※上記はこれまでのご依頼内容をもとにした事例紹介です。<br />お客様のプライバシー保護のため詳細は一部変更しております。
           </p>
-        </div>
-      </section>
-
-      {/* 🟢 7. 代表挨拶（実在感の究極系） */}
-      <section className="py-10 md:py-20 px-3 md:px-4 bg-slate-800 text-white">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
-          <div className="w-32 h-32 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-full border-4 md:border-8 border-slate-600 shadow-2xl relative">
-            <Image src="/IMG_1828.jpg" alt="大和市 不用品回収 まごころ整理センター 代表 粟野匠音" fill sizes="(max-width: 768px) 128px, 256px" className="object-cover rounded-full"/>
-          </div>
-          <div className="text-center md:text-left flex-grow">
-            <h2 className="text-2xl md:text-4xl font-extrabold text-yellow-400 mb-2 md:mb-4 tracking-tight">大和市の皆様へ</h2>
-            <div className="mb-4 md:mb-6">
-              <span className="text-sm md:text-lg font-bold text-gray-300 block mb-0.5">代表</span>
-              <h3 className="text-3xl md:text-5xl font-extrabold text-white tracking-widest">粟野 匠音</h3>
-            </div>
-            <p className="text-gray-200 text-[13px] md:text-[16px] leading-relaxed md:leading-loose text-left font-medium">
-              『神奈川 まごころ整理センター』代表の粟野です。<br/>
-              私たちは、大和市福田に拠点を置く「生粋の地元企業」です。遠方から来て高額な出張費を請求するような業者とは違い、地元のお客様に愛される誠実なサービスを第一としております。<br/>
-              不要になったお品物を、単に処分するのではなく、新しい価値を見出し、高価買取を行うことで、お客様のご負担を大幅に軽減いたします。<br/>
-              大和市民の皆様、どのような些細なご相談でもお気軽にお申し付けください。私が直接お電話に出ます！
-            </p>
-            
-            <div className="mt-6 md:mt-8 flex flex-col items-center md:items-start">
-              <p className="text-yellow-400 font-bold text-xs md:text-sm mb-2">＼ 担当者たらい回しなし！代表直通です ／</p>
-              <a href="tel:+819013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
-                <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
-                <span className="text-left leading-tight">
-                  <span className="block text-[10px] md:text-xs font-bold opacity-90 mb-0.5">代表の粟野に電話で相談する</span>
-                  <span className="block text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</span>
-                </span>
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
