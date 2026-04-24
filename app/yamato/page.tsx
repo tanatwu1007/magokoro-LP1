@@ -77,19 +77,19 @@ export default function Page() {
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
           {/* H1 */}
-          <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]">
+          <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
             <span className="block text-[#2B2B2B] text-[19px] sm:text-[26px] md:text-[42px] lg:text-[50px] font-bold leading-[1.25]">
               大和市で、ご実家の片付け・<br/>遺品整理をお手伝いします
             </span>
           </h1>
 
           {/* サブコピー */}
-          <p className="text-[#6B5B47] text-[14px] sm:text-base md:text-lg font-medium leading-relaxed mb-3 tracking-[0.03em]">
+          <p className="text-[#6B5B47] text-[14px] sm:text-base md:text-lg font-medium leading-relaxed mb-3 tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
             ご遺族・ご家族のお気持ちに寄り添い、<br/>一つひとつ丁寧にお引き受けします
           </p>
 
           {/* 第三コピー */}
-          <div className="w-[95%] max-w-xl mx-auto mb-3 text-center">
+          <div className="w-[95%] max-w-xl mx-auto mb-3 text-center" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
             <p className="text-[#555555] text-[12px] sm:text-sm md:text-base font-normal leading-relaxed">
               大和市・福田の地元業者　│　代表・粟野が直接ご相談をお受けします
             </p>
@@ -125,17 +125,17 @@ export default function Page() {
               <span className="block text-[22px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
             </span>
           </a>
-          <p className="text-[#555555] text-[11px] md:text-sm font-bold mb-2">年中無休・受付中</p>
+          <p className="text-[#6B5B47] text-[11px] md:text-sm font-bold mb-2" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.8)' }}>年中無休・受付中</p>
 
           {/* 安心要素 */}
-          <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1 sm:gap-4 mb-4">
-            <p className="text-[#555555] text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+          <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1 sm:gap-4 mb-4 bg-white/50 rounded-lg py-2 px-3">
+            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
               <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>見積もり後のキャンセル無料
             </p>
-            <p className="text-[#555555] text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
               <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>しつこい営業は一切いたしません
             </p>
-            <p className="text-[#555555] text-[11px] md:text-xs font-bold flex items-center justify-center gap-1">
+            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
               <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>ご家族でご相談の上でお決めください
             </p>
           </div>
