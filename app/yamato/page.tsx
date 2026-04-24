@@ -76,7 +76,7 @@ export default function Page() {
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
           {/* メインコピー */}
-          <h1 className="w-full px-1 mb-4 text-center">
+          <h1 className="w-full px-1 mb-3 text-center">
             <span className="block text-white text-[24px] sm:text-3xl md:text-5xl lg:text-6xl font-black drop-shadow-2xl leading-[1.15] tracking-tight">
               大和市の不用品回収・遺品整理
             </span>
@@ -85,52 +85,62 @@ export default function Page() {
             </span>
           </h1>
 
-          {/* 信頼の証明 */}
-          <div className="w-[95%] max-w-xl mx-auto mb-5 bg-white/95 rounded-xl border-2 border-green-500 p-3 md:p-5 shadow-2xl">
-            <ul className="space-y-2.5 md:space-y-3 text-left">
-              <li className="flex items-center gap-2.5">
-                <ShieldCheck className="text-green-600 w-5 h-5 md:w-6 md:h-6 shrink-0" />
-                <span className="text-[14px] md:text-base font-bold text-gray-800 leading-snug">
-                  大和市福田の地元業者・<span className="text-red-600">年間300件</span>の実績
-                </span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <ShieldCheck className="text-green-600 w-5 h-5 md:w-6 md:h-6 shrink-0" />
-                <span className="text-[14px] md:text-base font-bold text-gray-800 leading-snug">
-                  古物商許可取得済（東京都公安委員第301052616733号）
-                </span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <ShieldCheck className="text-green-600 w-5 h-5 md:w-6 md:h-6 shrink-0" />
-                <span className="text-[14px] md:text-base font-bold text-gray-800 leading-snug">
-                  代表の粟野が<span className="text-red-600">必ず直接対応</span>
-                </span>
-              </li>
-            </ul>
+          {/* 顧客の生の声を反映したサブコピー */}
+          <div className="w-[95%] max-w-xl mx-auto mb-4 space-y-1.5">
+            <p className="text-white text-[15px] sm:text-lg md:text-xl font-extrabold drop-shadow-lg leading-snug">
+              <span className="bg-red-600/90 px-2 py-0.5 rounded">マットレスやテレビ1点</span>から即日回収！
+            </p>
+            <p className="text-yellow-300 text-[13px] sm:text-base md:text-lg font-bold drop-shadow-md leading-snug">
+              引越しの退去日が迫った「最後の片付け・ゴミ出しSOS」も<br className="md:hidden"/>そのまま丸投げOK！
+            </p>
           </div>
 
-          {/* 電話CTA（最大・赤） */}
-          <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[60px] bg-[#B91C1C] hover:bg-[#991B1B] text-white rounded-xl py-4 md:py-5 shadow-[0_8px_24px_rgba(185,28,28,0.5)] flex items-center justify-center gap-3 border-2 border-[#991B1B] touch-manipulation active:scale-[0.97] transition-transform mb-3">
-            <Phone className="w-8 h-8 md:w-10 md:h-10 shrink-0" aria-hidden />
-            <span className="text-left leading-tight">
-              <span className="block text-[12px] md:text-sm font-bold opacity-90 mb-0.5">今すぐお電話（年中無休）</span>
-              <span className="block text-[20px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
-            </span>
-          </a>
-          <p className="text-white/80 text-[11px] md:text-xs mb-4 font-bold flex items-center justify-center gap-1">
-            <CheckCircle2 className="w-3 h-3 text-green-400"/>ご相談だけでも大歓迎です
-          </p>
+          {/* 期間限定オファーバッジ */}
+          <div className="w-[95%] max-w-xl mx-auto mb-4 bg-yellow-400 text-gray-900 rounded-lg py-2.5 px-4 shadow-lg border-2 border-yellow-500 flex items-center justify-center gap-2">
+            <Flame className="w-5 h-5 md:w-6 md:h-6 text-red-600 shrink-0" />
+            <span className="text-[15px] md:text-xl font-black tracking-tight">軽トラ積み放題 <span className="text-red-700 text-[20px] md:text-2xl">14,800円〜</span></span>
+          </div>
+
+          {/* 電話CTA（最大・赤）+ 代表写真 */}
+          <div className="w-[95%] max-w-xl flex items-center gap-3 mb-2">
+            <div className="shrink-0 hidden sm:block">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-3 border-white shadow-lg">
+                <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <a href="tel:0120437599" className="flex-1 min-h-[68px] bg-[#B91C1C] hover:bg-[#991B1B] text-white rounded-xl py-4 md:py-5 shadow-[0_8px_24px_rgba(185,28,28,0.5)] flex items-center justify-center gap-3 border-2 border-[#991B1B] touch-manipulation active:scale-[0.97] transition-transform">
+              <Phone className="w-8 h-8 md:w-10 md:h-10 shrink-0 animate-pulse" aria-hidden />
+              <span className="text-left leading-tight">
+                <span className="block text-[11px] md:text-sm font-bold opacity-90 mb-0.5">今すぐお電話（年中無休・通話無料）</span>
+                <span className="block text-[22px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
+              </span>
+            </a>
+          </div>
+
+          {/* 電話CTA マイクロコピー */}
+          <div className="w-[95%] max-w-xl flex items-center gap-3 mb-4">
+            <div className="shrink-0 sm:hidden">
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <p className="text-yellow-300 text-[12px] md:text-sm font-extrabold mb-1 drop-shadow-md">代表の粟野が直接お電話に出ます！</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-0.5 justify-center sm:justify-start">
+                <p className="text-white/90 text-[10px] md:text-xs font-bold flex items-center gap-1">
+                  <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>お電話口で今すぐ概算料金がわかります
+                </p>
+                <p className="text-white/90 text-[10px] md:text-xs font-bold flex items-center gap-1">
+                  <CheckCircle2 className="w-3 h-3 text-green-400 shrink-0"/>お見積り後のキャンセル完全無料
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* LINEサブCTA（小さめ・緑） */}
-          <a href="https://lin.ee/Gf8Or5r" className="w-[95%] max-w-xl min-h-[48px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-3 md:py-4 shadow-[0_6px_16px_rgba(6,199,85,0.35)] flex items-center justify-center gap-2 transition-transform active:scale-[0.97] border border-[#05b34c] touch-manipulation mb-5">
-            <MessageCircle className="w-6 h-6 md:w-7 md:h-7 shrink-0" />
-            <span className="text-[14px] md:text-lg font-black tracking-tight drop-shadow-md">LINEで写真送って即見積り（無料）</span>
-          </a>
-
-          {/* 価格情報（小さく・スクロールリンク） */}
-          <a href="#pricing" className="inline-flex items-center gap-1.5 text-white/90 hover:text-white text-[14px] md:text-base font-bold transition-colors">
-            <BadgeJapaneseYen className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
-            軽トラパック 14,800円〜（料金プラン詳細はこちら↓）
+          <a href="https://lin.ee/Gf8Or5r" className="w-[95%] max-w-xl min-h-[44px] bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl py-2.5 md:py-3 shadow-[0_6px_16px_rgba(6,199,85,0.35)] flex items-center justify-center gap-2 transition-transform active:scale-[0.97] border border-[#05b34c] touch-manipulation">
+            <MessageCircle className="w-5 h-5 md:w-6 md:h-6 shrink-0" />
+            <span className="text-[13px] md:text-base font-black tracking-tight drop-shadow-md">LINEで写真送って即見積り（無料）</span>
           </a>
         </div>
       </section>
