@@ -62,7 +62,7 @@ export default function Page() {
       </header>
 
       {/* 🟢 1. ファーストビュー（信頼→CTA→価格の順） */}
-      <section className="relative pb-8 md:pb-14 pt-12 md:pt-16 overflow-hidden">
+      <section className="relative pb-8 md:pb-14 pt-7 md:pt-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-engawa.jpg"
@@ -78,46 +78,46 @@ export default function Page() {
 
           {/* H1 */}
           <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
-            <span className="block text-[#2B2B2B] text-[19px] sm:text-[26px] md:text-[42px] lg:text-[50px] font-bold leading-[1.25]">
+            <span className="block text-[#2B2B2B] text-[28px] sm:text-[26px] md:text-[42px] lg:text-[50px] font-bold leading-[1.4] md:leading-[1.25]">
               大和市で、ご実家の片付け・<br/>遺品整理をお手伝いします
             </span>
           </h1>
 
           {/* サブコピー */}
-          <p className="text-[#6B5B47] text-[14px] sm:text-base md:text-lg font-medium leading-relaxed mb-3 tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
+          <p className="text-[#3B2E1F] md:text-[#6B5B47] text-[15px] sm:text-base md:text-lg font-medium leading-relaxed mb-3 tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.9)' }}>
             ご遺族・ご家族のお気持ちに寄り添い、<br/>一つひとつ丁寧にお引き受けします
           </p>
 
           {/* 第三コピー */}
           <div className="w-[95%] max-w-xl mx-auto mb-3 text-center" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
-            <p className="text-[#555555] text-[12px] sm:text-sm md:text-base font-normal leading-relaxed">
+            <p className="text-[#4A3D2E] md:text-[#555555] text-[13px] sm:text-sm md:text-base font-medium md:font-normal leading-relaxed">
               大和市・福田の地元業者　│　代表・粟野が直接ご相談をお受けします
             </p>
-            <p className="text-[#6B5B47] text-[11px] sm:text-[13px] md:text-sm font-normal mt-1">
+            <p className="text-[#4A3D2E] md:text-[#6B5B47] text-[12px] sm:text-[13px] md:text-sm font-medium md:font-normal mt-1">
               お家具1点のお片付けから、お家丸ごとまで
             </p>
           </div>
 
           {/* Step 13: 信頼バッジ */}
-          <div className="w-[95%] max-w-xl mx-auto mb-5 flex flex-wrap justify-center gap-2">
-            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
+          <div className="w-[80%] max-w-[280px] md:w-[95%] md:max-w-xl mx-auto mb-4 md:mb-5 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-2">
+            <div className="bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm w-full md:w-auto justify-center">
               <ShieldCheck className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">古物商許可証あり</span>
+              <span className="text-[11px] md:text-xs font-bold text-[#3B2E1F]">古物商許可証あり</span>
             </div>
-            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
+            <div className="bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm w-full md:w-auto justify-center">
               <CheckCircle2 className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">女性スタッフ在籍</span>
+              <span className="text-[11px] md:text-xs font-bold text-[#3B2E1F]">女性スタッフ在籍</span>
             </div>
-            <div className="bg-white rounded-full px-3 py-1 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm">
+            <div className="bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 border border-[#D4C4A8] shadow-sm w-full md:w-auto justify-center">
               <HeartHandshake className="w-3.5 h-3.5 text-green-700 shrink-0" />
-              <span className="text-[10px] md:text-xs font-bold text-[#3B2E1F]">供養・お焚き上げ対応</span>
+              <span className="text-[11px] md:text-xs font-bold text-[#3B2E1F]">供養・お焚き上げ対応</span>
             </div>
           </div>
 
           {/* Step 8: 電話CTA */}
           <a href="tel:0120437599" className="w-[95%] max-w-xl min-h-[84px] bg-[#A83232] hover:bg-[#963030] text-white rounded-xl py-4 md:py-5 shadow-[0_6px_20px_rgba(168,50,50,0.4)] flex items-center justify-center gap-3 border-2 border-[#8a2a2a] touch-manipulation active:scale-[0.97] transition-transform mb-2">
             <div className="flex flex-col items-center shrink-0">
-              <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden shrink-0" style={{ border: '3px solid #FFFFFF', boxShadow: '0 0 0 2px #D4A04A, 0 4px 12px rgba(0,0,0,0.25)' }}>
+              <div className="w-[56px] h-[56px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden shrink-0" style={{ border: '3px solid #FFFFFF', boxShadow: '0 0 0 2px #D4A04A, 0 4px 12px rgba(0,0,0,0.25)' }}>
                 <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover" />
               </div>
               <span className="text-[10px] md:text-[11px] font-medium mt-1 opacity-90">代表　粟野</span>
@@ -125,21 +125,21 @@ export default function Page() {
             <Phone className="w-7 h-7 md:w-9 md:h-9 shrink-0" aria-hidden />
             <span className="text-left leading-tight">
               <span className="block text-[11px] md:text-sm font-bold opacity-90 mb-0.5">お電話でのご相談（通話無料）</span>
-              <span className="block text-[22px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
-              <span className="block text-[13px] md:text-sm font-normal mt-1 text-white/90">年中無休・受付中</span>
+              <span className="block text-[28px] md:text-3xl font-black tracking-[0.03em] drop-shadow-md">0120-437-599</span>
+              <span className="block text-[12px] md:text-sm font-normal mt-1 text-white/90">年中無休・受付中</span>
             </span>
           </a>
 
           {/* 安心要素 */}
-          <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1 sm:gap-4 mb-4 bg-white/50 rounded-lg py-2 px-3">
-            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>見積もり後のキャンセル無料
+          <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1.5 sm:gap-4 mb-4 bg-white/50 rounded-lg py-3 md:py-2 px-4 md:px-3">
+            <p className="text-[#3B2E1F] text-[13px] md:text-xs font-medium flex items-center justify-start sm:justify-center gap-1.5 leading-relaxed">
+              <CheckCircle2 className="w-3.5 h-3.5 md:w-3 md:h-3 text-green-600 shrink-0"/>見積もり後のキャンセル無料
             </p>
-            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>しつこい営業は一切いたしません
+            <p className="text-[#3B2E1F] text-[13px] md:text-xs font-medium flex items-center justify-start sm:justify-center gap-1.5 leading-relaxed">
+              <CheckCircle2 className="w-3.5 h-3.5 md:w-3 md:h-3 text-green-600 shrink-0"/>しつこい営業は一切いたしません
             </p>
-            <p className="text-[#3B2E1F] text-[11px] md:text-xs font-medium flex items-center justify-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-green-600 shrink-0"/>ご家族でご相談の上でお決めください
+            <p className="text-[#3B2E1F] text-[13px] md:text-xs font-medium flex items-center justify-start sm:justify-center gap-1.5 leading-relaxed">
+              <CheckCircle2 className="w-3.5 h-3.5 md:w-3 md:h-3 text-green-600 shrink-0"/>ご家族でご相談の上でお決めください
             </p>
           </div>
 
@@ -930,7 +930,7 @@ export default function Page() {
               <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
               <span className="text-left">
                 <span className="block text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</span>
-                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">📞 お電話で相談する</span>
+                <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">お電話で相談する</span>
               </span>
             </a>
           </div>
