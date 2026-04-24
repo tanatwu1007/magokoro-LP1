@@ -697,8 +697,8 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-[12px] text-[#888888] text-center mt-8 leading-[1.7]">
-            ※上記はこれまでのご依頼内容をもとにした事例紹介です。<br className="md:hidden" />お客様のプライバシー保護のため詳細は一部変更しております。
+          <p className="text-[12px] md:text-[13px] text-[#888888] text-center leading-[1.7] max-w-[600px] mx-auto mt-6 md:mt-8 px-5">
+            ※上記はこれまでのご依頼内容をもとにした事例紹介です。<br />お客様のプライバシー保護のため詳細は一部変更しております。
           </p>
         </div>
       </section>
