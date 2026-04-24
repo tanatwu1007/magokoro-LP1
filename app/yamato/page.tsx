@@ -68,8 +68,8 @@ export default function Page() {
             src="/images/hero-engawa.jpg"
             alt="落ち着いた日本家屋の縁側"
             fetchPriority="high"
-            className="w-full h-full object-cover object-center md:object-center"
-            style={{ objectPosition: '40% center' }}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: '65% center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[rgba(255,248,240,0.78)] to-[rgba(245,235,220,0.72)]"></div>
         </div>
