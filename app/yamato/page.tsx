@@ -301,6 +301,45 @@ export default function Page() {
         </div>
       </section>
 
+      {/* 🟢 遺品整理の料金目安 */}
+      <section className="pt-12 pb-12 md:pt-20 md:pb-20 px-4" style={{ backgroundColor: '#FAF8F3' }}>
+        <div className="max-w-[600px] mx-auto">
+          <div className="text-center mb-6 md:mb-8">
+            <h2 className="text-[22px] md:text-[32px] font-bold text-[#2B2B2B] mb-2">遺品整理の料金目安</h2>
+            <p className="text-[13px] md:text-sm text-[#6B5B47]">間取りに応じた目安料金です。正確な金額は無料お見積もりにてご提示します</p>
+          </div>
+          <div className="rounded-xl border border-[#E8DFD0] overflow-hidden shadow-sm">
+            <table className="w-full text-[14px] md:text-base">
+              <thead>
+                <tr style={{ backgroundColor: '#8B2E2E' }}>
+                  <th className="p-3 md:p-4 text-left font-bold text-white">間取り</th>
+                  <th className="p-3 md:p-4 text-right font-bold text-white">料金目安</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white border-b border-[#E8DFD0]">
+                  <td className="p-3 md:p-4 font-medium text-[#3B2E1F]">1K / 1R</td>
+                  <td className="p-3 md:p-4 text-right font-bold text-[#2B2B2B]">30,000円〜</td>
+                </tr>
+                <tr className="bg-white border-b border-[#E8DFD0]">
+                  <td className="p-3 md:p-4 font-medium text-[#3B2E1F]">1LDK / 2K</td>
+                  <td className="p-3 md:p-4 text-right font-bold text-[#2B2B2B]">80,000円〜</td>
+                </tr>
+                <tr className="bg-white border-b border-[#E8DFD0]">
+                  <td className="p-3 md:p-4 font-medium text-[#3B2E1F]">2LDK / 3K</td>
+                  <td className="p-3 md:p-4 text-right font-bold text-[#2B2B2B]">150,000円〜</td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="p-3 md:p-4 font-medium text-[#3B2E1F]">3LDK以上</td>
+                  <td className="p-3 md:p-4 text-right font-bold text-[#2B2B2B]">250,000円〜</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[11px] md:text-xs text-[#888888] mt-4 leading-relaxed text-center">※買取相殺により実際のお支払いはさらに安くなる場合があります。まずはお気軽にご相談ください</p>
+        </div>
+      </section>
+
       {/* 🟢 代表挨拶 */}
       <section className="pt-[60px] pb-12 md:pt-[100px] md:pb-20 px-3 md:px-4" style={{ backgroundColor: '#F5EFE6' }}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 relative overflow-hidden">
