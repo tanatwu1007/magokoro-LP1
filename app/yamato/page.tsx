@@ -5,7 +5,8 @@ import {
   CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
   HelpCircle, Building2, AlertTriangle, ThumbsUp, 
   Gift, CheckSquare, ArrowRight, ArrowDown, Timer, Star, ShieldCheck, Camera,
-  XCircle, CheckCircle, MessageSquareQuote, Flame, Info, ChevronRight
+  XCircle, CheckCircle, MessageSquareQuote, Flame, Info, ChevronRight,
+  Banknote, CreditCard
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -696,8 +697,8 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-[12px] text-gray-500 text-center mt-6 leading-relaxed">
-            ※上記はこれまでのご依頼内容をもとにしたご依頼例です。<br className="md:hidden" />実際のお客様のお声は今後随時更新してまいります。
+          <p className="text-[12px] text-[#888888] text-center mt-8 leading-[1.7]">
+            ※上記はこれまでのご依頼内容をもとにした事例紹介です。<br className="md:hidden" />お客様のプライバシー保護のため詳細は一部変更しております。
           </p>
         </div>
       </section>
@@ -792,7 +793,7 @@ export default function Page() {
       </section>
 
       {/* 🟢 お支払い方法 */}
-      <section className="py-10 md:py-16 px-4 bg-white border-t border-gray-200">
+      <section className="py-12 md:py-20 px-4 bg-white border-t border-gray-200">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6 md:mb-8">
             <h2 className="text-[20px] md:text-3xl font-extrabold text-gray-900 mb-2">お支払い方法について</h2>
@@ -801,15 +802,20 @@ export default function Page() {
 
           <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6">
             <div className="bg-slate-50 rounded-xl p-5 md:p-6 border border-gray-200 text-center">
-              <div className="text-3xl md:text-4xl mb-3">💴</div>
+              <div className="w-16 h-16 md:w-[72px] md:h-[72px] rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#F0E9DC' }}>
+                <Banknote className="w-9 h-9 md:w-12 md:h-12 text-green-700" strokeWidth={1.5} />
+              </div>
               <h3 className="text-[15px] md:text-lg font-extrabold text-gray-900 mb-3">現金でのお支払い</h3>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed">作業完了後、その場でお支払いいただけます。事前のお振込みは不要です。</p>
+              <p className="text-[12px] md:text-sm text-gray-600 leading-[1.8]">作業完了後、その場でお支払いいただけます。事前のお振込みは不要で、領収書の発行もその場でご対応いたします。</p>
             </div>
             <div className="bg-slate-50 rounded-xl p-5 md:p-6 border border-gray-200 text-center">
-              <div className="text-3xl md:text-4xl mb-3">💳</div>
+              <div className="w-16 h-16 md:w-[72px] md:h-[72px] rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#F0E9DC' }}>
+                <CreditCard className="w-9 h-9 md:w-12 md:h-12 text-green-700" strokeWidth={1.5} />
+              </div>
               <h3 className="text-[15px] md:text-lg font-extrabold text-gray-900 mb-3">クレジットカード決済</h3>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">Squareによる決済システムで、その場でカード決済が可能です。</p>
-              <p className="text-[11px] md:text-xs text-gray-500 font-bold">VISA / Mastercard / JCB / AMEX / Diners</p>
+              <p className="text-[12px] md:text-sm text-gray-600 leading-[1.8] mb-3">Squareによる決済システムを導入しております。高額のご依頼もその場でカード決済いただけるため、現金のご準備も不要で安心です。</p>
+              <p className="text-[11px] md:text-[13px] text-[#6B5B47] font-medium mb-1">対応ブランド：</p>
+              <p className="text-[12px] md:text-[14px] text-[#3B2E1F] font-medium">VISA / Mastercard / JCB / American Express / Diners Club</p>
             </div>
           </div>
 
