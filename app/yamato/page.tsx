@@ -62,7 +62,7 @@ export default function Page() {
       </header>
 
       {/* 🟢 1. ファーストビュー（信頼→CTA→価格の順） */}
-      <section className="relative pb-8 md:pb-14 pt-6 md:pt-10 overflow-hidden">
+      <section className="relative pb-8 md:pb-14 pt-12 md:pt-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-engawa.jpg"
