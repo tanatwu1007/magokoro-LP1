@@ -63,15 +63,7 @@ export default function Page() {
 
       {/* 🟢 1. ファーストビュー（信頼→CTA→価格の順） */}
       <section className="relative pb-8 md:pb-14 pt-6 md:pt-10 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/hero-yamato.jpg"
-            alt="明るく整理された部屋"
-            fetchPriority="high"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-slate-900/75"></div>
-        </div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#3a3530] via-[#4a443d] to-[#5a534a]"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
