@@ -791,6 +791,32 @@ export default function Page() {
         </div>
       </section>
 
+      {/* 🟢 お支払い方法 */}
+      <section className="py-10 md:py-16 px-4 bg-white border-t border-gray-200">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-6 md:mb-8">
+            <h2 className="text-[20px] md:text-3xl font-extrabold text-gray-900 mb-2">お支払い方法について</h2>
+            <p className="text-[13px] md:text-base text-gray-600 font-medium">現金・各種クレジットカードに対応しております</p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6">
+            <div className="bg-slate-50 rounded-xl p-5 md:p-6 border border-gray-200 text-center">
+              <div className="text-3xl md:text-4xl mb-3">💴</div>
+              <h3 className="text-[15px] md:text-lg font-extrabold text-gray-900 mb-3">現金でのお支払い</h3>
+              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed">作業完了後、その場でお支払いいただけます。事前のお振込みは不要です。</p>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-5 md:p-6 border border-gray-200 text-center">
+              <div className="text-3xl md:text-4xl mb-3">💳</div>
+              <h3 className="text-[15px] md:text-lg font-extrabold text-gray-900 mb-3">クレジットカード決済</h3>
+              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">Squareによる決済システムで、その場でカード決済が可能です。</p>
+              <p className="text-[11px] md:text-xs text-gray-500 font-bold">VISA / Mastercard / JCB / AMEX / Diners</p>
+            </div>
+          </div>
+
+          <p className="text-[11px] md:text-xs text-gray-500 text-center font-medium">※お見積もり時に、ご希望のお支払い方法をお伝えください</p>
+        </div>
+      </section>
+
       {/* 🟢 8. よくある質問 (FAQ) */}
       <section className="py-12 md:py-20 px-4 bg-slate-100">
         <div className="max-w-3xl mx-auto">
