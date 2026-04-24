@@ -91,7 +91,7 @@ export default function Page() {
           {/* 第三コピー */}
           <div className="w-[95%] max-w-xl mx-auto mb-3 text-center" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
             <p className="text-[#4A3D2E] md:text-[#555555] text-[13px] sm:text-sm md:text-base font-medium md:font-normal leading-relaxed">
-              大和市・福田の地元業者　│　代表・粟野が直接ご相談をお受けします
+              <span className="whitespace-nowrap">大和市・福田の地元業者</span><span className="hidden md:inline">　│　</span><br className="md:hidden" /><span className="whitespace-nowrap">代表・粟野が直接ご相談をお受けします</span>
             </p>
             <p className="text-[#4A3D2E] md:text-[#6B5B47] text-[12px] sm:text-[13px] md:text-sm font-medium md:font-normal mt-1">
               お家具1点のお片付けから、お家丸ごとまで
