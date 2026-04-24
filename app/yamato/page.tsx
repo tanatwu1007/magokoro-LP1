@@ -114,9 +114,9 @@ export default function Page() {
             <span className="text-left leading-tight">
               <span className="block text-[11px] md:text-sm font-bold opacity-90 mb-0.5">お電話でのご相談（通話無料）</span>
               <span className="block text-[22px] md:text-3xl font-black tracking-wide drop-shadow-md">0120-437-599</span>
-              <span className="block text-[9px] md:text-xs font-medium opacity-80 mt-0.5">年中無休・受付中</span>
             </span>
           </a>
+          <p className="text-white text-[11px] md:text-sm font-bold mb-2">年中無休・受付中</p>
 
           {/* Step 9: 安心要素 */}
           <div className="w-[95%] max-w-xl flex flex-col sm:flex-row sm:justify-center gap-1 sm:gap-4 mb-4">
