@@ -6,7 +6,7 @@ import {
   HelpCircle, Building2, AlertTriangle, ThumbsUp, 
   Gift, CheckSquare, ArrowRight, ArrowDown, Timer, Star, ShieldCheck, Camera,
   XCircle, CheckCircle, MessageSquareQuote, Flame, Info, ChevronRight,
-  Banknote, CreditCard
+  Banknote, CreditCard, Users
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -820,6 +820,65 @@ export default function Page() {
           </div>
 
           <p className="text-[11px] md:text-xs text-gray-500 text-center font-medium">※お見積もり時に、ご希望のお支払い方法をお伝えください</p>
+        </div>
+      </section>
+
+      {/* 🟢 ご依頼からお作業までの流れ */}
+      <section className="py-12 md:py-20 px-4 bg-slate-50 border-t border-gray-200">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-[24px] md:text-[32px] font-bold text-[#2B2B2B] mb-2">ご依頼からお作業までの流れ</h2>
+            <p className="text-[15px] md:text-base text-[#6B5B47]">はじめての方でも安心していただけるよう、丁寧にご案内いたします</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-6 items-stretch">
+            {/* STEP 1 */}
+            <div className="bg-white rounded-xl p-7 border border-[#D4C4A8] flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-[36px] md:text-[48px] font-bold text-[#D4A04A] leading-none">01</span>
+                <Phone className="w-8 h-8 md:w-10 md:h-10 text-green-700" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-[17px] md:text-lg font-bold text-[#2B2B2B] mb-3">お電話・LINEでご相談</h3>
+              <p className="text-[13px] md:text-[14px] text-[#3B2E1F] leading-[1.8] flex-grow">まずはお気軽にお電話（0120-437-599）またはLINEでご連絡ください。代表・粟野が直接お話を伺い、お客様のご状況を丁寧にお聞きします。ご相談だけでも構いません。</p>
+            </div>
+
+            {/* 矢印（モバイルのみ） */}
+            <div className="flex justify-center md:hidden"><ArrowDown className="w-5 h-5 text-[#D4C4A8]" /></div>
+
+            {/* STEP 2 */}
+            <div className="bg-white rounded-xl p-7 border border-[#D4C4A8] flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-[36px] md:text-[48px] font-bold text-[#D4A04A] leading-none">02</span>
+                <ClipboardList className="w-8 h-8 md:w-10 md:h-10 text-green-700" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-[17px] md:text-lg font-bold text-[#2B2B2B] mb-3">無料でお見積もり訪問</h3>
+              <p className="text-[13px] md:text-[14px] text-[#3B2E1F] leading-[1.8] flex-grow">ご希望の日時にお伺いし、実際のお荷物を拝見した上で正確なお見積もりをご提示します。出張費・お見積もりは無料です。お見積もり後のキャンセルも無料ですので、ご安心ください。</p>
+            </div>
+
+            <div className="flex justify-center md:hidden"><ArrowDown className="w-5 h-5 text-[#D4C4A8]" /></div>
+
+            {/* STEP 3 */}
+            <div className="bg-white rounded-xl p-7 border border-[#D4C4A8] flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-[36px] md:text-[48px] font-bold text-[#D4A04A] leading-none">03</span>
+                <Users className="w-8 h-8 md:w-10 md:h-10 text-green-700" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-[17px] md:text-lg font-bold text-[#2B2B2B] mb-3">ご家族でご検討</h3>
+              <p className="text-[13px] md:text-[14px] text-[#3B2E1F] leading-[1.8] flex-grow">お見積もりを元に、ご家族でゆっくりとご検討ください。その場で即決いただく必要はございません。しつこい営業のお電話も一切いたしません。ご不明な点があれば、何度でもご相談可能です。</p>
+            </div>
+
+            <div className="flex justify-center md:hidden"><ArrowDown className="w-5 h-5 text-[#D4C4A8]" /></div>
+
+            {/* STEP 4 */}
+            <div className="bg-white rounded-xl p-7 border border-[#D4C4A8] flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-[36px] md:text-[48px] font-bold text-[#D4A04A] leading-none">04</span>
+                <CheckCircle className="w-8 h-8 md:w-10 md:h-10 text-green-700" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-[17px] md:text-lg font-bold text-[#2B2B2B] mb-3">ご納得いただいてから作業</h3>
+              <p className="text-[13px] md:text-[14px] text-[#3B2E1F] leading-[1.8] flex-grow">ご依頼内容にご納得いただけましたら、ご希望の日時にお作業にお伺いします。女性スタッフの同行、仏壇のお焚き上げなど、ご要望に合わせて丁寧に対応いたします。作業完了後、その場でお支払いが可能です。</p>
+            </div>
+          </div>
         </div>
       </section>
 
