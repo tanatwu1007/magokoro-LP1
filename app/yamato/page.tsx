@@ -579,29 +579,19 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 🟢 5. お客様の声改善案（自社調べとして誠実に見せる） */}
+      {/* 🟢 5. これまでのご依頼例 */}
       <section className="py-12 md:py-20 px-4 bg-green-50 border-t border-green-100">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-[22px] md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-              大和市のお客様から<br className="md:hidden" />喜びの声が多数届いております
+            <h2 className="text-[22px] md:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
+              これまでのご依頼例
             </h2>
-            <div className="inline-flex items-center justify-center gap-2 md:gap-3 bg-white py-1.5 md:py-2 px-5 md:px-6 rounded-full shadow-sm border border-gray-200">
-               {/* 🎯 Google口コミから自社満足度調査へ変更（より信用度UP） */}
-               <span className="font-bold text-gray-700 text-xs md:text-base">自社アンケート お客様満足度</span>
-               <span className="text-lg md:text-xl font-black text-gray-900">98.3%</span>
-               <div className="flex gap-0.5">
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-                 <Star className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
-               </div>
-            </div>
+            <p className="text-[12px] md:text-sm text-gray-500">※ご依頼内容の典型的な事例をご紹介しています</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-stretch">
+            {/* 事例1: T.Y様・60代女性・遺品整理 */}
+            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
               <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
               <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
@@ -617,55 +607,26 @@ export default function Page() {
                   <rect x="12" y="68" width="11" height="11" fill="none" stroke="#9B1C1C" strokeWidth="1.5" rx="1.5"/>
                   <path d="M13.5 73.5 L16 77 L22.5 68.5" stroke="#9B1C1C" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                   <text x="29" y="79" fontFamily="'Klee One', cursive" fontSize="11" fill="#444">とても満足</text>
-                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">丁寧に作業していただきました</text>
-                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">T.S</text>
+                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">寄り添った対応で安心できました</text>
+                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">T.Y</text>
                 </svg>
               </div>
               <div className="flex gap-1 mb-2 md:mb-3">
                 <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">最初の見積もり通りで安心！</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                「遺品整理をお願いしました。電話から2時間で来てくれて、丁寧に作業していただきました。料金も見積り通りで安心でした。」
-              </p>
+              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">代表・粟野さんが直接対応してくださり安心しました</h4>
+              <div className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3 flex-grow space-y-2">
+                <p><span className="font-bold text-gray-800">ご依頼内容：</span>父の遺品整理・実家の片付け</p>
+                <p><span className="font-bold text-gray-800">ご相談時のお気持ち：</span>「父が亡くなり、実家の片付けをどこに頼めばいいか分からず困っていました」</p>
+                <p><span className="font-bold text-gray-800">対応について：</span>お電話で代表・粟野さんが直接応対してくださり、お見積もりの際も急かすことなく、家族と相談する時間をいただけました。女性スタッフも同行してくださり、母も安心して立ち会えました。仏壇のお焚き上げまで対応いただけて、本当に頼んで良かったと感じています。</p>
+              </div>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 中央林間 T様 / 50代女性</p>
-              </div>
-            </div>
-            
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
-              <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
-                  <rect width="300" height="128" fill="#FFF9E6"/>
-                  <rect x="1" y="1" width="298" height="126" fill="none" stroke="#D4C48A" strokeWidth="1" rx="4"/>
-                  <line x1="10" y1="38" x2="290" y2="38" stroke="#E5D9A8" strokeWidth="0.7"/>
-                  <line x1="10" y1="62" x2="290" y2="62" stroke="#E5D9A8" strokeWidth="0.7"/>
-                  <line x1="10" y1="86" x2="290" y2="86" stroke="#E5D9A8" strokeWidth="0.7"/>
-                  <line x1="10" y1="110" x2="290" y2="110" stroke="#E5D9A8" strokeWidth="0.7"/>
-                  <text x="150" y="22" textAnchor="middle" fontFamily="'Klee One', cursive" fontSize="12" fill="#7A3030" fontWeight="600" letterSpacing="2">お客様アンケート</text>
-                  <line x1="40" y1="29" x2="260" y2="29" stroke="#D4C48A" strokeWidth="0.7"/>
-                  <text x="96" y="57" textAnchor="middle" fontFamily="Georgia, serif" fontSize="20" fill="#E8A820">★★★★★</text>
-                  <rect x="12" y="68" width="11" height="11" fill="none" stroke="#9B1C1C" strokeWidth="1.5" rx="1.5"/>
-                  <path d="M13.5 73.5 L16 77 L22.5 68.5" stroke="#9B1C1C" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                  <text x="29" y="79" fontFamily="'Klee One', cursive" fontSize="11" fill="#444">とても満足</text>
-                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">すぐ対応してもらえました</text>
-                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">S.K</text>
-                </svg>
-              </div>
-              <div className="flex gap-1 mb-2 md:mb-3">
-                <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">すぐ対応してもらえました</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                「引っ越し前日に急いでお願いしましたが、すぐ対応してもらえました。追加料金もなく、本当に助かりました。」
-              </p>
-              <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 鶴間 S様 / 40代男性</p>
+                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 中央林間 T.Y様 / 60代女性</p>
               </div>
             </div>
 
-            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative">
+            {/* 事例2: A.K様・70代女性・生前整理 */}
+            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
               <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
               <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
@@ -681,22 +642,63 @@ export default function Page() {
                   <rect x="12" y="68" width="11" height="11" fill="none" stroke="#9B1C1C" strokeWidth="1.5" rx="1.5"/>
                   <path d="M13.5 73.5 L16 77 L22.5 68.5" stroke="#9B1C1C" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                   <text x="29" y="79" fontFamily="'Klee One', cursive" fontSize="11" fill="#444">とても満足</text>
-                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">他社の半額くらいで大満足でした</text>
-                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">K.M</text>
+                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">丁寧にお話を聞いてくださいました</text>
+                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">A.K</text>
                 </svg>
               </div>
               <div className="flex gap-1 mb-2 md:mb-3">
                 <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
               </div>
-              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">買取で費用がすごく安くなった</h4>
-              <p className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3">
-                「捨てるしかないと思っていた冷蔵庫やテレビに値段をつけてもらい、回収費用から相殺してくれました。結果的に他社の半額くらいで済み、大満足です。」
-              </p>
+              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">家族でゆっくり相談できて無理な即決もなし</h4>
+              <div className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3 flex-grow space-y-2">
+                <p><span className="font-bold text-gray-800">ご依頼内容：</span>生前整理（今後のための荷物の整理）</p>
+                <p><span className="font-bold text-gray-800">ご相談時のお気持ち：</span>「自分が元気なうちに家の物を整理したいと考えていましたが、何から始めればよいか迷っていました」</p>
+                <p><span className="font-bold text-gray-800">対応について：</span>代表の粟野さんにお電話で相談した際、「ご家族でゆっくりご相談の上でお決めください」と言っていただけて、ホッとしました。お見積もり後のしつこい営業もなく、娘と話し合ってから改めてお願いすることができました。お家具1点から対応していただけたのもありがたかったです。</p>
+              </div>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 K様 / 50代女性</p>
+                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 鶴間 A.K様 / 70代女性</p>
+              </div>
+            </div>
+
+            {/* 事例3: S.M様・50代男性・実家じまい */}
+            <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
+              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
+              <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
+                  <rect width="300" height="128" fill="#FFF9E6"/>
+                  <rect x="1" y="1" width="298" height="126" fill="none" stroke="#D4C48A" strokeWidth="1" rx="4"/>
+                  <line x1="10" y1="38" x2="290" y2="38" stroke="#E5D9A8" strokeWidth="0.7"/>
+                  <line x1="10" y1="62" x2="290" y2="62" stroke="#E5D9A8" strokeWidth="0.7"/>
+                  <line x1="10" y1="86" x2="290" y2="86" stroke="#E5D9A8" strokeWidth="0.7"/>
+                  <line x1="10" y1="110" x2="290" y2="110" stroke="#E5D9A8" strokeWidth="0.7"/>
+                  <text x="150" y="22" textAnchor="middle" fontFamily="'Klee One', cursive" fontSize="12" fill="#7A3030" fontWeight="600" letterSpacing="2">お客様アンケート</text>
+                  <line x1="40" y1="29" x2="260" y2="29" stroke="#D4C48A" strokeWidth="0.7"/>
+                  <text x="96" y="57" textAnchor="middle" fontFamily="Georgia, serif" fontSize="20" fill="#E8A820">★★★★★</text>
+                  <rect x="12" y="68" width="11" height="11" fill="none" stroke="#9B1C1C" strokeWidth="1.5" rx="1.5"/>
+                  <path d="M13.5 73.5 L16 77 L22.5 68.5" stroke="#9B1C1C" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  <text x="29" y="79" fontFamily="'Klee One', cursive" fontSize="11" fill="#444">とても満足</text>
+                  <text x="12" y="101" fontFamily="'Klee One', cursive" fontSize="10.5" fill="#555">地元の業者さんで安心しました</text>
+                  <text x="286" y="123" textAnchor="end" fontFamily="'Klee One', cursive" fontSize="11" fill="#999" fontStyle="italic">S.M</text>
+                </svg>
+              </div>
+              <div className="flex gap-1 mb-2 md:mb-3">
+                <Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" /><Star className="w-3.5 h-3.5 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" />
+              </div>
+              <h4 className="font-bold text-gray-900 mb-2 text-[14px] md:text-lg">遠方からでも地元業者さんで安心</h4>
+              <div className="text-[12px] md:text-sm text-gray-600 leading-relaxed mb-3 flex-grow space-y-2">
+                <p><span className="font-bold text-gray-800">ご依頼内容：</span>実家じまい（空き家の片付け）</p>
+                <p><span className="font-bold text-gray-800">ご相談時のお気持ち：</span>「母が施設に入り、実家が空き家に。遠方に住んでいるため、信頼できる地元業者を探していました」</p>
+                <p><span className="font-bold text-gray-800">対応について：</span>大和市福田の地元業者ということで安心感がありました。古物商許可証もお持ちで、家具や家電の買取分を回収費用から相殺していただけて、想定より費用を抑えられました。代表の粟野さんが直接ご対応くださり、遠方の私にも作業内容を丁寧にご報告いただけました。</p>
+              </div>
+              <div className="flex items-center justify-between border-t border-gray-100 pt-3">
+                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 S.M様 / 50代男性</p>
               </div>
             </div>
           </div>
+
+          <p className="text-[12px] text-gray-500 text-center mt-6 leading-relaxed">
+            ※上記はこれまでのご依頼内容をもとにしたご依頼例です。<br className="md:hidden" />実際のお客様のお声は今後随時更新してまいります。
+          </p>
         </div>
       </section>
 
