@@ -67,24 +67,24 @@ export default function Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
-          {/* Step 4: H1 */}
+          {/* H1（85%縮小） */}
           <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]">
-            <span className="block text-white text-[22px] sm:text-3xl md:text-5xl lg:text-6xl font-bold drop-shadow-2xl leading-[1.2]">
+            <span className="block text-white text-[19px] sm:text-[26px] md:text-[42px] lg:text-[50px] font-bold drop-shadow-2xl leading-[1.25]">
               大和市で、ご実家の片付け・<br/>遺品整理をお手伝いします
             </span>
           </h1>
 
-          {/* Step 5: サブコピー */}
-          <p className="text-white text-[15px] sm:text-lg md:text-xl font-bold drop-shadow-lg leading-relaxed mb-3 tracking-[0.03em]">
+          {/* サブコピー */}
+          <p className="text-white text-[14px] sm:text-base md:text-lg font-bold drop-shadow-lg leading-relaxed mb-3 tracking-[0.03em]">
             ご遺族・ご家族のお気持ちに寄り添い、<br/>一つひとつ丁寧にお引き受けします
           </p>
 
-          {/* Step 6: 第三コピー（信頼情報） */}
+          {/* 第三コピー（サブコピーより一回り小さく） */}
           <div className="w-[95%] max-w-xl mx-auto mb-3 text-center">
-            <p className="text-white/90 text-[13px] sm:text-base md:text-lg font-bold drop-shadow-md leading-relaxed">
+            <p className="text-white/85 text-[12px] sm:text-sm md:text-base font-medium drop-shadow-md leading-relaxed">
               大和市・福田の地元業者　│　代表・粟野が直接ご相談をお受けします
             </p>
-            <p className="text-white/80 text-[12px] sm:text-sm md:text-base font-medium drop-shadow-md mt-1">
+            <p className="text-white/70 text-[11px] sm:text-[13px] md:text-sm font-normal drop-shadow-md mt-1">
               お家具1点のお片付けから、お家丸ごとまで
             </p>
           </div>
