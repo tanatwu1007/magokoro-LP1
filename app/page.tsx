@@ -10,8 +10,8 @@ import {
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '大和市の不用品回収・遺品整理｜即日対応・最短30分｜まごころ整理センター',
-  description: '大和市で不用品回収・遺品整理なら地元・福田のまごころ整理センター。即日対応・最短30分で到着。見積無料・追加料金なし・年中無休。軽トラパック14,800円〜。大和市全域対応。',
+  title: '大和市の不用品回収・粗大ゴミ処分｜即日対応・最短30分｜まごころ整理センター',
+  description: '大和市で不用品回収・粗大ゴミ処分なら地元・福田のまごころ整理センター。引越しゴミや大型家具の回収も即日対応・最短30分で到着。見積無料・追加料金なし・年中無休。軽トラパック14,800円〜。大和市全域対応。',
   formatDetection: { telephone: false },
 };
 
@@ -83,7 +83,7 @@ export default function Page() {
               駆けつけます
             </span>
             <span className="block text-white text-[20px] sm:text-2xl md:text-4xl font-extrabold leading-snug mt-4 md:mt-5 drop-shadow-lg px-1">
-              大和市の不用品回収・遺品整理
+              大和市の不用品回収・粗大ゴミ処分
             </span>
           </h1>
 
