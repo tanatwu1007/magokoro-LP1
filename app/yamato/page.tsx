@@ -80,7 +80,7 @@ export default function Page() {
           {/* H1 */}
           <h1 className="w-full px-1 mb-3 text-center tracking-[0.03em]" style={{ textShadow: '0 1px 2px rgba(255,255,255,0.6)' }}>
             <span className="block text-[#2B2B2B] text-[28px] sm:text-[26px] md:text-[42px] lg:text-[50px] font-bold leading-[1.4] md:leading-[1.25]">
-              大和市で、ご実家の片付け・<br/>遺品整理をお手伝いします
+              大和市の不用品回収・<br/>ご実家の片付け・遺品整理を<br className="md:hidden"/>お手伝いします
             </span>
           </h1>
 
