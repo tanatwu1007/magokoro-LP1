@@ -67,14 +67,14 @@ export default function Page() {
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
           {/* サブコピーバッジ */}
-          <div className="mb-4 inline-block bg-[#FFF1E6] text-[#B93838] font-bold text-[14px] sm:text-[16px] md:text-[20px] px-5 py-2 rounded-full border-t border-b border-[#B93838]/30 shadow-sm text-center">
-            大和市福田の地元企業だからできる！お見積り後の追加料金一切なし！
+          <div className="mb-4 inline-block bg-[#FFF1E6] text-[#B93838] font-bold text-[13px] sm:text-[16px] md:text-[20px] px-4 sm:px-5 py-2 rounded-full border-t border-b border-[#B93838]/30 shadow-sm text-center leading-snug">
+            <span className="block sm:inline">大和市福田の地元企業だからできる！</span><span className="block sm:inline">お見積り後の追加料金一切なし！</span>
           </div>
 
           {/* メインH1 */}
           <h1 className="w-full px-1 mb-3 text-center">
-            <span className="block text-[#2B2B2B] text-[clamp(1.5rem,6vw,2.75rem)] md:text-5xl font-bold leading-[1.2] tracking-tight" style={{ fontFamily: '"Noto Serif JP", "Yu Mincho", serif' }}>
-              大和市の不用品回収・粗大ごみ処分
+            <span className="block text-[#2B2B2B] text-[clamp(1.5rem,6vw,2.75rem)] md:text-5xl font-bold leading-[1.3] tracking-[-0.02em]" style={{ fontFamily: '"Noto Serif JP", "Yu Mincho", serif' }}>
+              大和市の不用品回収・<br className="md:hidden" />粗大ごみ処分
             </span>
           </h1>
           <h2 className="text-[#2B2B2B] text-[15px] sm:text-lg md:text-2xl font-medium leading-relaxed mb-6 md:mb-8 px-2" style={{ fontFamily: '"Noto Serif JP", "Yu Mincho", serif' }}>
@@ -94,8 +94,8 @@ export default function Page() {
             </div>
             {/* 単品回収バッジ（副） */}
             <div className="sm:w-[40%] bg-[#FF8C42] text-white rounded-xl px-3 py-3 md:px-4 md:py-3 text-center shadow-md flex flex-col justify-center">
-              <p className="font-bold text-[13px] md:text-base leading-snug">冷蔵庫1点から喜んでお伺い！</p>
-              <p className="font-bold text-[16px] md:text-lg mt-0.5">単品回収 3,000円〜</p>
+              <p className="font-bold text-[13px] md:text-base leading-snug whitespace-nowrap">冷蔵庫1点から喜んでお伺い！</p>
+              <p className="font-bold text-[16px] md:text-lg mt-0.5 whitespace-nowrap">単品回収 3,000円〜</p>
               <p className="text-[9px] md:text-[11px] mt-1 opacity-90 font-medium">テレビ・洗濯機・自転車など<br/>お気軽にご相談ください</p>
             </div>
           </div>
@@ -140,7 +140,7 @@ export default function Page() {
       <section className="py-8 md:py-12 px-4 bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
            <h2 className="text-[20px] md:text-3xl font-extrabold text-gray-900 mb-5 leading-tight">
-              大和市全域、<span className="text-red-600 border-b-2 border-red-300">最短30分で到着</span>します
+              大和市全域、<span className="font-extrabold">丁寧にお伺い</span>します
            </h2>
            
            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 md:p-6 mb-6">
