@@ -10,8 +10,8 @@ import {
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '大和市の不用品回収・粗大ゴミ処分｜即日対応・最短30分｜まごころ整理センター',
-  description: '大和市で不用品回収・粗大ゴミ処分なら地元・福田のまごころ整理センター。引越しゴミや大型家具の回収も即日対応・最短30分で到着。見積無料・追加料金なし・年中無休。軽トラパック14,800円〜。大和市全域対応。',
+  title: '神奈川まごころ整理センター｜大和市の不用品回収・遺品整理｜代表が直接対応',
+  description: '大和市福田の地元業者。代表・粟野が直接お電話に出ます。下請けなし、見積もり無料。50代以上のご家族から信頼される丁寧な対応。',
   formatDetection: { telephone: false },
 };
 
@@ -21,7 +21,7 @@ export default function Page() {
     "@type": "LocalBusiness",
     "name": "まごころ整理センター 大和市本店",
     "image": "https://magokoro-lp-1.vercel.app/logo.png",
-    "description": "大和市密着！不用品回収、遺品整理、ゴミ屋敷清掃を高価買取で費用を大幅に削減します。地元・大和市福田から最短30分で急行。",
+    "description": "大和市福田の地元業者。代表・粟野が直接対応する不用品回収・遺品整理サービス。下請けなし、見積もり無料、追加料金なし。",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "大和市",
@@ -219,8 +219,8 @@ export default function Page() {
           <p className="text-xl md:text-3xl font-black mb-2 text-white opacity-80">↓↓↓</p>
           <div className="bg-gradient-to-b from-slate-900 to-slate-800 py-4 px-3 md:py-6 md:px-8 rounded-xl border border-slate-600 shadow-xl w-[98%] mx-auto">
             <p className="text-[17px] md:text-3xl font-extrabold text-white leading-snug">
-              市の回収で待てない案件も、<br className="md:hidden" />
-              地元企業が<span className="bg-red-600 text-white px-2.5 py-0.5 md:py-1 rounded-md mx-1 inline-block mt-1.5 md:mt-0 text-[20px] md:text-4xl shadow-md border border-red-500 transform scale-105">完全丸投げ・即日対応</span> で解決します！
+              分別から運び出しまで、<br className="md:hidden" />
+              地元企業が<span className="bg-green-700 text-white px-2.5 py-0.5 md:py-1 rounded-md mx-1 inline-block mt-1.5 md:mt-0 text-[20px] md:text-4xl shadow-md border border-green-600 transform scale-105">丁寧に、誠実に対応</span> します
             </p>
             <p className="text-[10px] md:text-sm text-gray-300 mt-3 md:mt-6 font-medium text-balance">※分別から運び出しまで全て当店スタッフが行います。お客様は指を差すだけでOKです。</p>
           </div>
@@ -240,11 +240,8 @@ export default function Page() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 mb-10">
-            {/* 🎯 軽トラパック（価格変更・限定ラベル） */}
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-red-400 flex flex-col relative">
-              <div className="bg-red-600 text-white text-center py-2 md:py-2.5 font-black text-[11px] md:text-sm tracking-wide">
-                本日あと3名・先着10名限定
-              </div>
+            {/* 🎯 軽トラパック */}
+            <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-green-500 flex flex-col relative">
               <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest">ちょっとしたお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">軽トラ積み放題</h3>
@@ -864,8 +861,8 @@ export default function Page() {
             大和市の不用品回収・遺品整理なら<br/>
             地元・福田の<span className="text-green-700">まごころ整理センター</span>にお任せ！
           </h2>
-          <p className="text-[11px] md:text-lg text-red-600 mb-6 md:mb-10 font-bold bg-white inline-block px-3 sm:px-4 py-2 md:py-2.5 rounded-full shadow-sm border border-red-100 w-full sm:max-w-2xl sm:mx-auto text-balance leading-snug">
-            ＼ 大和市民限定！他社のお見積書提示で最低価格保証 ／
+          <p className="text-[11px] md:text-lg text-green-700 mb-6 md:mb-10 font-bold bg-white inline-block px-3 sm:px-4 py-2 md:py-2.5 rounded-full shadow-sm border border-green-200 w-full sm:max-w-2xl sm:mx-auto text-balance leading-snug">
+            ＼ 大和市福田の地元業者として、ご相談を丁寧にお受けします ／
           </p>
           <div className="flex flex-col md:flex-row gap-2.5 md:gap-5 justify-center">
             <div className="w-full md:w-auto">
