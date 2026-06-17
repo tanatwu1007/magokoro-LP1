@@ -67,9 +67,9 @@ export default function Page() {
         <div className="relative z-10 max-w-4xl mx-auto px-3 w-full text-center flex flex-col items-center">
 
           {/* サブコピーバッジ */}
-          <div className="mb-4 inline-block bg-[#FFF1E6] text-[#B93838] font-bold text-[13px] sm:text-[16px] md:text-[20px] px-4 sm:px-5 py-2 rounded-full border-t border-b border-[#B93838]/30 shadow-sm text-center leading-snug">
+          <a href="tel:0120437599" className="mb-4 inline-block bg-[#FFF1E6] text-[#B93838] font-bold text-[13px] sm:text-[16px] md:text-[20px] px-4 sm:px-5 py-2 rounded-full border-t border-b border-[#B93838]/30 shadow-sm text-center leading-snug cursor-pointer active:scale-[0.98] transition-transform touch-manipulation">
             <span className="block sm:inline">大和市福田の地元企業だからできる！</span><span className="block sm:inline">お見積り後の追加料金一切なし！</span>
-          </div>
+          </a>
 
           {/* メインH1 */}
           <h1 className="w-full px-1 mb-3 text-center">
@@ -84,20 +84,20 @@ export default function Page() {
           {/* 料金エリア */}
           <div className="w-[95%] max-w-xl mx-auto mb-4 flex flex-col sm:flex-row items-stretch justify-center gap-3 md:gap-4">
             {/* 軽トラパック（主） */}
-            <div className="flex-1 bg-white rounded-xl border border-[#E8DFD0] p-4 md:p-6 shadow-md text-center flex flex-col justify-center">
+            <a href="tel:0120437599" className="flex-1 bg-white rounded-xl border border-[#E8DFD0] p-4 md:p-6 shadow-md text-center flex flex-col justify-center cursor-pointer active:scale-[0.98] hover:shadow-lg transition-all touch-manipulation">
               <p className="text-[#666666] text-[12px] md:text-sm font-bold mb-1">軽トラパック</p>
               <p className="text-[#2B2B2B] text-[36px] sm:text-[38px] md:text-[42px] font-bold tracking-tight whitespace-nowrap">
                 14,800<span className="text-[15px] md:text-lg font-bold">円〜</span>
               </p>
               <p className="text-[#666666] text-[11px] md:text-xs font-medium mt-0.5">（税込）</p>
               <p className="text-[#666666] text-[11px] md:text-sm font-medium mt-2">お部屋まるごと、まとめてお片付け</p>
-            </div>
+            </a>
             {/* 単品回収バッジ（副） */}
-            <div className="sm:w-[40%] bg-[#FF8C42] text-white rounded-xl px-3 py-3 md:px-4 md:py-3 text-center shadow-md flex flex-col justify-center">
+            <a href="tel:0120437599" className="sm:w-[40%] bg-[#FF8C42] text-white rounded-xl px-3 py-3 md:px-4 md:py-3 text-center shadow-md flex flex-col justify-center cursor-pointer active:scale-[0.98] hover:shadow-lg transition-all touch-manipulation">
               <p className="font-bold text-[13px] md:text-base leading-snug whitespace-nowrap">冷蔵庫1点から喜んでお伺い！</p>
               <p className="font-bold text-[16px] md:text-lg mt-0.5 whitespace-nowrap">単品回収 3,000円〜</p>
               <p className="text-[9px] md:text-[11px] mt-1 opacity-90 font-medium">テレビ・洗濯機・自転車など<br/>お気軽にご相談ください</p>
-            </div>
+            </a>
           </div>
 
           {/* 安心3要素 */}
@@ -116,6 +116,18 @@ export default function Page() {
                 <span className="leading-snug">女性スタッフ同行可・代表が直接お伺いします</span>
               </li>
             </ul>
+          </div>
+
+          {/* 代表ミニプロフィール */}
+          <div className="w-[95%] max-w-xl mx-auto mb-6 flex items-center gap-3 bg-white rounded-xl border border-[#E8E0D4] px-4 py-3 shadow-sm">
+            <div className="relative w-14 h-14 md:w-16 md:h-16 shrink-0 overflow-hidden rounded-full border-2 border-[#2F7D3F]">
+              <Image src="/IMG_1828.jpg" alt="代表 粟野匠音" fill sizes="64px" className="object-cover" />
+            </div>
+            <div className="text-left">
+              <p className="text-[11px] md:text-xs text-[#666666] font-bold">代表</p>
+              <p className="text-[16px] md:text-lg font-extrabold text-[#2B2B2B] tracking-wide">粟野 匠音</p>
+              <p className="text-[12px] md:text-sm text-[#B93838] font-bold leading-snug">私が直接お電話に出ます</p>
+            </div>
           </div>
 
           {/* 電話CTA */}
