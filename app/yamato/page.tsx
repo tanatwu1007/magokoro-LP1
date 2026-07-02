@@ -21,7 +21,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "まごころ整理センター 大和市本店",
-    "image": "https://magokoro-lp-1.vercel.app/logo.png",
+    "image": "https://www.magokoro-yamato.com/logo.png",
     "description": "大和市密着！不用品回収、遺品整理、ゴミ屋敷清掃を高価買取で費用を大幅に削減します。地元・大和市福田から最短30分で急行。",
     "address": {
       "@type": "PostalAddress",

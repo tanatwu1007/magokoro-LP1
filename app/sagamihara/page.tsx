@@ -20,7 +20,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "神奈川 まごころ整理センター",
-    "image": "https://magokoro-lp-1.vercel.app/logo.png",
+    "image": "https://www.magokoro-yamato.com/logo.png",
     "description": "神奈川県大和市を中心に不用品回収、遺品整理、ゴミ屋敷清掃を行っております。高価買取で費用を大幅に削減します。他社のお見積り書提示で最低価格保証。",
     "address": {
       "@type": "PostalAddress",

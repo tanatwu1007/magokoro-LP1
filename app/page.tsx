@@ -1,13 +1,20 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { 
-  Phone, MessageCircle, MapPin, Clock, HeartHandshake, 
+import { Noto_Serif_JP } from 'next/font/google';
+import {
+  Phone, MessageCircle, MapPin, Clock, HeartHandshake,
   CheckCircle2, BadgeJapaneseYen, ClipboardList, Truck,
-  HelpCircle, Building2, AlertTriangle, ThumbsUp, 
+  HelpCircle, Building2, AlertTriangle, ThumbsUp,
   Gift, CheckSquare, ArrowRight, ArrowDown, Timer, Star, ShieldCheck, Camera,
   XCircle, CheckCircle, MessageSquareQuote, Info, ChevronRight
 } from 'lucide-react';
 import Image from 'next/image';
+
+const notoSerifJP = Noto_Serif_JP({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: '神奈川まごころ整理センター｜大和市の不用品回収・遺品整理｜代表が直接対応',
@@ -20,7 +27,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "まごころ整理センター 大和市本店",
-    "image": "https://magokoro-lp-1.vercel.app/logo.png",
+    "image": "https://www.magokoro-yamato.com/logo.png",
     "description": "大和市福田の地元業者。代表・粟野が直接対応する不用品回収・遺品整理サービス。下請けなし、見積もり無料、追加料金なし。",
     "address": {
       "@type": "PostalAddress",
@@ -73,11 +80,11 @@ export default function Page() {
 
           {/* メインH1 */}
           <h1 className="w-full px-1 mb-3 text-center">
-            <span className="block text-[#2B2B2B] text-[clamp(1.5rem,6vw,2.75rem)] md:text-5xl font-bold leading-[1.3] tracking-[-0.02em]" style={{ fontFamily: '"Noto Serif JP", "Yu Mincho", serif' }}>
+            <span className={`block text-[#2B2B2B] text-[clamp(1.5rem,6vw,2.75rem)] md:text-5xl font-bold leading-[1.3] tracking-[-0.02em] ${notoSerifJP.className}`}>
               大和市の不用品回収・<br className="md:hidden" />粗大ごみ処分
             </span>
           </h1>
-          <h2 className="text-[#2B2B2B] text-[15px] sm:text-lg md:text-2xl font-medium leading-relaxed mb-6 md:mb-8 px-2" style={{ fontFamily: '"Noto Serif JP", "Yu Mincho", serif' }}>
+          <h2 className={`text-[#2B2B2B] text-[15px] sm:text-lg md:text-2xl font-medium leading-relaxed mb-6 md:mb-8 px-2 ${notoSerifJP.className}`}>
             ご家族で困った「重いもの・大きなもの」、丁寧に運び出します
           </h2>
 
