@@ -5,7 +5,7 @@ import "./globals.css";
 
 /** Google Ads コンバージョン ID。必要なら NEXT_PUBLIC_GOOGLE_ADS_ID で上書き */
 const GOOGLE_ADS_ID =
-  process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "AW-8141898422";
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "AW-18067811320";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +49,28 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', ${JSON.stringify(GOOGLE_ADS_ID)});
+`,
+          }}
+        />
+        <Script
+          id="conversion-click-listener"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a || typeof window.gtag !== 'function') return;
+    var href = a.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18067811320/nfxtCPPyvakcEPjXs6dD'
+      });
+    } else if (href.indexOf('lin.ee') !== -1 || href.indexOf('line.me') !== -1) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18067811320/CJnvCMKJvakcEPjXs6dD'
+      });
+    }
+  });
 `,
           }}
         />
