@@ -20,7 +20,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "神奈川 まごころ整理センター",
-    "image": "https://www.magokoro-yamato.com/logo.png",
+    "image": "https://www.magokoro-yamato.com/logo.webp",
     "description": "神奈川県大和市を中心に不用品回収、遺品整理、ゴミ屋敷清掃を行っております。高価買取で費用を大幅に削減します。他社のお見積り書提示で最低価格保証。",
     "address": {
       "@type": "PostalAddress",
@@ -44,7 +44,7 @@ export default function Page() {
       {/* 🟢 ヘッダー */}
       <header className="bg-white py-2 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/logo.png" alt="神奈川 まごころ整理センター" width={952} height={242} className="h-8 md:h-14 w-auto object-contain" />
+          <Image src="/logo.webp" alt="神奈川 まごころ整理センター" width={480} height={122} className="h-8 md:h-14 w-auto object-contain" />
         </div>
         <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-1 md:py-1.5 rounded-full font-bold shadow-sm flex items-center gap-1">
           <Timer className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
@@ -596,7 +596,7 @@ export default function Page() {
           {/* 画像部分：スクショ通り青い枠線の円形 */}
           <div className="w-48 h-48 md:w-72 md:h-72 shrink-0 rounded-full border-[6px] border-[#104285] p-1.5 shadow-lg mx-auto md:mx-0 bg-white">
             <div className="relative w-full h-full overflow-hidden rounded-full">
-              <Image src="/IMG_1828.jpg" alt="代表 粟野 匠音" fill sizes="(max-width: 768px) 128px, 256px" className="object-cover"/>
+              <Image src="/IMG_1828.webp" alt="代表 粟野 匠音" fill sizes="(max-width: 768px) 128px, 256px" className="object-cover"/>
             </div>
           </div>
           {/* テキスト部分 */}

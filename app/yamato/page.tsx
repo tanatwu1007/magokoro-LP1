@@ -21,7 +21,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "まごころ整理センター 大和市本店",
-    "image": "https://www.magokoro-yamato.com/logo.png",
+    "image": "https://www.magokoro-yamato.com/logo.webp",
     "description": "大和市密着！不用品回収、遺品整理、ゴミ屋敷清掃を高価買取で費用を大幅に削減します。地元・大和市福田から最短30分で急行。",
     "address": {
       "@type": "PostalAddress",
@@ -43,7 +43,7 @@ export default function Page() {
       />
 
       {/* 🟢 上部帯 */}
-      <div className="bg-green-600 text-white text-[9px] sm:text-[10px] md:text-sm font-bold py-1.5 px-2 text-center flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5 md:gap-x-4 md:gap-y-0 shadow-sm z-50 relative leading-snug">
+      <div className="bg-green-600 text-white text-[12px] sm:text-[13px] md:text-sm font-bold py-1.5 px-2 text-center flex flex-wrap justify-center items-center gap-x-1.5 gap-y-0.5 md:gap-x-4 md:gap-y-0 shadow-sm z-50 relative leading-snug">
         <span className="shrink-0">大和市対応</span><span className="opacity-50 shrink-0">|</span>
         <span className="shrink-0">見積もり無料</span><span className="opacity-50 shrink-0">|</span>
         <span className="shrink-0">女性スタッフ同行可</span><span className="opacity-50 shrink-0">|</span>
@@ -53,10 +53,10 @@ export default function Page() {
       {/* 🟢 ヘッダー */}
       <header className="bg-white py-1 md:py-1.5 px-3 md:px-6 sticky top-0 z-40 shadow-sm border-b border-gray-200 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="text-[9px] md:text-xs font-black text-red-600 border-2 border-red-500 bg-red-50 px-1.5 py-0.5 rounded shadow-sm">大和市福田の地元企業</div>
-          <Image src="/logo.png" alt="大和市 まごころ整理センター" width={952} height={242} className="h-6 md:h-10 w-auto object-contain mt-1 origin-left scale-140" />
+          <div className="text-[12px] md:text-xs font-black text-red-600 border-2 border-red-500 bg-red-50 px-1.5 py-0.5 rounded shadow-sm">大和市福田の地元企業</div>
+          <Image src="/logo.webp" alt="大和市 まごころ整理センター" width={480} height={122} className="h-6 md:h-10 w-auto object-contain mt-1 origin-left scale-140" />
         </div>
-        <div className="text-[9px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-0.5 md:py-1 rounded-full font-bold shadow-sm flex items-center gap-1">
+        <div className="text-[12px] md:text-sm bg-green-50 text-green-700 border border-green-600 px-2.5 py-0.5 md:py-1 rounded-full font-bold shadow-sm flex items-center gap-1">
           <Timer className="w-3 h-3 md:w-4 md:h-4 text-green-600" />
           24時間受付
         </div>
@@ -121,7 +121,7 @@ export default function Page() {
               <div className="w-[56px] h-[56px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden shrink-0" style={{ backgroundColor: '#E8D9C0', border: '3px solid #FFFFFF', boxShadow: '0 0 0 2px #D4A04A, 0 4px 12px rgba(0,0,0,0.25)' }}>
                 <Image src="/images/representative-awano.png" alt="代表 粟野匠音" width={718} height={888} className="w-full h-full object-cover object-top" />
               </div>
-              <span className="text-[10px] md:text-[11px] font-medium mt-1 opacity-90">代表　粟野</span>
+              <span className="text-[12px] md:text-xs font-medium mt-1 opacity-90">代表　粟野</span>
             </div>
             <Phone className="w-7 h-7 md:w-9 md:h-9 shrink-0" aria-hidden />
             <span className="text-left leading-tight">
@@ -221,7 +221,7 @@ export default function Page() {
             </div>
 
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-[3px] border-green-500 relative flex flex-col z-10 transform md:scale-105">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[10px] md:text-sm font-extrabold px-4 py-1 rounded-b-md shadow-sm z-20 whitespace-nowrap">スタッフおすすめプラン</div>
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-[12px] md:text-sm font-extrabold px-4 py-1 rounded-b-md shadow-sm z-20 whitespace-nowrap">スタッフおすすめプラン</div>
               <div className="bg-gradient-to-b from-green-500 to-green-600 text-white text-center py-3 md:py-4 font-bold text-sm md:text-lg tracking-widest mt-5 md:mt-0">ごっそりお片付け</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">1.5t平積みパック</h3>
@@ -235,7 +235,7 @@ export default function Page() {
             </div>
 
             <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200 flex flex-col relative">
-              <div className="absolute top-0 right-0 bg-red-100 text-red-800 text-[10px] font-bold px-2 py-1 rounded-bl-lg">大和市民割引適用可</div>
+              <div className="absolute top-0 right-0 bg-red-100 text-red-800 text-[12px] font-bold px-2 py-1 rounded-bl-lg">大和市民割引適用可</div>
               <div className="bg-gray-700 text-white text-center py-2.5 font-bold text-xs md:text-sm tracking-widest mt-4">家まるごと・ゴミ屋敷</div>
               <div className="p-5 md:p-8 text-center flex-grow">
                 <h3 className="text-lg md:text-2xl font-bold text-gray-800 mb-1">2tトラックパック</h3>
@@ -257,14 +257,14 @@ export default function Page() {
             <div className="flex flex-col md:flex-row gap-6 mt-3">
               <div className="flex-1">
                  <p className="font-extrabold text-gray-900 mb-3 text-[14px] md:text-lg">当店の料金は、<span className="text-red-600 border-b-2 border-red-200">以下の作業がすべて無料（込み）</span>です！</p>
-                 <div className="flex flex-wrap gap-1.5 md:gap-2 text-[10px] md:text-sm text-green-800 font-bold mb-3">
+                 <div className="flex flex-wrap gap-1.5 md:gap-2 text-[12px] md:text-sm text-green-800 font-bold mb-3">
                    <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500"/>作業費</span>
                    <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500"/>出張費（大和市内）</span>
                    <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500"/>車両費</span>
                    <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500"/>スタッフ費</span>
                    <span className="bg-green-50 px-2 py-1 md:py-1.5 rounded border border-green-100 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500"/>簡易清掃</span>
                  </div>
-                 <p className="text-[10px] md:text-xs text-gray-600 font-medium bg-gray-50 p-2 rounded border border-gray-200">※階段料金・エアコン取外しなども、事前の見積もり金額にすべて含めてご提示し、後からの追加費用は絶対にいただきません。</p>
+                 <p className="text-[12px] md:text-xs text-gray-600 font-medium bg-gray-50 p-2 rounded border border-gray-200">※階段料金・エアコン取外しなども、事前の見積もり金額にすべて含めてご提示し、後からの追加費用は絶対にいただきません。</p>
               </div>
               
               <div className="flex-1">
@@ -364,7 +364,7 @@ export default function Page() {
               <a href="tel:+819013835108" className="bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl py-3 px-6 shadow-lg flex items-center justify-center gap-3 border border-[#e65f00] w-full sm:w-auto touch-manipulation">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0" aria-hidden />
                 <span className="text-left leading-tight">
-                  <span className="block text-[10px] md:text-xs font-bold opacity-90 mb-0.5">代表の粟野に電話で相談する</span>
+                  <span className="block text-[12px] md:text-xs font-bold opacity-90 mb-0.5">代表の粟野に電話で相談する</span>
                   <span className="block text-lg md:text-2xl font-black tracking-tight drop-shadow-sm">090-1383-5108</span>
                 </span>
               </a>
@@ -386,7 +386,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-stretch">
             {/* 事例1: T.Y様・60代女性・遺品整理 */}
             <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
+              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[12px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
               <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
                   <rect width="300" height="128" fill="#FFF9E6"/>
@@ -415,13 +415,13 @@ export default function Page() {
                 <p><span className="font-bold text-gray-800">対応について：</span>お電話で代表・粟野さんが直接応対してくださり、お見積もりの際も急かすことなく、家族と相談する時間をいただけました。女性スタッフも同行してくださり、母も安心して立ち会えました。仏壇のお焚き上げまで対応いただけて、本当に頼んで良かったと感じています。</p>
               </div>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 中央林間 T.Y様 / 60代女性</p>
+                 <p className="text-[12px] md:text-xs text-gray-400 font-bold">大和市 中央林間 T.Y様 / 60代女性</p>
               </div>
             </div>
 
             {/* 事例2: A.K様・70代女性・生前整理 */}
             <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
+              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[12px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
               <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
                   <rect width="300" height="128" fill="#FFF9E6"/>
@@ -450,13 +450,13 @@ export default function Page() {
                 <p><span className="font-bold text-gray-800">対応について：</span>代表の粟野さんにお電話で相談した際、「ご家族でゆっくりご相談の上でお決めください」と言っていただけて、ホッとしました。お見積もり後のしつこい営業もなく、娘と話し合ってから改めてお願いすることができました。お家具1点から対応していただけたのもありがたかったです。</p>
               </div>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 鶴間 A.K様 / 70代女性</p>
+                 <p className="text-[12px] md:text-xs text-gray-400 font-bold">大和市 鶴間 A.K様 / 70代女性</p>
               </div>
             </div>
 
             {/* 事例3: S.M様・50代男性・実家じまい */}
             <div className="bg-white p-5 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-green-200 relative flex flex-col">
-              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[10px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
+              <div className="absolute top-0 right-0 bg-green-100 text-green-800 text-[12px] px-2 py-1 rounded-bl-lg font-bold">大和市でのご依頼</div>
               <div className="-mx-5 md:-mx-6 -mt-5 md:-mt-6 mb-4 overflow-hidden rounded-t-xl md:rounded-t-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 128" width="100%">
                   <rect width="300" height="128" fill="#FFF9E6"/>
@@ -485,7 +485,7 @@ export default function Page() {
                 <p><span className="font-bold text-gray-800">対応について：</span>大和市福田の地元業者ということで安心感がありました。古物商許可証もお持ちで、家具や家電の買取分を回収費用から相殺していただけて、想定より費用を抑えられました。代表の粟野さんが直接ご対応くださり、遠方の私にも作業内容を丁寧にご報告いただけました。</p>
               </div>
               <div className="flex items-center justify-between border-t border-gray-100 pt-3">
-                 <p className="text-[10px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 S.M様 / 50代男性</p>
+                 <p className="text-[12px] md:text-xs text-gray-400 font-bold">大和市 高座渋谷 S.M様 / 50代男性</p>
               </div>
             </div>
           </div>
@@ -648,7 +648,7 @@ export default function Page() {
                   <th className="bg-gray-50 py-3 md:py-5 px-3 md:px-6 text-left text-gray-700 align-top border-r border-gray-200">許認可番号</th>
                   <td className="py-3 md:py-5 px-3 md:px-6 text-gray-900 leading-relaxed">
                     古物商許可：東京都公安委員第301052616733号<br/>
-                    <div className="mt-2 text-[9px] md:text-xs text-gray-500 leading-relaxed bg-gray-50 p-2 md:p-3 rounded border border-gray-200 font-normal">
+                    <div className="mt-2 text-[12px] md:text-xs text-gray-500 leading-relaxed bg-gray-50 p-2 md:p-3 rounded border border-gray-200 font-normal">
                       ※家庭から出る一般廃棄物の回収につきましては、各市町村の許可を受けた業者に委託し、各種法令を厳守して処理を行っております。
                     </div>
                   </td>
@@ -674,7 +674,7 @@ export default function Page() {
                <a href="https://lin.ee/Gf8Or5r" className="w-full md:px-12 bg-gradient-to-b from-[#06C755] to-[#04a044] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 transition-transform active:scale-95 border border-[#05b34c]">
                  <Camera className="w-6 h-6 md:w-10 md:h-10" />
                  <div className="text-left leading-tight">
-                   <div className="text-[9px] md:text-sm font-bold opacity-90 mb-0.5">無料で見積りを取る</div>
+                   <div className="text-[12px] md:text-sm font-bold opacity-90 mb-0.5">無料で見積りを取る</div>
                    <div className="text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">LINEで写真を送って相談</div>
                  </div>
                </a>
@@ -683,7 +683,7 @@ export default function Page() {
                <a href="tel:0120437599" className="w-full md:px-12 bg-gradient-to-b from-[#FF6A00] to-[#e05d00] text-white rounded-xl md:rounded-2xl py-3.5 md:py-5 shadow-lg flex items-center justify-center gap-2 md:gap-3 border border-[#e65f00] touch-manipulation">
                  <Phone className="w-6 h-6 md:w-10 md:h-10 shrink-0" aria-hidden />
                  <span className="text-left leading-tight">
-                   <span className="block text-[9px] md:text-sm font-bold opacity-90 mb-0.5">お電話で相談する</span>
+                   <span className="block text-[12px] md:text-sm font-bold opacity-90 mb-0.5">お電話で相談する</span>
                    <span className="block text-lg md:text-2xl font-extrabold tracking-tight drop-shadow-md">0120-437-599</span>
                  </span>
                </a>
@@ -693,7 +693,7 @@ export default function Page() {
       </section>
 
       {/* 🟢 フッター */}
-      <footer className="bg-gray-800 text-gray-300 py-10 md:py-16 px-4 text-center text-[10px] md:text-sm pb-32 md:pb-48">
+      <footer className="bg-gray-800 text-gray-300 py-10 md:py-16 px-4 text-center text-[12px] md:text-sm pb-32 md:pb-48">
         <p className="font-extrabold mb-2 md:mb-4 text-sm md:text-xl tracking-widest">神奈川 まごころ整理センター</p>
         <p className="mb-4 md:mb-5 text-gray-400 font-medium">〒242-0024 神奈川県大和市福田５丁目4-11</p>
         <p className="opacity-70">© 2026 神奈川 まごころ整理センター All Rights Reserved.</p>
@@ -702,7 +702,7 @@ export default function Page() {
       {/* 🟢 追従型CTA */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_15px_rgba(0,0,0,0.08)] p-2 md:p-3" style={{ paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom))' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-1 md:gap-2">
-          <p className="text-center text-[9px] md:text-xs font-extrabold text-gray-700 px-2 text-balance leading-tight">
+          <p className="text-center text-[12px] md:text-xs font-extrabold text-gray-700 px-2 text-balance leading-tight">
             ＼ <span className="text-red-600">しつこい営業なし！</span>出張費・お見積り・キャンセル0円 ／
           </p>
           <div className="flex gap-2 md:gap-2 mt-0.5">
@@ -710,11 +710,11 @@ export default function Page() {
               href="https://lin.ee/Gf8Or5r" 
               className="flex-1 min-h-[52px] min-w-0 bg-gradient-to-b from-[#06C755] to-[#04a044] transition-colors text-white rounded-lg md:rounded-xl flex items-center justify-center py-3 md:py-4 px-1.5 md:px-3 shadow-md relative overflow-hidden active:scale-95 border border-[#05b34c] touch-manipulation"
             >
-              <div className="absolute top-0 right-0 bg-red-600 text-[8px] md:text-xs font-black px-1.5 md:px-3 py-0.5 rounded-bl-md animate-pulse shadow-sm">無料</div>
+              <div className="absolute top-0 right-0 bg-red-600 text-[12px] md:text-xs font-black px-1.5 md:px-3 py-0.5 rounded-bl-md animate-pulse shadow-sm">無料</div>
               <div className="flex items-center gap-1 md:gap-3 relative z-10">
                 <Camera className="w-5 h-5 md:w-9 md:h-9 drop-shadow-md" />
                 <div className="text-left">
-                  <div className="text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">無料で見積りを取る</div>
+                  <div className="text-[12px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">無料で見積りを取る</div>
                   <div className="text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">LINEで写真を送って相談</div>
                 </div>
               </div>
@@ -726,7 +726,7 @@ export default function Page() {
             >
               <Phone className="w-5 h-5 md:w-9 md:h-9 shrink-0 drop-shadow-md" aria-hidden />
               <span className="text-left">
-                <span className="block text-[8px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</span>
+                <span className="block text-[12px] md:text-xs font-bold leading-tight opacity-95 mb-0.5">お急ぎの方はこちら</span>
                 <span className="block text-[12px] md:text-xl font-black leading-tight tracking-tight drop-shadow-sm">お電話で相談する</span>
               </span>
             </a>
