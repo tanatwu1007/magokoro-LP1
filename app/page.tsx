@@ -18,7 +18,7 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: '神奈川まごころ整理センター｜大和市の不用品回収・遺品整理｜代表が直接対応',
-  description: '大和市福田の地元業者。代表・粟野が直接お電話に出ます。下請けなし、見積もり無料。50代以上のご家族から信頼される丁寧な対応。',
+  description: '大和市福田の地元業者。不用品回収・粗大ゴミ処分・遺品整理を代表が直接対応。下請けなし、見積もり無料、追加料金なし。',
   formatDetection: { telephone: false },
 };
 
